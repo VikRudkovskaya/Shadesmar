@@ -1,7 +1,7 @@
 # Shadesmar | Шейдсмар
 
 Море бусин. Фан-приложение по вселенной Архив Штормсвета Сандерсон Брендона.
-![Иллюстрация к проекту](https://github.com/VikRudkovskaya/Shadesmar/raw/master/ART/Shadesmar-side-art-1.png)
+![Иллюстрация к проекту](https://github.com/VikRudkovskaya/Shadesmar/blob/master/ART/Shadesmar-side-art-1.jpg)
 
 ## Premise
 
