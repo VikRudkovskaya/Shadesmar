@@ -12,6 +12,13 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AboutShadesmarViewController" customModule="Shadesmar" customModuleProvider="target">
             <connections>
+                <outlet property="bottomLeftImageView" destination="VRg-tJ-P7T" id="wNi-Oo-Sv3"/>
+                <outlet property="bottomRightImageView" destination="852-uE-ekp" id="6Y7-HR-3vz"/>
+                <outlet property="leftImaheView" destination="x93-bh-glK" id="LNA-mW-ezQ"/>
+                <outlet property="mainTextLabel" destination="wrM-E9-9XY" id="e1b-P3-0Wb"/>
+                <outlet property="rightImageView" destination="nR2-cS-JqX" id="Vl8-ag-wMo"/>
+                <outlet property="topLeftImageView" destination="uro-Uo-KIX" id="upC-br-6UP"/>
+                <outlet property="topRightImageView" destination="mCa-BK-QAM" id="Tf5-gS-CAw"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -20,78 +27,134 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bfI-7V-O62">
-                    <rect key="frame" x="47" y="184" width="320" height="451"/>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg-noize" translatesAutoresizingMaskIntoConstraints="NO" id="R9Q-w5-Pne">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                </imageView>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bfI-7V-O62">
+                    <rect key="frame" x="47" y="179" width="320" height="548"/>
                     <subviews>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_about" translatesAutoresizingMaskIntoConstraints="NO" id="yUo-cj-bsq">
-                            <rect key="frame" x="0.0" y="0.0" width="320" height="451"/>
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                         </imageView>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tentacles_right" translatesAutoresizingMaskIntoConstraints="NO" id="nR2-cS-JqX">
-                            <rect key="frame" x="279" y="93" width="53" height="264"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tentacles_right" translatesAutoresizingMaskIntoConstraints="NO" id="nR2-cS-JqX">
+                            <rect key="frame" x="280" y="97" width="40" height="363"/>
                         </imageView>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tentacles_top_right" translatesAutoresizingMaskIntoConstraints="NO" id="mCa-BK-QAM">
-                            <rect key="frame" x="133" y="0.0" width="187" height="70"/>
+                            <rect key="frame" x="101" y="8" width="239" height="70"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="70" id="833-b9-h0x"/>
                             </constraints>
                         </imageView>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tentacles_top_left" translatesAutoresizingMaskIntoConstraints="NO" id="uro-Uo-KIX">
-                            <rect key="frame" x="-20" y="-20" width="121" height="126"/>
+                            <rect key="frame" x="-20" y="-12" width="121" height="117"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="121" id="8DF-e7-tWa"/>
-                                <constraint firstAttribute="height" constant="126" id="ebn-1M-du1"/>
+                                <constraint firstAttribute="height" constant="117" id="ebn-1M-du1"/>
                             </constraints>
                         </imageView>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tentacles_left" translatesAutoresizingMaskIntoConstraints="NO" id="x93-bh-glK">
-                            <rect key="frame" x="0.0" y="98" width="40" height="250"/>
+                            <rect key="frame" x="0.0" y="97" width="40" height="363"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="40" id="URX-5E-PjV"/>
-                                <constraint firstAttribute="height" constant="250" id="bUi-Mg-ary"/>
                             </constraints>
                         </imageView>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tentacles_bottom_round" translatesAutoresizingMaskIntoConstraints="NO" id="852-uE-ekp">
-                            <rect key="frame" x="189" y="317" width="146" height="151"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tentacles_bottom_round" translatesAutoresizingMaskIntoConstraints="NO" id="852-uE-ekp">
+                            <rect key="frame" x="219" y="451" width="121" height="117"/>
                         </imageView>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tentacles_bottom_left" translatesAutoresizingMaskIntoConstraints="NO" id="VRg-tJ-P7T">
-                            <rect key="frame" x="8" y="304" width="255" height="176"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tentacles_bottom_left" translatesAutoresizingMaskIntoConstraints="NO" id="VRg-tJ-P7T">
+                            <rect key="frame" x="-12" y="448" width="244" height="100"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="244" id="PTh-wn-mwz"/>
+                                <constraint firstAttribute="height" constant="100" id="mSD-jA-baQ"/>
+                            </constraints>
                         </imageView>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Shadesmar" translatesAutoresizingMaskIntoConstraints="NO" id="ZZh-sI-aRK">
-                            <rect key="frame" x="102" y="39" width="165" height="84"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a3V-l1-kvn">
+                            <rect key="frame" x="40" y="132" width="240" height="374"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wrM-E9-9XY">
+                                    <rect key="frame" x="0.0" y="0.0" width="240" height="353"/>
+                                    <mutableString key="text">Шейдсмар – это место в сфере Разума, являющееся когнитивным отражением физической реальности мира Рошара. Географически Шейдсмар выступает как инверсия континента Рошара, где землей являются моря, реки и океаны на Рошаре, а морем земли.
+
+«Море» сделано из стеклянных бусинок, которые представляют собой когнитивные отражения материальных объектов, которые существуют в физическом мире. Летающие светящиеся огоньки являются отражениям живых существ в физической реальности.
+
+Те кто управляют потоком трансформации и те у кого имеются особые фабриали Духозаклинатели, могут ментально посещать это царство находясь одновременно в двух этих реальностях.</mutableString>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="13"/>
+                                    <color key="textColor" red="0.11004295487416989" green="0.13905565605479733" blue="0.1819876269035533" alpha="0.75240796229999996" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="wrM-E9-9XY" firstAttribute="leading" secondItem="a3V-l1-kvn" secondAttribute="leading" id="688-ou-ztB"/>
+                                <constraint firstAttribute="trailing" secondItem="wrM-E9-9XY" secondAttribute="trailing" id="7KL-p0-sWV"/>
+                                <constraint firstItem="wrM-E9-9XY" firstAttribute="centerX" secondItem="a3V-l1-kvn" secondAttribute="centerX" id="RY3-Wg-X4n"/>
+                                <constraint firstAttribute="bottom" secondItem="wrM-E9-9XY" secondAttribute="bottom" id="XZb-ot-sv4"/>
+                                <constraint firstItem="wrM-E9-9XY" firstAttribute="top" secondItem="a3V-l1-kvn" secondAttribute="top" id="omb-2p-9LI"/>
+                            </constraints>
+                        </scrollView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Shadesmar" translatesAutoresizingMaskIntoConstraints="NO" id="ZZh-sI-aRK">
+                            <rect key="frame" x="77.5" y="70" width="165" height="54"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="165" id="ev3-Wx-IrD"/>
+                                <constraint firstAttribute="height" constant="54" id="pu8-HJ-FEl"/>
+                            </constraints>
                         </imageView>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
+                        <constraint firstItem="a3V-l1-kvn" firstAttribute="leading" secondItem="x93-bh-glK" secondAttribute="trailing" id="2u4-ZA-6eU"/>
+                        <constraint firstItem="nR2-cS-JqX" firstAttribute="width" secondItem="x93-bh-glK" secondAttribute="width" id="3hd-ab-Vc7"/>
                         <constraint firstItem="yUo-cj-bsq" firstAttribute="top" secondItem="bfI-7V-O62" secondAttribute="top" id="6X3-gr-Yrj"/>
-                        <constraint firstItem="mCa-BK-QAM" firstAttribute="leading" secondItem="uro-Uo-KIX" secondAttribute="trailing" constant="32" id="7Vr-lp-wUr"/>
+                        <constraint firstItem="mCa-BK-QAM" firstAttribute="leading" secondItem="uro-Uo-KIX" secondAttribute="trailing" id="7Vr-lp-wUr"/>
+                        <constraint firstAttribute="bottom" secondItem="a3V-l1-kvn" secondAttribute="bottom" constant="42" id="87r-Eg-7HO"/>
+                        <constraint firstItem="ZZh-sI-aRK" firstAttribute="centerX" secondItem="bfI-7V-O62" secondAttribute="centerX" id="AZL-pT-ASF"/>
+                        <constraint firstItem="VRg-tJ-P7T" firstAttribute="top" secondItem="x93-bh-glK" secondAttribute="bottom" constant="-12" id="BWT-lJ-YVX"/>
                         <constraint firstAttribute="trailing" secondItem="yUo-cj-bsq" secondAttribute="trailing" id="GXn-yP-3XA"/>
+                        <constraint firstItem="ZZh-sI-aRK" firstAttribute="top" secondItem="mCa-BK-QAM" secondAttribute="bottom" constant="-8" id="Nh7-Xs-zhG"/>
+                        <constraint firstItem="nR2-cS-JqX" firstAttribute="leading" secondItem="a3V-l1-kvn" secondAttribute="trailing" id="P0j-kO-Af1"/>
                         <constraint firstAttribute="bottom" secondItem="yUo-cj-bsq" secondAttribute="bottom" id="PAP-D1-88x"/>
                         <constraint firstAttribute="width" constant="320" id="R3P-nB-Iz7"/>
+                        <constraint firstItem="VRg-tJ-P7T" firstAttribute="leading" secondItem="bfI-7V-O62" secondAttribute="leading" constant="-12" id="T2u-Jq-Tkk"/>
                         <constraint firstItem="uro-Uo-KIX" firstAttribute="leading" secondItem="bfI-7V-O62" secondAttribute="leading" constant="-20" id="WRR-Dj-vrb"/>
+                        <constraint firstItem="a3V-l1-kvn" firstAttribute="top" secondItem="ZZh-sI-aRK" secondAttribute="bottom" constant="8" id="Wqi-5v-IXt"/>
+                        <constraint firstItem="852-uE-ekp" firstAttribute="height" secondItem="uro-Uo-KIX" secondAttribute="height" id="XDs-S3-5vw"/>
+                        <constraint firstAttribute="trailing" secondItem="nR2-cS-JqX" secondAttribute="trailing" id="ahA-dA-7Oq"/>
                         <constraint firstItem="yUo-cj-bsq" firstAttribute="leading" secondItem="bfI-7V-O62" secondAttribute="leading" id="axV-ER-spW"/>
-                        <constraint firstAttribute="trailing" secondItem="mCa-BK-QAM" secondAttribute="trailing" id="eEk-F0-Dcc"/>
+                        <constraint firstAttribute="bottom" secondItem="VRg-tJ-P7T" secondAttribute="bottom" id="bc7-MF-zf1"/>
+                        <constraint firstAttribute="height" constant="548" id="cB5-kh-mDg"/>
+                        <constraint firstAttribute="trailing" secondItem="mCa-BK-QAM" secondAttribute="trailing" constant="-20" id="eEk-F0-Dcc"/>
                         <constraint firstItem="x93-bh-glK" firstAttribute="leading" secondItem="bfI-7V-O62" secondAttribute="leading" id="fHz-fc-7ru"/>
+                        <constraint firstItem="852-uE-ekp" firstAttribute="width" secondItem="uro-Uo-KIX" secondAttribute="width" id="fXZ-vd-wjG"/>
+                        <constraint firstItem="nR2-cS-JqX" firstAttribute="height" secondItem="x93-bh-glK" secondAttribute="height" id="jO8-lm-NaV"/>
+                        <constraint firstItem="nR2-cS-JqX" firstAttribute="top" secondItem="x93-bh-glK" secondAttribute="top" id="jQX-dK-oOL"/>
+                        <constraint firstAttribute="bottom" secondItem="852-uE-ekp" secondAttribute="bottom" constant="-20" id="oWi-D9-wRi"/>
                         <constraint firstItem="x93-bh-glK" firstAttribute="top" secondItem="uro-Uo-KIX" secondAttribute="bottom" constant="-8" id="t6N-eJ-vMX"/>
-                        <constraint firstItem="uro-Uo-KIX" firstAttribute="top" secondItem="bfI-7V-O62" secondAttribute="top" constant="-20" id="tG3-Wz-VlP"/>
-                        <constraint firstItem="mCa-BK-QAM" firstAttribute="top" secondItem="bfI-7V-O62" secondAttribute="top" id="x1o-yo-rtn"/>
+                        <constraint firstItem="uro-Uo-KIX" firstAttribute="top" secondItem="bfI-7V-O62" secondAttribute="top" constant="-12" id="tG3-Wz-VlP"/>
+                        <constraint firstAttribute="trailing" secondItem="852-uE-ekp" secondAttribute="trailing" constant="-20" id="wWN-81-lCI"/>
+                        <constraint firstItem="mCa-BK-QAM" firstAttribute="top" secondItem="bfI-7V-O62" secondAttribute="top" constant="8" id="x1o-yo-rtn"/>
                     </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <integer key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
                 </view>
             </subviews>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="bfI-7V-O62" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="K4j-U7-IXv"/>
-                <constraint firstItem="bfI-7V-O62" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="140" id="KiB-PA-B9S"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="bfI-7V-O62" secondAttribute="bottom" constant="227" id="q36-rT-Vgz"/>
+                <constraint firstItem="R9Q-w5-Pne" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="PKs-wP-4fh"/>
+                <constraint firstAttribute="bottom" secondItem="R9Q-w5-Pne" secondAttribute="bottom" id="QmF-aU-gLN"/>
+                <constraint firstItem="R9Q-w5-Pne" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Rz2-hu-X7h"/>
+                <constraint firstItem="R9Q-w5-Pne" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="hXb-o1-1gf"/>
+                <constraint firstItem="bfI-7V-O62" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="igS-GD-1S0"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="137.68115942028987" y="124.55357142857142"/>
+            <point key="canvasLocation" x="136.23188405797103" y="123.21428571428571"/>
         </view>
     </objects>
     <resources>
         <image name="Shadesmar" width="297" height="81"/>
+        <image name="bg-noize" width="200" height="350"/>
         <image name="bg_about" width="928" height="1159"/>
         <image name="tentacles_bottom_left" width="1229" height="587"/>
         <image name="tentacles_bottom_round" width="471" height="470"/>

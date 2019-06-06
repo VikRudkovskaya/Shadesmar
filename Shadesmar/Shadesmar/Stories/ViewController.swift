@@ -13,6 +13,8 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var sceneView: SKView!
     
+    @IBOutlet weak var about: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -20,6 +22,10 @@ class ViewController: UIViewController {
         sceneView.presentScene(scene)
     }
 
-
+    @IBAction func aboutTouchUpInside(_ sender: UIButton) {
+        let vc = AboutShadesmarViewController()
+        self.present(vc, animated: true, completion: nil)
+    }
+    
 }
 
