@@ -10,4 +10,10 @@ import Foundation
 
 class Bead {
     
+    var textureName: String?
+    
+    var title: String?
+    
+    var isAlive: Bool?
+    
 }

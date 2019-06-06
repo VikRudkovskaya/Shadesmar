@@ -9,5 +9,7 @@
 import Foundation
 
 class Bucket {
+    
     var beads: [Bead]?
+    
 }

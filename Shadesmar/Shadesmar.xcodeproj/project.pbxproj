@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F21CEE87227ECBC600327051 /* Bucket+Values.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21CEE86227ECBC600327051 /* Bucket+Values.swift */; };
+		F26958C622A8437100655AB2 /* AboutShadesmarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26958C422A8437100655AB2 /* AboutShadesmarViewController.swift */; };
+		F26958C722A8437100655AB2 /* AboutShadesmarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F26958C522A8437100655AB2 /* AboutShadesmarViewController.xib */; };
 		F272236B2255404800A6330D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F272236A2255404800A6330D /* AppDelegate.swift */; };
 		F272236D2255404800A6330D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F272236C2255404800A6330D /* ViewController.swift */; };
 		F27223702255404800A6330D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F272236E2255404800A6330D /* Main.storyboard */; };
@@ -19,6 +22,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F21CEE86227ECBC600327051 /* Bucket+Values.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bucket+Values.swift"; sourceTree = "<group>"; };
+		F26958C422A8437100655AB2 /* AboutShadesmarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutShadesmarViewController.swift; sourceTree = "<group>"; };
+		F26958C522A8437100655AB2 /* AboutShadesmarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AboutShadesmarViewController.xib; sourceTree = "<group>"; };
 		F27223672255404800A6330D /* Shadesmar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shadesmar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F272236A2255404800A6330D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F272236C2255404800A6330D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -43,6 +49,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F26958C822A8437700655AB2 /* About */ = {
+			isa = PBXGroup;
+			children = (
+				F26958C422A8437100655AB2 /* AboutShadesmarViewController.swift */,
+				F26958C522A8437100655AB2 /* AboutShadesmarViewController.xib */,
+			);
+			path = About;
+			sourceTree = "<group>";
+		};
 		F272235E2255404800A6330D = {
 			isa = PBXGroup;
 			children = (
@@ -76,6 +91,7 @@
 			children = (
 				F272237C2255F7B000A6330D /* Bead.swift */,
 				F2D1D192227B67C6004ECC96 /* Bucket.swift */,
+				F21CEE86227ECBC600327051 /* Bucket+Values.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -103,6 +119,7 @@
 			children = (
 				F272236C2255404800A6330D /* ViewController.swift */,
 				F272236E2255404800A6330D /* Main.storyboard */,
+				F26958C822A8437700655AB2 /* About */,
 			);
 			path = Stories;
 			sourceTree = "<group>";
@@ -176,6 +193,7 @@
 			files = (
 				F27223752255404A00A6330D /* LaunchScreen.storyboard in Resources */,
 				F27223722255404A00A6330D /* Assets.xcassets in Resources */,
+				F26958C722A8437100655AB2 /* AboutShadesmarViewController.xib in Resources */,
 				F27223702255404800A6330D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -190,8 +208,10 @@
 				F272236D2255404800A6330D /* ViewController.swift in Sources */,
 				F2D1D19D227B7F04004ECC96 /* Base2DScene.swift in Sources */,
 				F2D1D193227B67C6004ECC96 /* Bucket.swift in Sources */,
+				F26958C622A8437100655AB2 /* AboutShadesmarViewController.swift in Sources */,
 				F272236B2255404800A6330D /* AppDelegate.swift in Sources */,
 				F272237D2255F7B000A6330D /* Bead.swift in Sources */,
+				F21CEE87227ECBC600327051 /* Bucket+Values.swift in Sources */,
 				F2D1D19C227B7F04004ECC96 /* SKNode+Utility.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
