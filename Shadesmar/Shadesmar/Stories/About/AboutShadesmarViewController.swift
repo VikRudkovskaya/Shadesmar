@@ -22,6 +22,7 @@ class AboutShadesmarViewController: UIViewController {
     @IBOutlet weak var rightFromImageView: UIImageView!
     
     @IBOutlet weak var bottomRightImageView: UIImageView!
+    @IBOutlet weak var bottomRightToImageView: UIImageView!
     
     @IBOutlet weak var bottomLeftImageView: UIImageView!
     @IBOutlet weak var bottomLeftFromImageView: UIImageView!
@@ -45,7 +46,11 @@ class AboutShadesmarViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        UIView.animate(withDuration: 10, delay: 0.5, options: .curveEaseOut, animations: {
+        UIView.animate(withDuration: 7, delay: 1.5, options: .curveEaseOut, animations: {
+           self.topCenterBgImageView.alpha = 0.55
+        }, completion: nil)
+        
+        UIView.animate(withDuration: 7, delay: 0.5, options: .curveEaseOut, animations: {
             self.bottomLeftFromImageView.alpha = 0.0
             self.bottomLeftImageView.alpha = 1.0
         }, completion: nil)
@@ -60,10 +65,20 @@ class AboutShadesmarViewController: UIViewController {
             self.topLeftYellowImageView.alpha = 1.0
         }, completion: nil)
         
-        UIView.animate(withDuration: 3.0, delay: 0.5, options: [.repeat, .autoreverse], animations: {
-            self.rightToImageView.alpha = 0.0
-            self.rightFromImageView.alpha = 1.0
+        UIView.animate(withDuration: 2.0, delay: 0, options: [.repeat, .autoreverse], animations: {
+            self.topLeftImageView.alpha = 0.0
+            self.topLeftYellowImageView.alpha = 1.0
+        }, completion: nil)
+        
+        
+        UIView.animate(withDuration: 3.0, delay: 1, options: [.repeat, .autoreverse], animations: {
+            self.bottomRightImageView.alpha = 0.0
+            self.bottomRightToImageView.alpha = 1.0
         }, completion: nil)
     }
-
+    
+    @IBAction func closeTouchUpInside(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
 }

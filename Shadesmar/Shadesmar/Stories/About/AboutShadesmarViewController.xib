@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,6 +15,7 @@
                 <outlet property="bottomLeftFromImageView" destination="WtQ-iO-kcW" id="PTT-Ps-dfe"/>
                 <outlet property="bottomLeftImageView" destination="VRg-tJ-P7T" id="wNi-Oo-Sv3"/>
                 <outlet property="bottomRightImageView" destination="852-uE-ekp" id="6Y7-HR-3vz"/>
+                <outlet property="bottomRightToImageView" destination="852-uE-ekp" id="CUm-lg-OsQ"/>
                 <outlet property="leftImageView" destination="x93-bh-glK" id="I6f-ZK-cFS"/>
                 <outlet property="mainTextLabel" destination="wrM-E9-9XY" id="e1b-P3-0Wb"/>
                 <outlet property="rightFromImageView" destination="PWo-9P-5EM" id="zTS-Td-B9W"/>
@@ -29,24 +30,54 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg-noize" translatesAutoresizingMaskIntoConstraints="NO" id="R9Q-w5-Pne">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg-noize" translatesAutoresizingMaskIntoConstraints="NO" id="R9Q-w5-Pne">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                    <gestureRecognizers/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="LHF-KP-8fO" appends="YES" id="LZv-LV-DxN"/>
+                    </connections>
                 </imageView>
-                <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.55000000000000004" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shadow-sword-top" translatesAutoresizingMaskIntoConstraints="NO" id="XWp-oB-Rcf">
-                    <rect key="frame" x="-236" y="-46.5" width="847" height="200"/>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shadow-sword-top" translatesAutoresizingMaskIntoConstraints="NO" id="XWp-oB-Rcf">
+                    <rect key="frame" x="-216.66666666666666" y="-12" width="847.33333333333337" height="200"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="200" id="FD2-6s-tdv"/>
                     </constraints>
                 </imageView>
                 <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bfI-7V-O62">
-                    <rect key="frame" x="27.5" y="69.5" width="320" height="548"/>
+                    <rect key="frame" x="47" y="104" width="320" height="548"/>
                     <subviews>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_about" translatesAutoresizingMaskIntoConstraints="NO" id="yUo-cj-bsq">
+                        <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_about" translatesAutoresizingMaskIntoConstraints="NO" id="yUo-cj-bsq">
                             <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                            <connections>
+                                <outletCollection property="gestureRecognizers" destination="3lN-ei-mEy" appends="YES" id="EW9-AA-YDj"/>
+                            </connections>
                         </imageView>
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a3V-l1-kvn">
+                            <rect key="frame" x="44" y="132" width="232" height="374"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wrM-E9-9XY">
+                                    <rect key="frame" x="8" y="7" width="232" height="368.33333333333331"/>
+                                    <mutableString key="text">Шейдсмар – это место в сфере Разума, являющееся когнитивным отражением физической реальности мира Рошара. Географически Шейдсмар выступает как инверсия континента Рошара, где землей являются моря, реки и океаны на Рошаре, а морем земли.
+
+«Море» сделано из стеклянных бусинок, которые представляют собой когнитивные отражения материальных объектов, которые существуют в физическом мире. Летающие светящиеся огоньки являются отражениям живых существ в физической реальности.
+
+Те кто управляют потоком трансформации и те у кого имеются особые фабриали Духозаклинатели, могут ментально посещать это царство находясь одновременно в двух этих реальностях.</mutableString>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="13"/>
+                                    <color key="textColor" red="0.11004295487416989" green="0.13905565605479733" blue="0.1819876269035533" alpha="0.75240796229999996" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="wrM-E9-9XY" firstAttribute="leading" secondItem="a3V-l1-kvn" secondAttribute="leading" id="688-ou-ztB"/>
+                                <constraint firstAttribute="trailing" secondItem="wrM-E9-9XY" secondAttribute="trailing" id="7KL-p0-sWV"/>
+                                <constraint firstItem="wrM-E9-9XY" firstAttribute="centerX" secondItem="a3V-l1-kvn" secondAttribute="centerX" id="RY3-Wg-X4n"/>
+                                <constraint firstAttribute="bottom" secondItem="wrM-E9-9XY" secondAttribute="bottom" id="XZb-ot-sv4"/>
+                                <constraint firstItem="wrM-E9-9XY" firstAttribute="top" secondItem="a3V-l1-kvn" secondAttribute="top" id="omb-2p-9LI"/>
+                            </constraints>
+                        </scrollView>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tentacles_right_from" translatesAutoresizingMaskIntoConstraints="NO" id="nR2-cS-JqX">
                             <rect key="frame" x="280" y="97" width="40" height="363"/>
                         </imageView>
@@ -82,7 +113,14 @@
                                 <constraint firstAttribute="width" constant="40" id="URX-5E-PjV"/>
                             </constraints>
                         </imageView>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tentacles_bottom_round" translatesAutoresizingMaskIntoConstraints="NO" id="852-uE-ekp">
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tentacles-bottom-right-from" translatesAutoresizingMaskIntoConstraints="NO" id="A3q-qH-idp">
+                            <rect key="frame" x="219" y="451" width="121" height="117"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="121" id="C85-QF-5M2"/>
+                                <constraint firstAttribute="height" constant="117" id="PHI-OR-x3L"/>
+                            </constraints>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tentacles-bottom-right-to" translatesAutoresizingMaskIntoConstraints="NO" id="852-uE-ekp">
                             <rect key="frame" x="219" y="451" width="121" height="117"/>
                         </imageView>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tentacles-bottom-left-to" translatesAutoresizingMaskIntoConstraints="NO" id="VRg-tJ-P7T">
@@ -99,31 +137,8 @@
                                 <constraint firstAttribute="width" constant="244" id="bSv-8N-jfV"/>
                             </constraints>
                         </imageView>
-                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a3V-l1-kvn">
-                            <rect key="frame" x="44" y="132" width="232" height="374"/>
-                            <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wrM-E9-9XY">
-                                    <rect key="frame" x="0.0" y="0.0" width="232" height="368.5"/>
-                                    <mutableString key="text">Шейдсмар – это место в сфере Разума, являющееся когнитивным отражением физической реальности мира Рошара. Географически Шейдсмар выступает как инверсия континента Рошара, где землей являются моря, реки и океаны на Рошаре, а морем земли.
-
-«Море» сделано из стеклянных бусинок, которые представляют собой когнитивные отражения материальных объектов, которые существуют в физическом мире. Летающие светящиеся огоньки являются отражениям живых существ в физической реальности.
-
-Те кто управляют потоком трансформации и те у кого имеются особые фабриали Духозаклинатели, могут ментально посещать это царство находясь одновременно в двух этих реальностях.</mutableString>
-                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="13"/>
-                                    <color key="textColor" red="0.11004295487416989" green="0.13905565605479733" blue="0.1819876269035533" alpha="0.75240796229999996" colorSpace="custom" customColorSpace="displayP3"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                            </subviews>
-                            <constraints>
-                                <constraint firstItem="wrM-E9-9XY" firstAttribute="leading" secondItem="a3V-l1-kvn" secondAttribute="leading" id="688-ou-ztB"/>
-                                <constraint firstAttribute="trailing" secondItem="wrM-E9-9XY" secondAttribute="trailing" id="7KL-p0-sWV"/>
-                                <constraint firstItem="wrM-E9-9XY" firstAttribute="centerX" secondItem="a3V-l1-kvn" secondAttribute="centerX" id="RY3-Wg-X4n"/>
-                                <constraint firstAttribute="bottom" secondItem="wrM-E9-9XY" secondAttribute="bottom" id="XZb-ot-sv4"/>
-                                <constraint firstItem="wrM-E9-9XY" firstAttribute="top" secondItem="a3V-l1-kvn" secondAttribute="top" id="omb-2p-9LI"/>
-                            </constraints>
-                        </scrollView>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Shadesmar" translatesAutoresizingMaskIntoConstraints="NO" id="ZZh-sI-aRK">
-                            <rect key="frame" x="77.5" y="70" width="165" height="54"/>
+                            <rect key="frame" x="77.666666666666686" y="70" width="165" height="54"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="165" id="ev3-Wx-IrD"/>
                                 <constraint firstAttribute="height" constant="54" id="pu8-HJ-FEl"/>
@@ -142,6 +157,7 @@
                         <constraint firstItem="mCa-BK-QAM" firstAttribute="leading" secondItem="uro-Uo-KIX" secondAttribute="trailing" id="7Vr-lp-wUr"/>
                         <constraint firstAttribute="bottom" secondItem="a3V-l1-kvn" secondAttribute="bottom" constant="42" id="87r-Eg-7HO"/>
                         <constraint firstItem="ZZh-sI-aRK" firstAttribute="centerX" secondItem="bfI-7V-O62" secondAttribute="centerX" id="AZL-pT-ASF"/>
+                        <constraint firstAttribute="bottom" secondItem="A3q-qH-idp" secondAttribute="bottom" constant="-20" id="B2x-sa-D4o"/>
                         <constraint firstItem="VRg-tJ-P7T" firstAttribute="top" secondItem="x93-bh-glK" secondAttribute="bottom" constant="-12" id="BWT-lJ-YVX"/>
                         <constraint firstItem="PWo-9P-5EM" firstAttribute="top" secondItem="mCa-BK-QAM" secondAttribute="bottom" constant="19" id="Btb-tS-OUT"/>
                         <constraint firstItem="Vkt-xI-kWs" firstAttribute="top" secondItem="bfI-7V-O62" secondAttribute="top" constant="8" id="CD0-SD-6lP"/>
@@ -174,6 +190,7 @@
                         <constraint firstAttribute="bottom" secondItem="852-uE-ekp" secondAttribute="bottom" constant="-20" id="oWi-D9-wRi"/>
                         <constraint firstItem="x93-bh-glK" firstAttribute="top" secondItem="uro-Uo-KIX" secondAttribute="bottom" constant="-8" id="t6N-eJ-vMX"/>
                         <constraint firstItem="uro-Uo-KIX" firstAttribute="top" secondItem="bfI-7V-O62" secondAttribute="top" constant="-12" id="tG3-Wz-VlP"/>
+                        <constraint firstAttribute="trailing" secondItem="A3q-qH-idp" secondAttribute="trailing" constant="-20" id="uzW-TO-OC6"/>
                         <constraint firstAttribute="trailing" secondItem="852-uE-ekp" secondAttribute="trailing" constant="-20" id="wWN-81-lCI"/>
                         <constraint firstItem="mCa-BK-QAM" firstAttribute="top" secondItem="bfI-7V-O62" secondAttribute="top" constant="8" id="x1o-yo-rtn"/>
                     </constraints>
@@ -198,6 +215,16 @@
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="135.19999999999999" y="122.66009852216749"/>
         </view>
+        <tapGestureRecognizer id="3lN-ei-mEy">
+            <connections>
+                <action selector="closeTouchUpInside:" destination="-1" id="6uJ-vp-DY6"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="LHF-KP-8fO">
+            <connections>
+                <action selector="closeTouchUpInside:" destination="-1" id="2rE-k1-feX"/>
+            </connections>
+        </tapGestureRecognizer>
     </objects>
     <resources>
         <image name="Shadesmar" width="297" height="81"/>
@@ -206,7 +233,8 @@
         <image name="shadow-sword-top" width="847" height="811"/>
         <image name="tentacles-bottom-left-from" width="1229" height="587"/>
         <image name="tentacles-bottom-left-to" width="1229" height="587"/>
-        <image name="tentacles_bottom_round" width="471" height="470"/>
+        <image name="tentacles-bottom-right-from" width="471" height="470"/>
+        <image name="tentacles-bottom-right-to" width="471" height="470"/>
         <image name="tentacles_left" width="112" height="1453"/>
         <image name="tentacles_right_from" width="116" height="1453"/>
         <image name="tentacles_right_to" width="116" height="1453"/>
