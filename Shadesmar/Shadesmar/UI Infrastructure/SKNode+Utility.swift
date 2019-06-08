@@ -1,6 +1,6 @@
 //
 //  SKNode+Utility.swift
-//  ARVTBPrototype
+//  Core
 //
 //  Created by Viktoria Rudkovskaya on 04/12/2018.
 //  Copyright © 2018 Viktoria Rudkovskaya. All rights reserved.

@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		F21CEE87227ECBC600327051 /* Bucket+Values.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21CEE86227ECBC600327051 /* Bucket+Values.swift */; };
+		F226284B22AB8DCA0008E7F6 /* bg-splash.png in Resources */ = {isa = PBXBuildFile; fileRef = F226284A22AB8DCA0008E7F6 /* bg-splash.png */; };
+		F226284E22AB910B0008E7F6 /* LifeUnlifeQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F226284C22AB910B0008E7F6 /* LifeUnlifeQuestionViewController.swift */; };
+		F226284F22AB910B0008E7F6 /* LifeUnlifeQuestionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F226284D22AB910B0008E7F6 /* LifeUnlifeQuestionViewController.xib */; };
 		F26958C622A8437100655AB2 /* AboutShadesmarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26958C422A8437100655AB2 /* AboutShadesmarViewController.swift */; };
 		F26958C722A8437100655AB2 /* AboutShadesmarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F26958C522A8437100655AB2 /* AboutShadesmarViewController.xib */; };
 		F272236B2255404800A6330D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F272236A2255404800A6330D /* AppDelegate.swift */; };
@@ -23,6 +26,9 @@
 
 /* Begin PBXFileReference section */
 		F21CEE86227ECBC600327051 /* Bucket+Values.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bucket+Values.swift"; sourceTree = "<group>"; };
+		F226284A22AB8DCA0008E7F6 /* bg-splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bg-splash.png"; path = "../../../../bg-splash.png"; sourceTree = "<group>"; };
+		F226284C22AB910B0008E7F6 /* LifeUnlifeQuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeUnlifeQuestionViewController.swift; sourceTree = "<group>"; };
+		F226284D22AB910B0008E7F6 /* LifeUnlifeQuestionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LifeUnlifeQuestionViewController.xib; sourceTree = "<group>"; };
 		F26958C422A8437100655AB2 /* AboutShadesmarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutShadesmarViewController.swift; sourceTree = "<group>"; };
 		F26958C522A8437100655AB2 /* AboutShadesmarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AboutShadesmarViewController.xib; sourceTree = "<group>"; };
 		F27223672255404800A6330D /* Shadesmar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shadesmar.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -99,6 +105,7 @@
 		F2D1D195227B7CDB004ECC96 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				F226284A22AB8DCA0008E7F6 /* bg-splash.png */,
 				F27223732255404A00A6330D /* LaunchScreen.storyboard */,
 				F27223712255404A00A6330D /* Assets.xcassets */,
 			);
@@ -119,6 +126,8 @@
 			children = (
 				F272236C2255404800A6330D /* ViewController.swift */,
 				F272236E2255404800A6330D /* Main.storyboard */,
+				F226284C22AB910B0008E7F6 /* LifeUnlifeQuestionViewController.swift */,
+				F226284D22AB910B0008E7F6 /* LifeUnlifeQuestionViewController.xib */,
 				F26958C822A8437700655AB2 /* About */,
 			);
 			path = Stories;
@@ -165,6 +174,7 @@
 				TargetAttributes = {
 					F27223662255404800A6330D = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -193,6 +203,8 @@
 			files = (
 				F27223752255404A00A6330D /* LaunchScreen.storyboard in Resources */,
 				F27223722255404A00A6330D /* Assets.xcassets in Resources */,
+				F226284B22AB8DCA0008E7F6 /* bg-splash.png in Resources */,
+				F226284F22AB910B0008E7F6 /* LifeUnlifeQuestionViewController.xib in Resources */,
 				F26958C722A8437100655AB2 /* AboutShadesmarViewController.xib in Resources */,
 				F27223702255404800A6330D /* Main.storyboard in Resources */,
 			);
@@ -209,6 +221,7 @@
 				F2D1D19D227B7F04004ECC96 /* Base2DScene.swift in Sources */,
 				F2D1D193227B67C6004ECC96 /* Bucket.swift in Sources */,
 				F26958C622A8437100655AB2 /* AboutShadesmarViewController.swift in Sources */,
+				F226284E22AB910B0008E7F6 /* LifeUnlifeQuestionViewController.swift in Sources */,
 				F272236B2255404800A6330D /* AppDelegate.swift in Sources */,
 				F272237D2255F7B000A6330D /* Bead.swift in Sources */,
 				F21CEE87227ECBC600327051 /* Bucket+Values.swift in Sources */,
@@ -359,16 +372,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = JZHS7Z7G7D;
 				INFOPLIST_FILE = "$(SRCROOT)/Shadesmar/Infrastructure/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.vrrn.shadesmar.Shadesmar;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vrrn.shadesmar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.2;
+				PROVISIONING_PROFILE_SPECIFIER = Shadesmar_Dev_Profile;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -384,10 +397,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.vrrn.shadesmar.Shadesmar;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vrrn.shadesmar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

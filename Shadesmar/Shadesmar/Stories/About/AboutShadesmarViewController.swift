@@ -18,14 +18,12 @@ class AboutShadesmarViewController: UIViewController {
     @IBOutlet weak var topRightImageView: UIImageView!
     @IBOutlet weak var topRightToImageView: UIImageView!
     
-    @IBOutlet weak var rightToImageView: UIImageView!
-    @IBOutlet weak var rightFromImageView: UIImageView!
+    @IBOutlet weak var rightImageView: UIImageView!
     
     @IBOutlet weak var bottomRightImageView: UIImageView!
     @IBOutlet weak var bottomRightToImageView: UIImageView!
     
     @IBOutlet weak var bottomLeftImageView: UIImageView!
-    @IBOutlet weak var bottomLeftFromImageView: UIImageView!
     
     @IBOutlet weak var leftImageView: UIImageView!
     
@@ -51,7 +49,6 @@ class AboutShadesmarViewController: UIViewController {
         }, completion: nil)
         
         UIView.animate(withDuration: 7, delay: 0.5, options: .curveEaseOut, animations: {
-            self.bottomLeftFromImageView.alpha = 0.0
             self.bottomLeftImageView.alpha = 1.0
         }, completion: nil)
         
@@ -65,7 +62,7 @@ class AboutShadesmarViewController: UIViewController {
             self.topLeftYellowImageView.alpha = 1.0
         }, completion: nil)
         
-        UIView.animate(withDuration: 2.0, delay: 0, options: [.repeat, .autoreverse], animations: {
+        UIView.animate(withDuration: 3.0, delay: 0, options: [.repeat, .autoreverse], animations: {
             self.topLeftImageView.alpha = 0.0
             self.topLeftYellowImageView.alpha = 1.0
         }, completion: nil)
@@ -74,7 +71,11 @@ class AboutShadesmarViewController: UIViewController {
         UIView.animate(withDuration: 3.0, delay: 1, options: [.repeat, .autoreverse], animations: {
             self.bottomRightImageView.alpha = 0.0
             self.bottomRightToImageView.alpha = 1.0
+            
+//            self.rightFromImageView.alpha = 0.0
+//            self.rightToImageView.alpha = 1.0
         }, completion: nil)
+        
     }
     
     @IBAction func closeTouchUpInside(_ sender: Any) {
