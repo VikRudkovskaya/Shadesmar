@@ -29,7 +29,7 @@ class ViewController: UIViewController {
             let vm = BeadViewModel(bead: (bucket.beads?.first)!)
             let bead = BeadNode(viewModel: vm)
 
-            bead.position = CGPoint(x: 200, y: 500)
+            bead.position = self.sceneView.center
             self.sceneView.scene?.addChild(bead)
         }) { (message) in
             

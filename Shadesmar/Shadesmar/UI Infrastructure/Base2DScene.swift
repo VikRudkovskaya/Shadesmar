@@ -51,11 +51,16 @@ class Base2DScene: SKScene {
         let locationInScene = convertPoint(fromView: locationInView)
         let hitNodes = nodes(at: locationInScene) // все ноды, которые попали в координату тача
         
+        for node in hitNodes {
+            if ((node as? BeadNode) != nil) {
+                return
+            }
+        }
         guard let beads = service?.bucket?.beads else {
             return
         }
         
-        let vm = BeadViewModel(bead: beads.first!)
+        let vm = BeadViewModel(bead: beads[Utils.random(beads.count)])
         let bead = BeadNode(viewModel: vm)
         
         bead.position = locationInScene

@@ -20,7 +20,7 @@ class BeadNode: SKSpriteNode {
         super.init(texture: texture, color: .clear, size: size)
         isUserInteractionEnabled = true
         name = viewModel.bead.id
-        physicsBody = SKPhysicsBody(circleOfRadius: 80)
+        physicsBody = SKPhysicsBody(circleOfRadius: 66)
         physicsBody?.mass = 0.1
         physicsBody?.friction = 0.01
 
