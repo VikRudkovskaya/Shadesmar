@@ -1,0 +1,101 @@
+{
+    "beads" : [
+        {
+            "id": "10690760368bee893ac466d73eb6a604",
+            "textureName": "bead-cupcake",
+            "title": "Капкейк",
+            "isAlive": false
+        },
+        
+        {
+            "id": "7d11f8577674378bb960b63d3114b1f5",
+            "textureName": "bead-birthdayCake",
+            "title": "Праздничный торт",
+            "isAlive": false
+        },
+        
+        {
+            "id": "",
+            "textureName": "bead-lollipop",
+            "title": "Леденец",
+            "isAlive": false
+        },
+        
+        {
+            "id": "",
+            "textureName": "bead-shavedIce",
+            "title": "Фруктовый лёд",
+            "isAlive": false
+        },
+        
+        {
+            "id": "",
+            "textureName": "bead-donut",
+            "title": "Пончик",
+            "isAlive": false
+        },
+        
+        {
+            "id": "",
+            "textureName": "bead-iceCream",
+            "title": "Мороженое",
+            "isAlive": false
+        },
+        
+        {
+            "id": "",
+            "textureName": "bead-softIceCream",
+            "title": "Мягкоое мороженое",
+            "isAlive": false
+        },
+        
+        {
+            "id": "",
+            "textureName": "bead-pie",
+            "title": "Пирог",
+            "isAlive": false
+        },
+        
+        {
+            "id": "",
+            "textureName": "bead-shortcake",
+            "title": "Кусок пирога",
+            "isAlive": false
+        },
+        
+        {
+            "id": "",
+            "textureName": "bead-custard",
+            "title": "Пудинг",
+            "isAlive": false
+        },
+        
+        {
+            "id": "",
+            "textureName": "bead-candy",
+            "title": "Конфета",
+            "isAlive": false
+        },
+        
+        {
+            "id": "",
+            "textureName": "bead-chocolateBar",
+            "title": "Плитка шоколада",
+            "isAlive": false
+        },
+        
+        {
+            "id": "",
+            "textureName": "bead-cookie",
+            "title": "Печенька",
+            "isAlive": false
+        },
+        
+        {
+            "id": "",
+            "textureName": "bead-honey",
+            "title": "Мёд",
+            "isAlive": false
+        }
+    ]
+}

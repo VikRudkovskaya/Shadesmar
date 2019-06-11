@@ -10,6 +10,9 @@ import UIKit
 
 class AliveNotAliveQuestionPopUp: UIViewController {
     
+    @IBOutlet weak var beadImageView: UIImageView!
+    @IBOutlet weak var questionText: UILabel!
+    
     var aliveDidChose: (() -> ())?
     var notAliveDidChose: (() -> ())?
 

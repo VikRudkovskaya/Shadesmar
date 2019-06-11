@@ -1,0 +1,73 @@
+{
+    "beads" : [
+        {
+            "id": "c6883fc3194d8d27ebf07b37ca197bb5",
+            "textureName": "bead-duck",
+            "title": "Утка",
+            "isAlive": true
+        },
+        
+        {
+            "id": "46c5b7ab2128b8f92b80b89f0b5b1779",
+            "textureName": "bead-littleChick",
+            "title": "Цыпленок",
+            "isAlive": true
+        },
+        
+        {
+            "id": "574035019f9fce0404a09185450fc0ad",
+            "textureName": "bead-eagle",
+            "title": "Орел",
+            "isAlive": true
+        },
+        
+        {
+            "id": "",
+            "textureName": "bead-cock",
+            "title": "Петух",
+            "isAlive": true
+        },
+        
+        {
+            "id": "",
+            "textureName": "bead-dove",
+            "title": "Голубка",
+            "isAlive": true
+        },
+        
+        {
+            "id": "",
+            "textureName": "bead-owl",
+            "title": "Сова",
+            "isAlive": true
+        },
+        
+        {
+            "id": "",
+            "textureName": "bead-parrot",
+            "title": "Попугай",
+            "isAlive": true
+        },
+        
+        {
+            "id": "",
+            "textureName": "bead-peacock",
+            "title": "Павлин",
+            "isAlive": true
+        },
+        
+        {
+            "id": "",
+            "textureName": "bead-swan",
+            "title": "Лебедь",
+            "isAlive": true
+        },
+        
+        {
+            "id": "",
+            "textureName": "bead-turkey",
+            "title": "Индейка",
+            "isAlive": true
+        }
+    ]
+}

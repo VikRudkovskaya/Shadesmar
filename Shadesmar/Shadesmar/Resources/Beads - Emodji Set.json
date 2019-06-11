@@ -1,0 +1,219 @@
+{
+    "beads" : [
+        {
+            "id": "7103d07450c4a4f069ae40eac51616c5",
+            "textureName": "bead-diamond",
+            "title": "Бриллиант",
+            "isAlive": false
+        },
+        {
+            "id": "c6883fc3194d8d27ebf07b37ca197bb5",
+            "textureName": "bead-duck",
+            "title": "Утка",
+            "isAlive": true
+        },
+        {
+            "id": "7d3827b95542cf604e0ee7616a1ff87b",
+            "textureName": "bead-lion",
+            "title": "Лев",
+            "isAlive": true
+        },
+        
+        {
+            "id": "10690760368bee893ac466d73eb6a604",
+            "textureName": "bead-cupcake",
+            "title": "Капкейк",
+            "isAlive": false
+        },
+        
+        {
+            "id": "7d11f8577674378bb960b63d3114b1f5",
+            "textureName": "bead-birthdayCake",
+            "title": "Праздничный торт",
+            "isAlive": false
+        },
+        
+        {
+            "id": "46c5b7ab2128b8f92b80b89f0b5b1779",
+            "textureName": "bead-littleChick",
+            "title": "Цыпленок",
+            "isAlive": true
+        },
+        
+        {
+            "id": "941a18dd5b5ab04e87f55d5584ee2d1f",
+            "textureName": "bead-fox",
+            "title": "Лиса",
+            "isAlive": true
+        },
+        
+        {
+            "id": "581b3435d21145269f9888d431c836af",
+            "textureName": "bead-T-rex",
+            "title": "Ти-рекс",
+            "isAlive": true
+        },
+        
+        {
+            "id": "060ebee06f271abff1b5901bf6973d1c",
+            "textureName": "bead-unicorn",
+            "title": "Единорог",
+            "isAlive": true
+        },
+        
+        {
+            "id": "574035019f9fce0404a09185450fc0ad",
+            "textureName": "bead-eagle",
+            "title": "Орел",
+            "isAlive": true
+        },
+        
+        {
+            "id": "",
+            "textureName": "bead-cock",
+            "title": "Петух",
+            "isAlive": true
+        },
+        
+        {
+            "id": "",
+            "textureName": "bead-dove",
+            "title": "Голубка",
+            "isAlive": true
+        },
+        
+        {
+            "id": "",
+            "textureName": "bead-owl",
+            "title": "Сова",
+            "isAlive": true
+        },
+        
+        {
+            "id": "",
+            "textureName": "bead-parrot",
+            "title": "Попугай",
+            "isAlive": true
+        },
+        
+        {
+            "id": "",
+            "textureName": "bead-peacock",
+            "title": "Павлин",
+            "isAlive": true
+        },
+        
+        {
+            "id": "",
+            "textureName": "bead-swan",
+            "title": "Лебедь",
+            "isAlive": true
+        },
+        
+        {
+            "id": "",
+            "textureName": "bead-turkey",
+            "title": "Индейка",
+            "isAlive": true
+        },
+        
+        {
+            "id": "10690760368bee893ac466d73eb6a604",
+            "textureName": "bead-cupcake",
+            "title": "Капкейк",
+            "isAlive": false
+        },
+        
+        {
+            "id": "7d11f8577674378bb960b63d3114b1f5",
+            "textureName": "bead-birthdayCake",
+            "title": "Праздничный торт",
+            "isAlive": false
+        },
+        
+        {
+            "id": "",
+            "textureName": "bead-lollipop",
+            "title": "Леденец",
+            "isAlive": false
+        },
+        
+        {
+            "id": "",
+            "textureName": "bead-shavedIce",
+            "title": "Фруктовый лёд",
+            "isAlive": false
+        },
+        
+        {
+            "id": "",
+            "textureName": "bead-donut",
+            "title": "Пончик",
+            "isAlive": false
+        },
+        
+        {
+            "id": "",
+            "textureName": "bead-iceCream",
+            "title": "Мороженое",
+            "isAlive": false
+        },
+        
+        {
+            "id": "",
+            "textureName": "bead-softIceCream",
+            "title": "Мягкоое мороженое",
+            "isAlive": false
+        },
+        
+        {
+            "id": "",
+            "textureName": "bead-pie",
+            "title": "Пирог",
+            "isAlive": false
+        },
+        
+        {
+            "id": "",
+            "textureName": "bead-shortcake",
+            "title": "Кусок пирога",
+            "isAlive": false
+        },
+        
+        {
+            "id": "",
+            "textureName": "bead-custard",
+            "title": "Пудинг",
+            "isAlive": false
+        },
+        
+        {
+            "id": "",
+            "textureName": "bead-candy",
+            "title": "Конфета",
+            "isAlive": false
+        },
+        
+        {
+            "id": "",
+            "textureName": "bead-chocolateBar",
+            "title": "Плитка шоколада",
+            "isAlive": false
+        },
+        
+        {
+            "id": "",
+            "textureName": "bead-cookie",
+            "title": "Печенька",
+            "isAlive": false
+        },
+        
+        {
+            "id": "",
+            "textureName": "bead-honey",
+            "title": "Мёд",
+            "isAlive": false
+        }
+        
+    ]
+}

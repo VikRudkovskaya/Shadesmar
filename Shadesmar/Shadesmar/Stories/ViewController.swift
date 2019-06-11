@@ -17,9 +17,12 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         
-
-
         let service = BeadsService()
         service.bucket(successHandler: { (bucket) in
             
@@ -28,14 +31,13 @@ class ViewController: UIViewController {
             self.sceneView.presentScene(scene)
             let vm = BeadViewModel(bead: (bucket.beads?.first)!)
             let bead = BeadNode(viewModel: vm)
-
+            
             bead.position = self.sceneView.center
             self.sceneView.scene?.addChild(bead)
+            
         }) { (message) in
             
         }
-
-        
     }
 
     @IBAction func aboutTouchUpInside(_ sender: UIButton) {

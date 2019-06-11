@@ -15,7 +15,7 @@ class BeadsService {
     func bucket(successHandler:@escaping (Bucket) -> (),
                    errorHandler:@escaping (String) -> ()) -> () {
         
-        guard let jsonData = Utils.unarchiveJSON(from: "Beads - Example") else {
+        guard let jsonData = Utils.unarchiveJSON(from: "Beads - Emodji Set") else {
             fatalError("Файл с указанным именем не найден")
         }
 

@@ -16,14 +16,14 @@ class Base2DScene: SKScene {
 
     override init(size: CGSize) {
         super.init(size: size)
-        
+                
         let bgNode = SKSpriteNode(texture: SKTexture(imageNamed: "bg-main"), size: size)
         bgNode.position = CGPoint(x: size.width / 2, y: size.height / 2)
         bgNode.name = "bg-main"
         backgroundNode = bgNode
         self.addChild(backgroundNode!)
         
-        physicsWorld.gravity = CGVector(dx: 0, dy: -4.8)
+        physicsWorld.gravity = CGVector(dx: 0, dy: 4.8)
         
         let physicsBody = SKPhysicsBody(edgeLoopFrom: CGRect(x: 0, y: 128, width: size.width, height: size.height - 128))
         self.physicsBody = physicsBody

@@ -19,12 +19,10 @@ class BeadNode: SKSpriteNode {
         let texture = SKTexture(imageNamed: viewModel.textureName)
         super.init(texture: texture, color: .clear, size: size)
         isUserInteractionEnabled = true
-        name = viewModel.bead.id
+        name = viewModel.bead.textureName
         physicsBody = SKPhysicsBody(circleOfRadius: 66)
         physicsBody?.mass = 0.1
         physicsBody?.friction = 0.01
-
-        
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -41,7 +39,7 @@ class BeadNode: SKSpriteNode {
             return
         }
         let node = atPoint(location)
-        if node.name! == viewModel.bead.id {
+        if node.name! == viewModel.bead.textureName {
             physicsBody?.applyImpulse(CGVector(dx: 10 * location.x, dy: 10 * location.y))
             beadDidTouch?(self.viewModel)
         }
