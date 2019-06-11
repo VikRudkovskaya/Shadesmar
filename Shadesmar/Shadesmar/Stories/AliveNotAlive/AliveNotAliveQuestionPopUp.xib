@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Cyrillicgoth.ttf">
+            <string>CyrillicGoth</string>
+        </array>
+        <array key="GothicCyr.ttf">
+            <string>GothicCyr-Normal</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AliveNotAliveQuestionPopUp" customModule="Shadesmar" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg-noize" translatesAutoresizingMaskIntoConstraints="NO" id="ptM-9X-WQh">
+                    <rect key="frame" x="-1" y="0.0" width="465" height="812"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <gestureRecognizers/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="APL-p5-vFS" appends="YES" id="rHp-Gb-Wk7"/>
+                    </connections>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RTf-fZ-T46">
+                    <rect key="frame" x="7.6666666666666572" y="241" width="360" height="340"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg-pop-up" translatesAutoresizingMaskIntoConstraints="NO" id="FGO-Un-KBu">
+                            <rect key="frame" x="0.0" y="0.0" width="360" height="340"/>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shadow-sword-light-silhouette" translatesAutoresizingMaskIntoConstraints="NO" id="Qzd-ta-9WG">
+                            <rect key="frame" x="72" y="-819.66666666666663" width="216" height="1979.333333333333"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Живое" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w9j-q8-ebK">
+                            <rect key="frame" x="101.33333333333333" y="235" width="53.333333333333329" height="25"/>
+                            <fontDescription key="fontDescription" name="GothicCyr-Normal" family="GothicCyr" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.55000000000000004" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shadow-ornament-light-silhouette" translatesAutoresizingMaskIntoConstraints="NO" id="r7Z-9h-AMa">
+                            <rect key="frame" x="8" y="16" width="32" height="308"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="32" id="baM-9q-qu3"/>
+                            </constraints>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.55000000000000004" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shadow-ornament-light-silhouette" translatesAutoresizingMaskIntoConstraints="NO" id="mR7-be-hEG">
+                            <rect key="frame" x="320" y="16" width="32" height="308"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="32" id="cm7-tt-2wr"/>
+                            </constraints>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bead-diamond" translatesAutoresizingMaskIntoConstraints="NO" id="LWV-yQ-MWh">
+                            <rect key="frame" x="-6" y="16" width="372" height="128"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="128" id="Ugk-3D-eep"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="В бусине заключено живое или неживоое?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A4b-Rf-bwU">
+                            <rect key="frame" x="56" y="144" width="248" height="62.666666666666657"/>
+                            <fontDescription key="fontDescription" name="CyrillicGoth" family="CyrillicGoth" pointSize="24"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S1x-6c-Q9V">
+                            <rect key="frame" x="78" y="244" width="100" height="100"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="100" id="a7L-dp-hSX"/>
+                                <constraint firstAttribute="width" constant="100" id="lQK-By-DUh"/>
+                            </constraints>
+                            <state key="normal" backgroundImage="life-round"/>
+                            <connections>
+                                <action selector="aliveTouchUpInside:" destination="-1" eventType="touchUpInside" id="Vjc-CH-pi0"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nel-LZ-ISf">
+                            <rect key="frame" x="182" y="244" width="100" height="100"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="100" id="3cE-2g-XLd"/>
+                                <constraint firstAttribute="width" constant="100" id="Rdf-8m-7t0"/>
+                            </constraints>
+                            <state key="normal" backgroundImage="unlife-round"/>
+                            <connections>
+                                <action selector="notAliveTouchUpInside:" destination="-1" eventType="touchUpInside" id="71E-TP-j2N"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LfQ-U2-0xf">
+                            <rect key="frame" x="178" y="276" width="4" height="64"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="4" id="gJe-d8-faA"/>
+                                <constraint firstAttribute="height" constant="64" id="hnc-ZB-uFS"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Неживое" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ls5-V0-EdC">
+                            <rect key="frame" x="197" y="235.66666666666669" width="70" height="24.333333333333314"/>
+                            <fontDescription key="fontDescription" name="GothicCyr-Normal" family="GothicCyr" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="S1x-6c-Q9V" secondAttribute="bottom" constant="-4" id="4V5-KO-Jxb"/>
+                        <constraint firstItem="r7Z-9h-AMa" firstAttribute="leading" secondItem="RTf-fZ-T46" secondAttribute="leading" constant="8" id="9te-La-3Zb"/>
+                        <constraint firstAttribute="trailing" secondItem="mR7-be-hEG" secondAttribute="trailing" constant="8" id="AUu-9X-4ak"/>
+                        <constraint firstItem="nel-LZ-ISf" firstAttribute="leading" secondItem="LfQ-U2-0xf" secondAttribute="trailing" id="BLt-iN-ih9"/>
+                        <constraint firstItem="FGO-Un-KBu" firstAttribute="leading" secondItem="RTf-fZ-T46" secondAttribute="leading" id="BYc-Ns-beG"/>
+                        <constraint firstItem="nel-LZ-ISf" firstAttribute="top" secondItem="Ls5-V0-EdC" secondAttribute="bottom" constant="-16" id="CWi-HM-Ecj"/>
+                        <constraint firstItem="A4b-Rf-bwU" firstAttribute="leading" secondItem="r7Z-9h-AMa" secondAttribute="trailing" constant="16" id="D7d-iv-37W"/>
+                        <constraint firstItem="Qzd-ta-9WG" firstAttribute="centerY" secondItem="RTf-fZ-T46" secondAttribute="centerY" id="DoT-KX-OC9"/>
+                        <constraint firstAttribute="height" constant="340" id="E7l-et-yMu"/>
+                        <constraint firstItem="FGO-Un-KBu" firstAttribute="top" secondItem="RTf-fZ-T46" secondAttribute="top" id="IEI-gU-Lc6"/>
+                        <constraint firstAttribute="width" constant="360" id="Vkv-KQ-izY"/>
+                        <constraint firstAttribute="bottom" secondItem="nel-LZ-ISf" secondAttribute="bottom" constant="-4" id="WtR-Cw-Hik"/>
+                        <constraint firstItem="Qzd-ta-9WG" firstAttribute="leading" secondItem="r7Z-9h-AMa" secondAttribute="trailing" constant="32" id="Zpz-Fq-y0b"/>
+                        <constraint firstAttribute="bottom" secondItem="LfQ-U2-0xf" secondAttribute="bottom" id="a09-LX-jHV"/>
+                        <constraint firstAttribute="bottom" secondItem="FGO-Un-KBu" secondAttribute="bottom" id="afD-pm-2jR"/>
+                        <constraint firstItem="A4b-Rf-bwU" firstAttribute="centerX" secondItem="RTf-fZ-T46" secondAttribute="centerX" id="b0J-q8-xUe"/>
+                        <constraint firstItem="LfQ-U2-0xf" firstAttribute="centerX" secondItem="RTf-fZ-T46" secondAttribute="centerX" id="b9Z-LV-ltd"/>
+                        <constraint firstItem="mR7-be-hEG" firstAttribute="centerY" secondItem="RTf-fZ-T46" secondAttribute="centerY" id="cnG-4x-OGM"/>
+                        <constraint firstAttribute="trailing" secondItem="FGO-Un-KBu" secondAttribute="trailing" id="dbb-XA-aUd"/>
+                        <constraint firstItem="mR7-be-hEG" firstAttribute="top" secondItem="RTf-fZ-T46" secondAttribute="top" constant="16" id="h1j-qP-yT2"/>
+                        <constraint firstItem="LfQ-U2-0xf" firstAttribute="leading" secondItem="S1x-6c-Q9V" secondAttribute="trailing" id="hbT-Oe-GfC"/>
+                        <constraint firstItem="Ls5-V0-EdC" firstAttribute="centerX" secondItem="nel-LZ-ISf" secondAttribute="centerX" id="hmb-kB-O2g"/>
+                        <constraint firstItem="r7Z-9h-AMa" firstAttribute="top" secondItem="RTf-fZ-T46" secondAttribute="top" constant="16" id="k7c-08-8n8"/>
+                        <constraint firstItem="r7Z-9h-AMa" firstAttribute="centerY" secondItem="RTf-fZ-T46" secondAttribute="centerY" id="lAc-df-1xn"/>
+                        <constraint firstItem="w9j-q8-ebK" firstAttribute="centerX" secondItem="S1x-6c-Q9V" secondAttribute="centerX" id="lBS-pI-PYl"/>
+                        <constraint firstItem="A4b-Rf-bwU" firstAttribute="top" secondItem="LWV-yQ-MWh" secondAttribute="bottom" id="mrK-Cp-XsZ"/>
+                        <constraint firstItem="LWV-yQ-MWh" firstAttribute="top" secondItem="RTf-fZ-T46" secondAttribute="top" constant="16" id="qpf-n9-K49"/>
+                        <constraint firstItem="S1x-6c-Q9V" firstAttribute="top" secondItem="w9j-q8-ebK" secondAttribute="bottom" constant="-16" id="tI1-td-oIg"/>
+                        <constraint firstItem="Qzd-ta-9WG" firstAttribute="centerX" secondItem="RTf-fZ-T46" secondAttribute="centerX" id="ucn-Vg-XOD"/>
+                        <constraint firstItem="LWV-yQ-MWh" firstAttribute="centerX" secondItem="RTf-fZ-T46" secondAttribute="centerX" id="zqz-0d-y5B"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="RTf-fZ-T46" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="1uT-x9-Qz9"/>
+                <constraint firstItem="RTf-fZ-T46" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="bnW-gn-86F"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="133.59999999999999" y="143.3497536945813"/>
+        </view>
+        <tapGestureRecognizer id="APL-p5-vFS">
+            <connections>
+                <action selector="closeAction:" destination="-1" id="2rw-L1-y30"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="bead-diamond" width="372" height="372"/>
+        <image name="bg-noize" width="200" height="350"/>
+        <image name="bg-pop-up" width="928" height="1159"/>
+        <image name="life-round" width="522" height="521"/>
+        <image name="shadow-ornament-light-silhouette" width="163" height="1084"/>
+        <image name="shadow-sword-light-silhouette" width="848" height="1979"/>
+        <image name="unlife-round" width="522" height="521"/>
+    </resources>
+</document>

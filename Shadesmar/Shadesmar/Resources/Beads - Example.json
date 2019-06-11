@@ -1,0 +1,10 @@
+{
+    "beads" : [
+        {
+            "id": "7103d07450c4a4f069ae40eac51616c5",
+            "textureName": "bead-diamond",
+            "title": "Бриллиант",
+            "isAlive": false
+        }
+    ]
+}

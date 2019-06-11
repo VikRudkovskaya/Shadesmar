@@ -3,17 +3,18 @@
 //  Shadesmar
 //
 //  Created by Viktoria Rudkovskaya on 04/04/2019.
-//  Copyright © 2019 Viktoria Rudkovskaya. All rights reserved.
+//  Copyright © 2019 VR/RN. All rights reserved.
 //
 
 import Foundation
 
-class Bead {
+class Bead: Decodable {
+    
+    var id: String?
     
     var textureName: String?
     
     var title: String?
     
     var isAlive: Bool?
-    
 }

@@ -18,13 +18,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DyZ-xM-WGe" customClass="SKView">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_main" translatesAutoresizingMaskIntoConstraints="NO" id="eA6-SM-OaN">
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg-main" translatesAutoresizingMaskIntoConstraints="NO" id="eA6-SM-OaN">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DyZ-xM-WGe" customClass="SKView">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Sc-ez-7PC">
                                 <rect key="frame" x="0.0" y="768" width="414" height="128"/>
                                 <subviews>
@@ -56,10 +56,10 @@
                             <constraint firstItem="eA6-SM-OaN" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="8QA-nJ-tuR"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eA6-SM-OaN" secondAttribute="trailing" id="8zW-kY-YOo"/>
                             <constraint firstItem="3Sc-ez-7PC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="BLV-St-RAG"/>
-                            <constraint firstItem="DyZ-xM-WGe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Gkw-4R-eZ9"/>
+                            <constraint firstItem="DyZ-xM-WGe" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="K7D-H0-bgV"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DyZ-xM-WGe" secondAttribute="trailing" id="X6I-ZH-xYd"/>
                             <constraint firstItem="DyZ-xM-WGe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ZGa-gr-8Ha"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="DyZ-xM-WGe" secondAttribute="bottom" id="fPx-Yr-xfV"/>
+                            <constraint firstAttribute="bottom" secondItem="DyZ-xM-WGe" secondAttribute="bottom" id="lEf-My-zxd"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3Sc-ez-7PC" secondAttribute="trailing" id="sMl-VO-2a3"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -76,6 +76,6 @@
     </scenes>
     <resources>
         <image name="about" width="491" height="493"/>
-        <image name="bg_main" width="400" height="700"/>
+        <image name="bg-main" width="400" height="700"/>
     </resources>
 </document>

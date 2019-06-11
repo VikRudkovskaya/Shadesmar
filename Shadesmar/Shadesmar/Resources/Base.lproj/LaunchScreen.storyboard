@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg-splash.png" translatesAutoresizingMaskIntoConstraints="NO" id="FFR-Pm-AdZ">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg-splash" translatesAutoresizingMaskIntoConstraints="NO" id="FFR-Pm-AdZ">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Shadesmar" translatesAutoresizingMaskIntoConstraints="NO" id="cG8-bx-maN">
@@ -44,6 +44,6 @@
     </scenes>
     <resources>
         <image name="Shadesmar" width="297" height="81"/>
-        <image name="bg-splash.png" width="400" height="700"/>
+        <image name="bg-splash" width="400" height="700"/>
     </resources>
 </document>

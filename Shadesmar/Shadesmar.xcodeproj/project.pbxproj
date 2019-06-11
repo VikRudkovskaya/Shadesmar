@@ -8,11 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		F21CEE87227ECBC600327051 /* Bucket+Values.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21CEE86227ECBC600327051 /* Bucket+Values.swift */; };
-		F226284B22AB8DCA0008E7F6 /* bg-splash.png in Resources */ = {isa = PBXBuildFile; fileRef = F226284A22AB8DCA0008E7F6 /* bg-splash.png */; };
-		F226284E22AB910B0008E7F6 /* LifeUnlifeQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F226284C22AB910B0008E7F6 /* LifeUnlifeQuestionViewController.swift */; };
-		F226284F22AB910B0008E7F6 /* LifeUnlifeQuestionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F226284D22AB910B0008E7F6 /* LifeUnlifeQuestionViewController.xib */; };
+		F226284E22AB910B0008E7F6 /* AliveNotAliveQuestionPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F226284C22AB910B0008E7F6 /* AliveNotAliveQuestionPopUp.swift */; };
+		F226284F22AB910B0008E7F6 /* AliveNotAliveQuestionPopUp.xib in Resources */ = {isa = PBXBuildFile; fileRef = F226284D22AB910B0008E7F6 /* AliveNotAliveQuestionPopUp.xib */; };
 		F226285222ABFB750008E7F6 /* GameOverPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F226285022ABFB750008E7F6 /* GameOverPopUp.swift */; };
 		F226285322ABFB750008E7F6 /* GameOverPopUp.xib in Resources */ = {isa = PBXBuildFile; fileRef = F226285122ABFB750008E7F6 /* GameOverPopUp.xib */; };
+		F226285622AD0BC60008E7F6 /* Beads.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F226285522AD0BC60008E7F6 /* Beads.xcassets */; };
+		F226285922AD60180008E7F6 /* Cyrillicgoth.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F226285722AD60180008E7F6 /* Cyrillicgoth.ttf */; };
+		F226285A22AD60180008E7F6 /* GothicCyr.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F226285822AD60180008E7F6 /* GothicCyr.ttf */; };
+		F226285C22AD61920008E7F6 /* Vtks Classical Hit.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F226285B22AD61910008E7F6 /* Vtks Classical Hit.ttf */; };
+		F226286022AE41B50008E7F6 /* BeadNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F226285F22AE41B50008E7F6 /* BeadNode.swift */; };
+		F226286222AEB7FB0008E7F6 /* BeadViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F226286122AEB7FB0008E7F6 /* BeadViewModel.swift */; };
+		F226286622AEC2190008E7F6 /* Beads - Example.json in Resources */ = {isa = PBXBuildFile; fileRef = F226286522AEC2190008E7F6 /* Beads - Example.json */; };
+		F226286A22AECD0E0008E7F6 /* BeadsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F226286922AECD0E0008E7F6 /* BeadsService.swift */; };
+		F226286C22AED5D90008E7F6 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F226286B22AED5D90008E7F6 /* Utils.swift */; };
 		F26958C622A8437100655AB2 /* AboutShadesmarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26958C422A8437100655AB2 /* AboutShadesmarViewController.swift */; };
 		F26958C722A8437100655AB2 /* AboutShadesmarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F26958C522A8437100655AB2 /* AboutShadesmarViewController.xib */; };
 		F272236B2255404800A6330D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F272236A2255404800A6330D /* AppDelegate.swift */; };
@@ -28,11 +36,19 @@
 
 /* Begin PBXFileReference section */
 		F21CEE86227ECBC600327051 /* Bucket+Values.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bucket+Values.swift"; sourceTree = "<group>"; };
-		F226284A22AB8DCA0008E7F6 /* bg-splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bg-splash.png"; path = "../../../../bg-splash.png"; sourceTree = "<group>"; };
-		F226284C22AB910B0008E7F6 /* LifeUnlifeQuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeUnlifeQuestionViewController.swift; sourceTree = "<group>"; };
-		F226284D22AB910B0008E7F6 /* LifeUnlifeQuestionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LifeUnlifeQuestionViewController.xib; sourceTree = "<group>"; };
+		F226284C22AB910B0008E7F6 /* AliveNotAliveQuestionPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AliveNotAliveQuestionPopUp.swift; sourceTree = "<group>"; };
+		F226284D22AB910B0008E7F6 /* AliveNotAliveQuestionPopUp.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AliveNotAliveQuestionPopUp.xib; sourceTree = "<group>"; };
 		F226285022ABFB750008E7F6 /* GameOverPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverPopUp.swift; sourceTree = "<group>"; };
 		F226285122ABFB750008E7F6 /* GameOverPopUp.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameOverPopUp.xib; sourceTree = "<group>"; };
+		F226285522AD0BC60008E7F6 /* Beads.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Beads.xcassets; sourceTree = "<group>"; };
+		F226285722AD60180008E7F6 /* Cyrillicgoth.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Cyrillicgoth.ttf; sourceTree = "<group>"; };
+		F226285822AD60180008E7F6 /* GothicCyr.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GothicCyr.ttf; sourceTree = "<group>"; };
+		F226285B22AD61910008E7F6 /* Vtks Classical Hit.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Vtks Classical Hit.ttf"; sourceTree = "<group>"; };
+		F226285F22AE41B50008E7F6 /* BeadNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeadNode.swift; sourceTree = "<group>"; };
+		F226286122AEB7FB0008E7F6 /* BeadViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeadViewModel.swift; sourceTree = "<group>"; };
+		F226286522AEC2190008E7F6 /* Beads - Example.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Beads - Example.json"; sourceTree = "<group>"; };
+		F226286922AECD0E0008E7F6 /* BeadsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeadsService.swift; sourceTree = "<group>"; };
+		F226286B22AED5D90008E7F6 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		F26958C422A8437100655AB2 /* AboutShadesmarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutShadesmarViewController.swift; sourceTree = "<group>"; };
 		F26958C522A8437100655AB2 /* AboutShadesmarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AboutShadesmarViewController.xib; sourceTree = "<group>"; };
 		F27223672255404800A6330D /* Shadesmar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shadesmar.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -59,13 +75,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		F26958C822A8437700655AB2 /* About */ = {
+		F226285422AC2A530008E7F6 /* GameOver */ = {
+			isa = PBXGroup;
+			children = (
+				F226285022ABFB750008E7F6 /* GameOverPopUp.swift */,
+				F226285122ABFB750008E7F6 /* GameOverPopUp.xib */,
+			);
+			path = GameOver;
+			sourceTree = "<group>";
+		};
+		F226285D22AE1F920008E7F6 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				F226285B22AD61910008E7F6 /* Vtks Classical Hit.ttf */,
+				F226285722AD60180008E7F6 /* Cyrillicgoth.ttf */,
+				F226285822AD60180008E7F6 /* GothicCyr.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		F226285E22AE349D0008E7F6 /* AliveNotAlive */ = {
+			isa = PBXGroup;
+			children = (
+				F226284C22AB910B0008E7F6 /* AliveNotAliveQuestionPopUp.swift */,
+				F226284D22AB910B0008E7F6 /* AliveNotAliveQuestionPopUp.xib */,
+			);
+			path = AliveNotAlive;
+			sourceTree = "<group>";
+		};
+		F26958C822A8437700655AB2 /* AboutShadesmar */ = {
 			isa = PBXGroup;
 			children = (
 				F26958C422A8437100655AB2 /* AboutShadesmarViewController.swift */,
 				F26958C522A8437100655AB2 /* AboutShadesmarViewController.xib */,
 			);
-			path = About;
+			path = AboutShadesmar;
 			sourceTree = "<group>";
 		};
 		F272235E2255404800A6330D = {
@@ -87,9 +131,11 @@
 		F27223692255404800A6330D /* Shadesmar */ = {
 			isa = PBXGroup;
 			children = (
+				F226286922AECD0E0008E7F6 /* BeadsService.swift */,
+				F226286B22AED5D90008E7F6 /* Utils.swift */,
+				F2D1D194227B7CCB004ECC96 /* Models */,
 				F2D1D198227B7DC6004ECC96 /* UI Infrastructure */,
 				F2D1D197227B7D7C004ECC96 /* Stories */,
-				F2D1D194227B7CCB004ECC96 /* Models */,
 				F2D1D196227B7D1C004ECC96 /* Infrastructure */,
 				F2D1D195227B7CDB004ECC96 /* Resources */,
 			);
@@ -102,6 +148,7 @@
 				F272237C2255F7B000A6330D /* Bead.swift */,
 				F2D1D192227B67C6004ECC96 /* Bucket.swift */,
 				F21CEE86227ECBC600327051 /* Bucket+Values.swift */,
+				F226286122AEB7FB0008E7F6 /* BeadViewModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -109,9 +156,11 @@
 		F2D1D195227B7CDB004ECC96 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				F226284A22AB8DCA0008E7F6 /* bg-splash.png */,
+				F226286522AEC2190008E7F6 /* Beads - Example.json */,
+				F226285D22AE1F920008E7F6 /* Fonts */,
 				F27223732255404A00A6330D /* LaunchScreen.storyboard */,
 				F27223712255404A00A6330D /* Assets.xcassets */,
+				F226285522AD0BC60008E7F6 /* Beads.xcassets */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -128,13 +177,12 @@
 		F2D1D197227B7D7C004ECC96 /* Stories */ = {
 			isa = PBXGroup;
 			children = (
+				F226285F22AE41B50008E7F6 /* BeadNode.swift */,
 				F272236C2255404800A6330D /* ViewController.swift */,
 				F272236E2255404800A6330D /* Main.storyboard */,
-				F226284C22AB910B0008E7F6 /* LifeUnlifeQuestionViewController.swift */,
-				F226284D22AB910B0008E7F6 /* LifeUnlifeQuestionViewController.xib */,
-				F226285022ABFB750008E7F6 /* GameOverPopUp.swift */,
-				F226285122ABFB750008E7F6 /* GameOverPopUp.xib */,
-				F26958C822A8437700655AB2 /* About */,
+				F226285E22AE349D0008E7F6 /* AliveNotAlive */,
+				F226285422AC2A530008E7F6 /* GameOver */,
+				F26958C822A8437700655AB2 /* AboutShadesmar */,
 			);
 			path = Stories;
 			sourceTree = "<group>";
@@ -176,7 +224,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1010;
-				ORGANIZATIONNAME = "Viktoria Rudkovskaya";
+				ORGANIZATIONNAME = VR/RN;
 				TargetAttributes = {
 					F27223662255404800A6330D = {
 						CreatedOnToolsVersion = 10.1;
@@ -207,13 +255,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F226285C22AD61920008E7F6 /* Vtks Classical Hit.ttf in Resources */,
+				F226285622AD0BC60008E7F6 /* Beads.xcassets in Resources */,
+				F226285922AD60180008E7F6 /* Cyrillicgoth.ttf in Resources */,
 				F27223752255404A00A6330D /* LaunchScreen.storyboard in Resources */,
 				F27223722255404A00A6330D /* Assets.xcassets in Resources */,
-				F226284B22AB8DCA0008E7F6 /* bg-splash.png in Resources */,
-				F226284F22AB910B0008E7F6 /* LifeUnlifeQuestionViewController.xib in Resources */,
+				F226286622AEC2190008E7F6 /* Beads - Example.json in Resources */,
+				F226284F22AB910B0008E7F6 /* AliveNotAliveQuestionPopUp.xib in Resources */,
 				F226285322ABFB750008E7F6 /* GameOverPopUp.xib in Resources */,
 				F26958C722A8437100655AB2 /* AboutShadesmarViewController.xib in Resources */,
 				F27223702255404800A6330D /* Main.storyboard in Resources */,
+				F226285A22AD60180008E7F6 /* GothicCyr.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,10 +281,14 @@
 				F226285222ABFB750008E7F6 /* GameOverPopUp.swift in Sources */,
 				F2D1D193227B67C6004ECC96 /* Bucket.swift in Sources */,
 				F26958C622A8437100655AB2 /* AboutShadesmarViewController.swift in Sources */,
-				F226284E22AB910B0008E7F6 /* LifeUnlifeQuestionViewController.swift in Sources */,
+				F226286C22AED5D90008E7F6 /* Utils.swift in Sources */,
+				F226284E22AB910B0008E7F6 /* AliveNotAliveQuestionPopUp.swift in Sources */,
+				F226286A22AECD0E0008E7F6 /* BeadsService.swift in Sources */,
+				F226286022AE41B50008E7F6 /* BeadNode.swift in Sources */,
 				F272236B2255404800A6330D /* AppDelegate.swift in Sources */,
 				F272237D2255F7B000A6330D /* Bead.swift in Sources */,
 				F21CEE87227ECBC600327051 /* Bucket+Values.swift in Sources */,
+				F226286222AEB7FB0008E7F6 /* BeadViewModel.swift in Sources */,
 				F2D1D19C227B7F04004ECC96 /* SKNode+Utility.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

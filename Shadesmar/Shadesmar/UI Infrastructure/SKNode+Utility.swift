@@ -3,7 +3,7 @@
 //  Core
 //
 //  Created by Viktoria Rudkovskaya on 04/12/2018.
-//  Copyright © 2018 Viktoria Rudkovskaya. All rights reserved.
+//  Copyright © 2018 VR/RN. All rights reserved.
 //
 
 import SpriteKit

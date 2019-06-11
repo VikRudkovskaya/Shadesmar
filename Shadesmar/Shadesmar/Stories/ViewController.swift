@@ -3,7 +3,7 @@
 //  Shadesmar
 //
 //  Created by Viktoria Rudkovskaya on 03/04/2019.
-//  Copyright © 2019 Viktoria Rudkovskaya. All rights reserved.
+//  Copyright © 2019 VR/RN. All rights reserved.
 //
 
 import UIKit
@@ -18,8 +18,24 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let scene = Base2DScene()
-        sceneView.presentScene(scene)
+
+
+        let service = BeadsService()
+        service.bucket(successHandler: { (bucket) in
+            
+            let scene = Base2DScene(size: self.sceneView.frame.size)
+            scene.service = service
+            self.sceneView.presentScene(scene)
+            let vm = BeadViewModel(bead: (bucket.beads?.first)!)
+            let bead = BeadNode(viewModel: vm)
+
+            bead.position = CGPoint(x: 200, y: 500)
+            self.sceneView.scene?.addChild(bead)
+        }) { (message) in
+            
+        }
+
+        
     }
 
     @IBAction func aboutTouchUpInside(_ sender: UIButton) {
