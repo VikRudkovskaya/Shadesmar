@@ -22,6 +22,8 @@
             <connections>
                 <outlet property="beadImageView" destination="LWV-yQ-MWh" id="Gcy-aS-ViR"/>
                 <outlet property="questionText" destination="A4b-Rf-bwU" id="vlb-1I-2Qg"/>
+                <outlet property="tooltipButton" destination="QRR-kT-h9d" id="UUR-iM-FWe"/>
+                <outlet property="tooltipLabel" destination="uMg-bp-QY6" id="Bf0-BH-k08"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -30,9 +32,8 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg-noize" translatesAutoresizingMaskIntoConstraints="NO" id="ptM-9X-WQh">
-                    <rect key="frame" x="-1" y="0.0" width="465" height="812"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg-noize" translatesAutoresizingMaskIntoConstraints="NO" id="ptM-9X-WQh">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                     <gestureRecognizers/>
                     <connections>
                         <outletCollection property="gestureRecognizers" destination="APL-p5-vFS" appends="YES" id="rHp-Gb-Wk7"/>
@@ -43,12 +44,17 @@
                     <subviews>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg-pop-up" translatesAutoresizingMaskIntoConstraints="NO" id="FGO-Un-KBu">
                             <rect key="frame" x="0.0" y="0.0" width="360" height="340"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <integer key="value" value="8"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
                         </imageView>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shadow-sword-light-silhouette" translatesAutoresizingMaskIntoConstraints="NO" id="Qzd-ta-9WG">
                             <rect key="frame" x="72" y="-819.66666666666663" width="216" height="1979.333333333333"/>
                         </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Живое" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w9j-q8-ebK">
-                            <rect key="frame" x="101.33333333333333" y="235" width="53.333333333333329" height="25"/>
+                            <rect key="frame" x="101.33333333333333" y="239" width="53.333333333333329" height="25"/>
                             <fontDescription key="fontDescription" name="GothicCyr-Normal" family="GothicCyr" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
@@ -108,23 +114,36 @@
                             </constraints>
                         </view>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Неживое" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ls5-V0-EdC">
-                            <rect key="frame" x="197" y="235.66666666666669" width="70" height="24.333333333333314"/>
+                            <rect key="frame" x="197" y="239.66666666666669" width="70" height="24.333333333333314"/>
                             <fontDescription key="fontDescription" name="GothicCyr-Normal" family="GothicCyr" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QRR-kT-h9d">
+                            <rect key="frame" x="270" y="116" width="44" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="FML-j8-kRt"/>
+                                <constraint firstAttribute="width" constant="44" id="thF-rW-p04"/>
+                            </constraints>
+                            <state key="normal" backgroundImage="info"/>
+                            <connections>
+                                <action selector="tooltipTouchUpInside:" destination="-1" eventType="touchUpInside" id="Ez4-Uc-ozP"/>
+                            </connections>
+                        </button>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
+                        <constraint firstItem="mR7-be-hEG" firstAttribute="leading" secondItem="QRR-kT-h9d" secondAttribute="trailing" constant="6" id="1Kz-Rs-f3D"/>
                         <constraint firstAttribute="bottom" secondItem="S1x-6c-Q9V" secondAttribute="bottom" constant="-4" id="4V5-KO-Jxb"/>
                         <constraint firstItem="r7Z-9h-AMa" firstAttribute="leading" secondItem="RTf-fZ-T46" secondAttribute="leading" constant="8" id="9te-La-3Zb"/>
                         <constraint firstAttribute="trailing" secondItem="mR7-be-hEG" secondAttribute="trailing" constant="8" id="AUu-9X-4ak"/>
                         <constraint firstItem="nel-LZ-ISf" firstAttribute="leading" secondItem="LfQ-U2-0xf" secondAttribute="trailing" id="BLt-iN-ih9"/>
                         <constraint firstItem="FGO-Un-KBu" firstAttribute="leading" secondItem="RTf-fZ-T46" secondAttribute="leading" id="BYc-Ns-beG"/>
-                        <constraint firstItem="nel-LZ-ISf" firstAttribute="top" secondItem="Ls5-V0-EdC" secondAttribute="bottom" constant="-16" id="CWi-HM-Ecj"/>
+                        <constraint firstItem="nel-LZ-ISf" firstAttribute="top" secondItem="Ls5-V0-EdC" secondAttribute="bottom" constant="-20" id="CWi-HM-Ecj"/>
                         <constraint firstItem="A4b-Rf-bwU" firstAttribute="leading" secondItem="r7Z-9h-AMa" secondAttribute="trailing" constant="16" id="D7d-iv-37W"/>
                         <constraint firstItem="Qzd-ta-9WG" firstAttribute="centerY" secondItem="RTf-fZ-T46" secondAttribute="centerY" id="DoT-KX-OC9"/>
                         <constraint firstAttribute="height" constant="340" id="E7l-et-yMu"/>
+                        <constraint firstItem="A4b-Rf-bwU" firstAttribute="top" secondItem="QRR-kT-h9d" secondAttribute="bottom" constant="-16" id="E8x-Yk-0fK"/>
                         <constraint firstItem="FGO-Un-KBu" firstAttribute="top" secondItem="RTf-fZ-T46" secondAttribute="top" id="IEI-gU-Lc6"/>
                         <constraint firstAttribute="width" constant="360" id="Vkv-KQ-izY"/>
                         <constraint firstAttribute="bottom" secondItem="nel-LZ-ISf" secondAttribute="bottom" constant="-4" id="WtR-Cw-Hik"/>
@@ -143,19 +162,36 @@
                         <constraint firstItem="w9j-q8-ebK" firstAttribute="centerX" secondItem="S1x-6c-Q9V" secondAttribute="centerX" id="lBS-pI-PYl"/>
                         <constraint firstItem="A4b-Rf-bwU" firstAttribute="top" secondItem="LWV-yQ-MWh" secondAttribute="bottom" id="mrK-Cp-XsZ"/>
                         <constraint firstItem="LWV-yQ-MWh" firstAttribute="top" secondItem="RTf-fZ-T46" secondAttribute="top" constant="16" id="qpf-n9-K49"/>
-                        <constraint firstItem="S1x-6c-Q9V" firstAttribute="top" secondItem="w9j-q8-ebK" secondAttribute="bottom" constant="-16" id="tI1-td-oIg"/>
+                        <constraint firstItem="S1x-6c-Q9V" firstAttribute="top" secondItem="w9j-q8-ebK" secondAttribute="bottom" constant="-20" id="tI1-td-oIg"/>
                         <constraint firstItem="Qzd-ta-9WG" firstAttribute="centerX" secondItem="RTf-fZ-T46" secondAttribute="centerX" id="ucn-Vg-XOD"/>
                         <constraint firstItem="LWV-yQ-MWh" firstAttribute="centerX" secondItem="RTf-fZ-T46" secondAttribute="centerX" id="zqz-0d-y5B"/>
                     </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <integer key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
                 </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Бриллиант" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uMg-bp-QY6">
+                    <rect key="frame" x="135" y="205.66666666666666" width="105.33333333333331" height="27.333333333333343"/>
+                    <fontDescription key="fontDescription" name="CyrillicGoth" family="CyrillicGoth" pointSize="21"/>
+                    <color key="textColor" red="0.15686274510000001" green="0.20392156859999999" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.24847495719178081" colorSpace="custom" customColorSpace="displayP3"/>
             <constraints>
                 <constraint firstItem="RTf-fZ-T46" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="1uT-x9-Qz9"/>
+                <constraint firstAttribute="bottom" secondItem="ptM-9X-WQh" secondAttribute="bottom" id="GZq-UZ-ZHn"/>
+                <constraint firstAttribute="trailing" secondItem="ptM-9X-WQh" secondAttribute="trailing" id="JQ6-Tx-xss"/>
+                <constraint firstItem="uMg-bp-QY6" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="Nf8-vC-qSy"/>
+                <constraint firstItem="ptM-9X-WQh" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="RvK-Pq-bkP"/>
                 <constraint firstItem="RTf-fZ-T46" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="bnW-gn-86F"/>
+                <constraint firstItem="RTf-fZ-T46" firstAttribute="top" secondItem="uMg-bp-QY6" secondAttribute="bottom" constant="8" id="z6D-fO-mVL"/>
+                <constraint firstItem="ptM-9X-WQh" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="zf8-69-0Ux"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="133.59999999999999" y="143.3497536945813"/>
+            <point key="canvasLocation" x="133.125" y="142.5"/>
         </view>
         <tapGestureRecognizer id="APL-p5-vFS">
             <connections>
@@ -167,6 +203,7 @@
         <image name="bead-diamond" width="442" height="442"/>
         <image name="bg-noize" width="200" height="350"/>
         <image name="bg-pop-up" width="928" height="1159"/>
+        <image name="info" width="246" height="246"/>
         <image name="life-round" width="522" height="521"/>
         <image name="shadow-ornament-light-silhouette" width="163" height="1084"/>
         <image name="shadow-sword-light-silhouette" width="848" height="1979"/>

@@ -46,37 +46,7 @@ extension SKNode {
         return scene as? SKNode
 
     }
-    
-
-        
-    // MARK: Actions
-    /**
-     * Action, меняющий размер нода и возвращающий к исходному [Пульсация]
-     * @param percent - интенсивность пульсации (на какой размер от исходного произойдет уменьшение)
-     */
-    func pulsar(percent: CGFloat, duration: TimeInterval) -> SKAction {
-        
-        self.isPaused = false
-        let originX = self.xScale
-        let originY = self.yScale
-        let action = SKAction.sequence([
-            .scaleX(to: originX * percent, y: originY * percent, duration: duration),
-            .scaleX(to: originX, y: originY, duration: duration)])
-        
-        return action
-    }
-    
-    func lineTelescopic() -> SKAction {
-        self.alpha = 0
-        let originX = self.xScale
-        let originY = self.yScale
-        //        let action1 = SKAction.scaleX(to: 0, duration: 0.01)
-        let action11 = SKAction.scaleY(to: 0, duration: 0.01)
-        let action2 = SKAction.scaleX(to: originX, y: originY, duration: 1.8)
-        let action3 = SKAction.fadeIn(withDuration: 0.1)
-        return SKAction.sequence([action11, action3, action2])
-    }
-
+ 
 }
 
 extension SKNode {

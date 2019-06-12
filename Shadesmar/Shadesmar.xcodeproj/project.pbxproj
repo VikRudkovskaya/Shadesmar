@@ -23,10 +23,12 @@
 		F226286C22AED5D90008E7F6 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F226286B22AED5D90008E7F6 /* Utils.swift */; };
 		F226286E22B0274F0008E7F6 /* Beads - Emodji Set Beards.json in Resources */ = {isa = PBXBuildFile; fileRef = F226286D22B0274F0008E7F6 /* Beads - Emodji Set Beards.json */; };
 		F226287022B03C960008E7F6 /* Beads - Emodji Set Sweets.json in Resources */ = {isa = PBXBuildFile; fileRef = F226286F22B03C960008E7F6 /* Beads - Emodji Set Sweets.json */; };
+		F226287222B157DD0008E7F6 /* SKNode+Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F226287122B157DD0008E7F6 /* SKNode+Actions.swift */; };
+		F226287422B19EC50008E7F6 /* FitaVjaz.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F226287322B19EC50008E7F6 /* FitaVjaz.ttf */; };
 		F26958C622A8437100655AB2 /* AboutShadesmarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26958C422A8437100655AB2 /* AboutShadesmarViewController.swift */; };
 		F26958C722A8437100655AB2 /* AboutShadesmarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F26958C522A8437100655AB2 /* AboutShadesmarViewController.xib */; };
 		F272236B2255404800A6330D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F272236A2255404800A6330D /* AppDelegate.swift */; };
-		F272236D2255404800A6330D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F272236C2255404800A6330D /* ViewController.swift */; };
+		F272236D2255404800A6330D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F272236C2255404800A6330D /* MainViewController.swift */; };
 		F27223702255404800A6330D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F272236E2255404800A6330D /* Main.storyboard */; };
 		F27223722255404A00A6330D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F27223712255404A00A6330D /* Assets.xcassets */; };
 		F27223752255404A00A6330D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F27223732255404A00A6330D /* LaunchScreen.storyboard */; };
@@ -53,11 +55,13 @@
 		F226286B22AED5D90008E7F6 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		F226286D22B0274F0008E7F6 /* Beads - Emodji Set Beards.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Beads - Emodji Set Beards.json"; sourceTree = "<group>"; };
 		F226286F22B03C960008E7F6 /* Beads - Emodji Set Sweets.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Beads - Emodji Set Sweets.json"; sourceTree = "<group>"; };
+		F226287122B157DD0008E7F6 /* SKNode+Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SKNode+Actions.swift"; sourceTree = "<group>"; };
+		F226287322B19EC50008E7F6 /* FitaVjaz.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FitaVjaz.ttf; sourceTree = "<group>"; };
 		F26958C422A8437100655AB2 /* AboutShadesmarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutShadesmarViewController.swift; sourceTree = "<group>"; };
 		F26958C522A8437100655AB2 /* AboutShadesmarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AboutShadesmarViewController.xib; sourceTree = "<group>"; };
 		F27223672255404800A6330D /* Shadesmar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shadesmar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F272236A2255404800A6330D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F272236C2255404800A6330D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F272236C2255404800A6330D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		F272236F2255404800A6330D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F27223712255404A00A6330D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F27223742255404A00A6330D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -91,6 +95,7 @@
 		F226285D22AE1F920008E7F6 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				F226287322B19EC50008E7F6 /* FitaVjaz.ttf */,
 				F226285B22AD61910008E7F6 /* Vtks Classical Hit.ttf */,
 				F226285722AD60180008E7F6 /* Cyrillicgoth.ttf */,
 				F226285822AD60180008E7F6 /* GothicCyr.ttf */,
@@ -183,8 +188,7 @@
 		F2D1D197227B7D7C004ECC96 /* Stories */ = {
 			isa = PBXGroup;
 			children = (
-				F226285F22AE41B50008E7F6 /* BeadNode.swift */,
-				F272236C2255404800A6330D /* ViewController.swift */,
+				F272236C2255404800A6330D /* MainViewController.swift */,
 				F272236E2255404800A6330D /* Main.storyboard */,
 				F226285E22AE349D0008E7F6 /* AliveNotAlive */,
 				F226285422AC2A530008E7F6 /* GameOver */,
@@ -196,7 +200,9 @@
 		F2D1D198227B7DC6004ECC96 /* UI Infrastructure */ = {
 			isa = PBXGroup;
 			children = (
+				F226285F22AE41B50008E7F6 /* BeadNode.swift */,
 				F2D1D19A227B7F04004ECC96 /* Base2DScene.swift */,
+				F226287122B157DD0008E7F6 /* SKNode+Actions.swift */,
 				F2D1D199227B7F04004ECC96 /* SKNode+Utility.swift */,
 			);
 			path = "UI Infrastructure";
@@ -266,6 +272,7 @@
 				F226285922AD60180008E7F6 /* Cyrillicgoth.ttf in Resources */,
 				F27223752255404A00A6330D /* LaunchScreen.storyboard in Resources */,
 				F27223722255404A00A6330D /* Assets.xcassets in Resources */,
+				F226287422B19EC50008E7F6 /* FitaVjaz.ttf in Resources */,
 				F226287022B03C960008E7F6 /* Beads - Emodji Set Sweets.json in Resources */,
 				F226286622AEC2190008E7F6 /* Beads - Emodji Set.json in Resources */,
 				F226284F22AB910B0008E7F6 /* AliveNotAliveQuestionPopUp.xib in Resources */,
@@ -284,13 +291,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F272236D2255404800A6330D /* ViewController.swift in Sources */,
+				F272236D2255404800A6330D /* MainViewController.swift in Sources */,
 				F2D1D19D227B7F04004ECC96 /* Base2DScene.swift in Sources */,
 				F226285222ABFB750008E7F6 /* GameOverPopUp.swift in Sources */,
 				F2D1D193227B67C6004ECC96 /* Bucket.swift in Sources */,
 				F26958C622A8437100655AB2 /* AboutShadesmarViewController.swift in Sources */,
 				F226286C22AED5D90008E7F6 /* Utils.swift in Sources */,
 				F226284E22AB910B0008E7F6 /* AliveNotAliveQuestionPopUp.swift in Sources */,
+				F226287222B157DD0008E7F6 /* SKNode+Actions.swift in Sources */,
 				F226286A22AECD0E0008E7F6 /* BeadsService.swift in Sources */,
 				F226286022AE41B50008E7F6 /* BeadNode.swift in Sources */,
 				F272236B2255404800A6330D /* AppDelegate.swift in Sources */,
@@ -446,6 +454,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = JZHS7Z7G7D;
 				INFOPLIST_FILE = "$(SRCROOT)/Shadesmar/Infrastructure/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -465,6 +474,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(SRCROOT)/Shadesmar/Infrastructure/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

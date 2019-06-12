@@ -10,6 +10,8 @@ import ARKit
 
 class Base2DScene: SKScene {
     
+    var beadDidTouch: ((BeadViewModel)->())?
+    
     var service: BeadsService?
     
     var backgroundNode: SKSpriteNode?
@@ -23,9 +25,9 @@ class Base2DScene: SKScene {
         backgroundNode = bgNode
         self.addChild(backgroundNode!)
         
-        physicsWorld.gravity = CGVector(dx: 0, dy: 4.8)
+        physicsWorld.gravity = CGVector(dx: 0, dy: -4.8)
         
-        let physicsBody = SKPhysicsBody(edgeLoopFrom: CGRect(x: 0, y: 128, width: size.width, height: size.height - 128))
+        let physicsBody = SKPhysicsBody(edgeLoopFrom: CGRect(x: 0, y: 92, width: size.width, height: size.height - 92))
         self.physicsBody = physicsBody
     }
     
@@ -62,6 +64,9 @@ class Base2DScene: SKScene {
         
         let vm = BeadViewModel(bead: beads[Utils.random(beads.count)])
         let bead = BeadNode(viewModel: vm)
+        bead.beadDidTouch = {(viewModel) in
+            self.beadDidTouch?(viewModel)
+        }
         
         bead.position = locationInScene
         addChild(bead)

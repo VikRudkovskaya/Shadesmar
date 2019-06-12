@@ -9,9 +9,17 @@
 import Foundation
 
 struct BeadViewModel {
+
+    var title: String {
+        return bead.title ?? ""
+    }
     
     var textureName: String {
         return bead.textureName ?? ""
+    }
+    
+    var isAlive: Bool {
+        return bead.isAlive ?? false
     }
     
     let bead: Bead
