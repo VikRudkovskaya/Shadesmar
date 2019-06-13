@@ -37,7 +37,7 @@
                                 <constraint firstAttribute="height" constant="128" id="8Ja-yE-Gsa"/>
                                 <constraint firstAttribute="width" constant="128" id="HVJ-63-wPR"/>
                             </constraints>
-                            <state key="normal" backgroundImage="ok-v1"/>
+                            <state key="normal" backgroundImage="round-ok-v1"/>
                             <connections>
                                 <action selector="closeAction:" destination="-1" eventType="touchUpInside" id="sGy-UK-bms"/>
                             </connections>
@@ -97,7 +97,7 @@
     <resources>
         <image name="bg-noize" width="200" height="350"/>
         <image name="bg-pop-up" width="928" height="1159"/>
-        <image name="ok-v1" width="523" height="521"/>
+        <image name="round-ok-v1" width="523" height="521"/>
         <image name="rounds-trio" width="1065" height="470"/>
     </resources>
 </document>

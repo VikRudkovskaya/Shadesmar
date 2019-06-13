@@ -14,9 +14,12 @@ class MainViewController: UIViewController {
     @IBOutlet weak var sceneView: SKView!
     @IBOutlet weak var about: UIButton!
     
+    @IBOutlet weak var bottomContainer: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        bottomContainer.layer.maskedCorners = [.layerMaxXMinYCorner,.layerMinXMinYCorner]
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -29,9 +32,15 @@ class MainViewController: UIViewController {
         let service = BeadsService()
         service.bucket(successHandler: { (bucket) in
             
-            let scene = Base2DScene(size: self.sceneView.frame.size)
+            let scene = AliveNotAlive2DScene(size: self.sceneView.frame.size)
             scene.beadDidTouch = {(viewModel) in
                 let vc = AliveNotAliveQuestionPopUp(viewModel: viewModel)
+                vc.aliveDidChose = { (viewModel) in
+                    
+                }
+                vc.notAliveDidChose = { (viewModel) in
+                    
+                }
                 self.present(vc, animated: true, completion: nil)
             }
             scene.service = service
@@ -40,6 +49,12 @@ class MainViewController: UIViewController {
             let bead = BeadNode(viewModel: vm)
             bead.beadDidTouch = { (viewModel) in
                 let vc = AliveNotAliveQuestionPopUp(viewModel: viewModel)
+                vc.aliveDidChose = { (viewModel) in
+                    
+                }
+                vc.notAliveDidChose = { (viewModel) in
+                    
+                }
                 self.present(vc, animated: true, completion: nil)
             }
             bead.position = self.sceneView.center

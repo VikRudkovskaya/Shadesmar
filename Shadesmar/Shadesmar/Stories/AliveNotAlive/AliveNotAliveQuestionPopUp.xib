@@ -89,7 +89,7 @@
                                 <constraint firstAttribute="height" constant="100" id="a7L-dp-hSX"/>
                                 <constraint firstAttribute="width" constant="100" id="lQK-By-DUh"/>
                             </constraints>
-                            <state key="normal" backgroundImage="life-round"/>
+                            <state key="normal" backgroundImage="round-life"/>
                             <connections>
                                 <action selector="aliveTouchUpInside:" destination="-1" eventType="touchUpInside" id="Vjc-CH-pi0"/>
                             </connections>
@@ -100,7 +100,7 @@
                                 <constraint firstAttribute="height" constant="100" id="3cE-2g-XLd"/>
                                 <constraint firstAttribute="width" constant="100" id="Rdf-8m-7t0"/>
                             </constraints>
-                            <state key="normal" backgroundImage="unlife-round"/>
+                            <state key="normal" backgroundImage="round-unlife"/>
                             <connections>
                                 <action selector="notAliveTouchUpInside:" destination="-1" eventType="touchUpInside" id="71E-TP-j2N"/>
                             </connections>
@@ -125,7 +125,7 @@
                                 <constraint firstAttribute="height" constant="44" id="FML-j8-kRt"/>
                                 <constraint firstAttribute="width" constant="44" id="thF-rW-p04"/>
                             </constraints>
-                            <state key="normal" backgroundImage="info"/>
+                            <state key="normal" backgroundImage="round-info"/>
                             <connections>
                                 <action selector="tooltipTouchUpInside:" destination="-1" eventType="touchUpInside" id="Ez4-Uc-ozP"/>
                             </connections>
@@ -203,10 +203,10 @@
         <image name="bead-diamond" width="442" height="442"/>
         <image name="bg-noize" width="200" height="350"/>
         <image name="bg-pop-up" width="928" height="1159"/>
-        <image name="info" width="246" height="246"/>
-        <image name="life-round" width="522" height="521"/>
+        <image name="round-info" width="246" height="246"/>
+        <image name="round-life" width="522" height="521"/>
+        <image name="round-unlife" width="522" height="521"/>
         <image name="shadow-ornament-light-silhouette" width="163" height="1084"/>
         <image name="shadow-sword-light-silhouette" width="848" height="1979"/>
-        <image name="unlife-round" width="522" height="521"/>
     </resources>
 </document>

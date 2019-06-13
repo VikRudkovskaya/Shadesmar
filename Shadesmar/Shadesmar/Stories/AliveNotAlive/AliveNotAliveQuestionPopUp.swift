@@ -17,8 +17,8 @@ class AliveNotAliveQuestionPopUp: UIViewController {
     @IBOutlet weak var questionText: UILabel!
     @IBOutlet weak var tooltipLabel: UILabel!
     
-    var aliveDidChose: (() -> ())?
-    var notAliveDidChose: (() -> ())?
+    var aliveDidChose: ((BeadViewModel) -> ())?
+    var notAliveDidChose: ((BeadViewModel) -> ())?
     
     convenience init(viewModel: BeadViewModel) {
         self.init(nibName: nil, bundle: nil)
@@ -41,12 +41,12 @@ class AliveNotAliveQuestionPopUp: UIViewController {
     }
     
     @IBAction func aliveTouchUpInside(_ sender: Any) {
-        aliveDidChose?()
+        aliveDidChose?(viewModel)
         self.dismiss(animated: true, completion: nil)
     }
     
     @IBAction func notAliveTouchUpInside(_ sender: Any) {
-        notAliveDidChose?()
+        notAliveDidChose?(viewModel)
         self.dismiss(animated: true, completion: nil)
     }
     
