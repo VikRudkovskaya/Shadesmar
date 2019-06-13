@@ -26,7 +26,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Sc-ez-7PC">
-                                <rect key="frame" x="0.0" y="804" width="414" height="92"/>
+                                <rect key="frame" x="-1" y="805" width="416" height="92"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="elY-ef-gd1">
                                         <rect key="frame" x="0.0" y="0.0" width="92" height="92"/>
@@ -40,7 +40,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3TY-zJ-WEu">
-                                        <rect key="frame" x="322" y="0.0" width="92" height="92"/>
+                                        <rect key="frame" x="324" y="0.0" width="92" height="92"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="92" id="AQG-mV-3a5"/>
                                             <constraint firstAttribute="width" constant="92" id="oze-xs-CqZ"/>
@@ -66,17 +66,17 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="3Sc-ez-7PC" secondAttribute="bottom" id="47Y-UT-iXw"/>
+                            <constraint firstAttribute="bottom" secondItem="3Sc-ez-7PC" secondAttribute="bottom" constant="-1" id="47Y-UT-iXw"/>
                             <constraint firstAttribute="bottom" secondItem="eA6-SM-OaN" secondAttribute="bottom" id="4bO-gt-JWh"/>
                             <constraint firstItem="eA6-SM-OaN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="725-AK-CEm"/>
                             <constraint firstItem="eA6-SM-OaN" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="8QA-nJ-tuR"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eA6-SM-OaN" secondAttribute="trailing" id="8zW-kY-YOo"/>
-                            <constraint firstItem="3Sc-ez-7PC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="BLV-St-RAG"/>
+                            <constraint firstItem="3Sc-ez-7PC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="-1" id="BLV-St-RAG"/>
                             <constraint firstItem="DyZ-xM-WGe" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="K7D-H0-bgV"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DyZ-xM-WGe" secondAttribute="trailing" id="X6I-ZH-xYd"/>
                             <constraint firstItem="DyZ-xM-WGe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ZGa-gr-8Ha"/>
                             <constraint firstAttribute="bottom" secondItem="DyZ-xM-WGe" secondAttribute="bottom" id="lEf-My-zxd"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3Sc-ez-7PC" secondAttribute="trailing" id="sMl-VO-2a3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3Sc-ez-7PC" secondAttribute="trailing" constant="-1" id="sMl-VO-2a3"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

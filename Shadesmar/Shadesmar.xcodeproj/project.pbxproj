@@ -142,6 +142,7 @@
 		F27223692255404800A6330D /* Shadesmar */ = {
 			isa = PBXGroup;
 			children = (
+				F226287522B2365F0008E7F6 /* GameStateHolder.swift */,
 				F226286922AECD0E0008E7F6 /* BeadsService.swift */,
 				F226286B22AED5D90008E7F6 /* Utils.swift */,
 				F2D1D194227B7CCB004ECC96 /* Models */,
@@ -149,7 +150,6 @@
 				F2D1D197227B7D7C004ECC96 /* Stories */,
 				F2D1D196227B7D1C004ECC96 /* Infrastructure */,
 				F2D1D195227B7CDB004ECC96 /* Resources */,
-				F226287522B2365F0008E7F6 /* GameStateHolder.swift */,
 			);
 			path = Shadesmar;
 			sourceTree = "<group>";

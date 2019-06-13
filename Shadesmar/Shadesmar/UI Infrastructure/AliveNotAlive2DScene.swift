@@ -71,6 +71,8 @@ class AliveNotAlive2DScene: SKScene {
         bead.position = locationInScene
         addChild(bead)
         
+        GameStateHolder.shared.displaingBeads.append(vm)
+        
         
     }
     

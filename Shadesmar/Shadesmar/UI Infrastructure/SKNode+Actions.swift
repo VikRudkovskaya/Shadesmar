@@ -26,16 +26,5 @@ extension SKNode {
         
         return action
     }
-    
-    func shown(duration: TimeInterval) -> SKAction {
-        
-        self.isPaused = false
-        let originX = self.xScale
-        let originY = self.yScale
-        let action = SKAction.sequence([
-            .scale(by: 0.1, duration: duration),
-            .scale(by: 1, duration: duration)])
-        
-        return action
-    }
+
 }

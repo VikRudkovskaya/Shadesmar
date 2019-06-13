@@ -12,5 +12,5 @@ class GameStateHolder {
     
     static let shared = GameStateHolder()
     
-    var displaingBeads: [Bead] = []
+    var displaingBeads: [BeadViewModel] = []
 }
