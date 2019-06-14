@@ -22,8 +22,8 @@
 	<true/>
 	<key>UIAppFonts</key>
 	<array>
+		<string>FrakturOmniv1.otf</string>
 		<string>Cyrillicgoth.ttf</string>
-		<string>FitaVjaz.ttf</string>
 		<string>GothicCyr.ttf</string>
 		<string>Vtks Classical Hit.ttf</string>
 	</array>

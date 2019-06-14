@@ -37,16 +37,21 @@ class MainViewController: UIViewController {
             let scene = AliveNotAlive2DScene(size: self.sceneView.frame.size)
             scene.beadDidTouch = {(viewModel) in
                 let vc = AliveNotAliveQuestionPopUp(viewModel: viewModel)
-                vc.aliveDidChose = { (viewModel) in
-                    if viewModel.isAlive == true {
-                        
+                vc.aliveDidChose = { (viewModel, isAliveChose) in
+                    
+                    if viewModel.isAlive == isAliveChose {
+                        // correct
+                        GameStateHolder.shared.correctDefinedBeads.append(viewModel)
+                        let infoPopUp = InfoPopUp(type: .Correct, message: "")
+                        self.present(infoPopUp, animated: true, completion: nil)
+                    } else {
+                        // incorect
+                        GameStateHolder.shared.incorrectDefinedBeads.append(viewModel)
+                        let infoPopUp = InfoPopUp(type: .Incorrect, message: "")
+                        self.present(infoPopUp, animated: true, completion: nil)
                     }
                 }
-                vc.notAliveDidChose = { (viewModel) in
-                    if viewModel.isAlive == false {
-                        
-                    }
-                }
+
                 self.present(vc, animated: true, completion: nil)
             }
             scene.service = service
