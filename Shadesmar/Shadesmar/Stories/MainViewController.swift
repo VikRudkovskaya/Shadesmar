@@ -43,7 +43,12 @@ class MainViewController: UIViewController {
                         // correct
                         GameStateHolder.shared.correctDefinedBeads.append(viewModel)
                         let infoPopUp = InfoPopUp(type: .Correct, message: "")
+                        infoPopUp.okCompletion = {
+                            let node = self.sceneView.scene?.childNode(withName: viewModel.textureName)
+                            node?.removeFromParent()
+                        }
                         self.present(infoPopUp, animated: true, completion: nil)
+                        
                     } else {
                         // incorect
                         GameStateHolder.shared.incorrectDefinedBeads.append(viewModel)

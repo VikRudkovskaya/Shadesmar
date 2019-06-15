@@ -18,6 +18,8 @@ enum PopUpType: String {
 
 class InfoPopUp: UIViewController {
     
+    var okCompletion: (()->())?
+    
     convenience init(type: PopUpType, message: String) {
 
         self.init(nibName: type.rawValue, bundle: nil)
@@ -30,7 +32,9 @@ class InfoPopUp: UIViewController {
     }
 
     @IBAction func closeAction(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
+        self.dismiss(animated: true, completion: {
+            self.okCompletion?()
+        })
     }
     
 
