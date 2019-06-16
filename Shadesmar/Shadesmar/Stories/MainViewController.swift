@@ -44,8 +44,10 @@ class MainViewController: UIViewController {
                         GameStateHolder.shared.correctDefinedBeads.append(viewModel)
                         let infoPopUp = InfoPopUp(type: .Correct, message: "")
                         infoPopUp.okCompletion = {
-                            let node = self.sceneView.scene?.childNode(withName: viewModel.textureName)
-                            node?.removeFromParent()
+                            let node = self.sceneView.scene?.childNode(withName: viewModel.textureName) as? BeadNode
+                            node?.disapearenceAnimation()
+                            
+                            
                         }
                         self.present(infoPopUp, animated: true, completion: nil)
                         

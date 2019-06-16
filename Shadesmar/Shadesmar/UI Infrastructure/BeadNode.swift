@@ -26,6 +26,15 @@ class BeadNode: SKSpriteNode {
         physicsBody?.friction = 0.01
         alpha = 0
         
+        apearenceAnimation()
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        self.viewModel = BeadViewModel(bead: Bead())
+        super.init(coder: aDecoder)
+    }
+    
+    func apearenceAnimation() {
         self.run(SKAction.fadeIn(withDuration: 1))
         
         if viewModel.isAlive {
@@ -34,9 +43,12 @@ class BeadNode: SKSpriteNode {
         }
     }
     
-    required init?(coder aDecoder: NSCoder) {
-        self.viewModel = BeadViewModel(bead: Bead())
-        super.init(coder: aDecoder)
+    func disapearenceAnimation() {
+        physicsBody?.mass = 100
+        
+        let action = SKAction.scale(to: CGSize(width: 10, height: 10), duration: 0.3)
+        run(action)
+        removeFromParent()
     }
     
     // MARK: Responder override
