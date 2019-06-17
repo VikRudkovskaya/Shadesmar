@@ -4,70 +4,70 @@
             "id": "c6883fc3194d8d27ebf07b37ca197bb5",
             "textureName": "bead-duck",
             "title": "Утка",
-            "isAlive": true
+            "properties": ["kAlive_d8510955f836a8da42a201507fa44b2e", "kBeard_d0384a5f433a948be7f6ebe19f77db89", "kFlyable_58ae98894784f1d9c334f0c5fdfd97b6"]
         },
         
         {
             "id": "46c5b7ab2128b8f92b80b89f0b5b1779",
             "textureName": "bead-littleChick",
             "title": "Цыпленок",
-            "isAlive": true
+            "properties": ["kAlive_d8510955f836a8da42a201507fa44b2e", "kBeard_d0384a5f433a948be7f6ebe19f77db89"]
         },
         
         {
             "id": "574035019f9fce0404a09185450fc0ad",
             "textureName": "bead-eagle",
             "title": "Орел",
-            "isAlive": true
+            "properties": ["kAlive_d8510955f836a8da42a201507fa44b2e", "kBeard_d0384a5f433a948be7f6ebe19f77db89", "kFlyable_58ae98894784f1d9c334f0c5fdfd97b6"]
         },
         
         {
             "id": "18d1a043db661f22193ff553096fabb2",
             "textureName": "bead-cock",
             "title": "Петух",
-            "isAlive": true
+            "properties": ["kAlive_d8510955f836a8da42a201507fa44b2e", "kBeard_d0384a5f433a948be7f6ebe19f77db89"]
         },
         
         {
             "id": "ff4aeb5ebc323fb6ebf284148a9874e8",
             "textureName": "bead-dove",
             "title": "Голубка",
-            "isAlive": true
+            "properties": ["kAlive_d8510955f836a8da42a201507fa44b2e", "kBeard_d0384a5f433a948be7f6ebe19f77db89", "kFlyable_58ae98894784f1d9c334f0c5fdfd97b6"]
         },
         
         {
             "id": "0e5bd97dad0f3302767c8413d50baf95",
             "textureName": "bead-owl",
             "title": "Сова",
-            "isAlive": true
+            "properties": ["kAlive_d8510955f836a8da42a201507fa44b2e", "kBeard_d0384a5f433a948be7f6ebe19f77db89", "kFlyable_58ae98894784f1d9c334f0c5fdfd97b6"]
         },
         
         {
             "id": "e32c34cf82e8827a5a13af499148ce83",
             "textureName": "bead-parrot",
             "title": "Попугай",
-            "isAlive": true
+            "properties": ["kAlive_d8510955f836a8da42a201507fa44b2e", "kBeard_d0384a5f433a948be7f6ebe19f77db89", "kFlyable_58ae98894784f1d9c334f0c5fdfd97b6"]
         },
         
         {
             "id": "3c4580155eb5d16c7e84079e9f61a16c",
             "textureName": "bead-peacock",
             "title": "Павлин",
-            "isAlive": true
+            "properties": ["kAlive_d8510955f836a8da42a201507fa44b2e", "kBeard_d0384a5f433a948be7f6ebe19f77db89", "kFlyable_58ae98894784f1d9c334f0c5fdfd97b6"]
         },
         
         {
             "id": "eac28a6ea2f50f2f0bd47fd5497e3223",
             "textureName": "bead-swan",
             "title": "Лебедь",
-            "isAlive": true
+            "properties": ["kAlive_d8510955f836a8da42a201507fa44b2e", "kBeard_d0384a5f433a948be7f6ebe19f77db89", "kFlyable_58ae98894784f1d9c334f0c5fdfd97b6"]
         },
         
         {
             "id": "34ae88c1de85097125162ac6bdbe5710",
             "textureName": "bead-turkey",
             "title": "Индейка",
-            "isAlive": true
+            "properties": ["kAlive_d8510955f836a8da42a201507fa44b2e", "kBeard_d0384a5f433a948be7f6ebe19f77db89"]
         }
     ]
 }

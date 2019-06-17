@@ -28,6 +28,7 @@
 		F226287822B3AD590008E7F6 /* CorrectPopUp.xib in Resources */ = {isa = PBXBuildFile; fileRef = F226287722B3AD590008E7F6 /* CorrectPopUp.xib */; };
 		F226287A22B3AD6F0008E7F6 /* IncorrectPopUp.xib in Resources */ = {isa = PBXBuildFile; fileRef = F226287922B3AD6F0008E7F6 /* IncorrectPopUp.xib */; };
 		F226287C22B3CAF90008E7F6 /* FrakturOmniv1.otf in Resources */ = {isa = PBXBuildFile; fileRef = F226287B22B3CAF90008E7F6 /* FrakturOmniv1.otf */; };
+		F226288022B6B1D70008E7F6 /* Beads - Properties.json in Resources */ = {isa = PBXBuildFile; fileRef = F226287F22B6B1D70008E7F6 /* Beads - Properties.json */; };
 		F26958C622A8437100655AB2 /* AboutShadesmarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26958C422A8437100655AB2 /* AboutShadesmarViewController.swift */; };
 		F26958C722A8437100655AB2 /* AboutShadesmarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F26958C522A8437100655AB2 /* AboutShadesmarViewController.xib */; };
 		F272236B2255404800A6330D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F272236A2255404800A6330D /* AppDelegate.swift */; };
@@ -63,6 +64,7 @@
 		F226287722B3AD590008E7F6 /* CorrectPopUp.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CorrectPopUp.xib; sourceTree = "<group>"; };
 		F226287922B3AD6F0008E7F6 /* IncorrectPopUp.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IncorrectPopUp.xib; sourceTree = "<group>"; };
 		F226287B22B3CAF90008E7F6 /* FrakturOmniv1.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FrakturOmniv1.otf; sourceTree = "<group>"; };
+		F226287F22B6B1D70008E7F6 /* Beads - Properties.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Beads - Properties.json"; sourceTree = "<group>"; };
 		F26958C422A8437100655AB2 /* AboutShadesmarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutShadesmarViewController.swift; sourceTree = "<group>"; };
 		F26958C522A8437100655AB2 /* AboutShadesmarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AboutShadesmarViewController.xib; sourceTree = "<group>"; };
 		F27223672255404800A6330D /* Shadesmar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shadesmar.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -174,6 +176,7 @@
 		F2D1D195227B7CDB004ECC96 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				F226287F22B6B1D70008E7F6 /* Beads - Properties.json */,
 				F226286D22B0274F0008E7F6 /* Beads - Emodji Set Beards.json */,
 				F226286F22B03C960008E7F6 /* Beads - Emodji Set Sweets.json */,
 				F226286522AEC2190008E7F6 /* Beads - Emodji Set.json */,
@@ -282,6 +285,7 @@
 				F226285622AD0BC60008E7F6 /* Beads.xcassets in Resources */,
 				F226285922AD60180008E7F6 /* Cyrillicgoth.ttf in Resources */,
 				F27223752255404A00A6330D /* LaunchScreen.storyboard in Resources */,
+				F226288022B6B1D70008E7F6 /* Beads - Properties.json in Resources */,
 				F226287C22B3CAF90008E7F6 /* FrakturOmniv1.otf in Resources */,
 				F27223722255404A00A6330D /* Assets.xcassets in Resources */,
 				F226287022B03C960008E7F6 /* Beads - Emodji Set Sweets.json in Resources */,
