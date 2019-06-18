@@ -18,8 +18,8 @@ struct BeadViewModel {
         return bead.textureName ?? ""
     }
     
-    var isAlive: Bool {
-        return bead.isAlive ?? false
+    var properties: [BeadProperty] {
+        return bead.properties ?? []
     }
     
     let bead: Bead

@@ -16,5 +16,5 @@ class Bead: Decodable {
     
     var title: String?
     
-    var isAlive: Bool?
+    var properties: [BeadProperty]?
 }

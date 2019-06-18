@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F21CEE87227ECBC600327051 /* Bucket+Values.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21CEE86227ECBC600327051 /* Bucket+Values.swift */; };
 		F226284E22AB910B0008E7F6 /* AliveNotAliveQuestionPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F226284C22AB910B0008E7F6 /* AliveNotAliveQuestionPopUp.swift */; };
 		F226284F22AB910B0008E7F6 /* AliveNotAliveQuestionPopUp.xib in Resources */ = {isa = PBXBuildFile; fileRef = F226284D22AB910B0008E7F6 /* AliveNotAliveQuestionPopUp.xib */; };
 		F226285222ABFB750008E7F6 /* InfoPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F226285022ABFB750008E7F6 /* InfoPopUp.swift */; };
@@ -18,7 +17,6 @@
 		F226285C22AD61920008E7F6 /* Vtks Classical Hit.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F226285B22AD61910008E7F6 /* Vtks Classical Hit.ttf */; };
 		F226286022AE41B50008E7F6 /* BeadNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F226285F22AE41B50008E7F6 /* BeadNode.swift */; };
 		F226286222AEB7FB0008E7F6 /* BeadViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F226286122AEB7FB0008E7F6 /* BeadViewModel.swift */; };
-		F226286622AEC2190008E7F6 /* Beads - Emodji Set.json in Resources */ = {isa = PBXBuildFile; fileRef = F226286522AEC2190008E7F6 /* Beads - Emodji Set.json */; };
 		F226286A22AECD0E0008E7F6 /* BeadsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F226286922AECD0E0008E7F6 /* BeadsService.swift */; };
 		F226286C22AED5D90008E7F6 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F226286B22AED5D90008E7F6 /* Utils.swift */; };
 		F226286E22B0274F0008E7F6 /* Beads - Emodji Set Beards.json in Resources */ = {isa = PBXBuildFile; fileRef = F226286D22B0274F0008E7F6 /* Beads - Emodji Set Beards.json */; };
@@ -29,6 +27,9 @@
 		F226287A22B3AD6F0008E7F6 /* IncorrectPopUp.xib in Resources */ = {isa = PBXBuildFile; fileRef = F226287922B3AD6F0008E7F6 /* IncorrectPopUp.xib */; };
 		F226287C22B3CAF90008E7F6 /* FrakturOmniv1.otf in Resources */ = {isa = PBXBuildFile; fileRef = F226287B22B3CAF90008E7F6 /* FrakturOmniv1.otf */; };
 		F226288022B6B1D70008E7F6 /* Beads - Properties.json in Resources */ = {isa = PBXBuildFile; fileRef = F226287F22B6B1D70008E7F6 /* Beads - Properties.json */; };
+		F226288222B7C27B0008E7F6 /* BeadProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = F226288122B7C27B0008E7F6 /* BeadProperty.swift */; };
+		F226288522B91D260008E7F6 /* BeadsSetsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F226288322B91D260008E7F6 /* BeadsSetsListViewController.swift */; };
+		F226288622B91D260008E7F6 /* BeadsSetsListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F226288422B91D260008E7F6 /* BeadsSetsListViewController.xib */; };
 		F26958C622A8437100655AB2 /* AboutShadesmarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26958C422A8437100655AB2 /* AboutShadesmarViewController.swift */; };
 		F26958C722A8437100655AB2 /* AboutShadesmarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F26958C522A8437100655AB2 /* AboutShadesmarViewController.xib */; };
 		F272236B2255404800A6330D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F272236A2255404800A6330D /* AppDelegate.swift */; };
@@ -37,13 +38,12 @@
 		F27223722255404A00A6330D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F27223712255404A00A6330D /* Assets.xcassets */; };
 		F27223752255404A00A6330D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F27223732255404A00A6330D /* LaunchScreen.storyboard */; };
 		F272237D2255F7B000A6330D /* Bead.swift in Sources */ = {isa = PBXBuildFile; fileRef = F272237C2255F7B000A6330D /* Bead.swift */; };
-		F2D1D193227B67C6004ECC96 /* Bucket.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D1D192227B67C6004ECC96 /* Bucket.swift */; };
+		F2D1D193227B67C6004ECC96 /* BeadsSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D1D192227B67C6004ECC96 /* BeadsSet.swift */; };
 		F2D1D19C227B7F04004ECC96 /* SKNode+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D1D199227B7F04004ECC96 /* SKNode+Utility.swift */; };
 		F2D1D19D227B7F04004ECC96 /* AliveNotAlive2DScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D1D19A227B7F04004ECC96 /* AliveNotAlive2DScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F21CEE86227ECBC600327051 /* Bucket+Values.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bucket+Values.swift"; sourceTree = "<group>"; };
 		F226284C22AB910B0008E7F6 /* AliveNotAliveQuestionPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AliveNotAliveQuestionPopUp.swift; sourceTree = "<group>"; };
 		F226284D22AB910B0008E7F6 /* AliveNotAliveQuestionPopUp.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AliveNotAliveQuestionPopUp.xib; sourceTree = "<group>"; };
 		F226285022ABFB750008E7F6 /* InfoPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPopUp.swift; sourceTree = "<group>"; };
@@ -54,7 +54,6 @@
 		F226285B22AD61910008E7F6 /* Vtks Classical Hit.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Vtks Classical Hit.ttf"; sourceTree = "<group>"; };
 		F226285F22AE41B50008E7F6 /* BeadNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeadNode.swift; sourceTree = "<group>"; };
 		F226286122AEB7FB0008E7F6 /* BeadViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeadViewModel.swift; sourceTree = "<group>"; };
-		F226286522AEC2190008E7F6 /* Beads - Emodji Set.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Beads - Emodji Set.json"; sourceTree = "<group>"; };
 		F226286922AECD0E0008E7F6 /* BeadsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeadsService.swift; sourceTree = "<group>"; };
 		F226286B22AED5D90008E7F6 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		F226286D22B0274F0008E7F6 /* Beads - Emodji Set Beards.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Beads - Emodji Set Beards.json"; sourceTree = "<group>"; };
@@ -65,6 +64,9 @@
 		F226287922B3AD6F0008E7F6 /* IncorrectPopUp.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IncorrectPopUp.xib; sourceTree = "<group>"; };
 		F226287B22B3CAF90008E7F6 /* FrakturOmniv1.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FrakturOmniv1.otf; sourceTree = "<group>"; };
 		F226287F22B6B1D70008E7F6 /* Beads - Properties.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Beads - Properties.json"; sourceTree = "<group>"; };
+		F226288122B7C27B0008E7F6 /* BeadProperty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeadProperty.swift; sourceTree = "<group>"; };
+		F226288322B91D260008E7F6 /* BeadsSetsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeadsSetsListViewController.swift; sourceTree = "<group>"; };
+		F226288422B91D260008E7F6 /* BeadsSetsListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BeadsSetsListViewController.xib; sourceTree = "<group>"; };
 		F26958C422A8437100655AB2 /* AboutShadesmarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutShadesmarViewController.swift; sourceTree = "<group>"; };
 		F26958C522A8437100655AB2 /* AboutShadesmarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AboutShadesmarViewController.xib; sourceTree = "<group>"; };
 		F27223672255404800A6330D /* Shadesmar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shadesmar.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -75,7 +77,7 @@
 		F27223742255404A00A6330D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F27223762255404A00A6330D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F272237C2255F7B000A6330D /* Bead.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bead.swift; sourceTree = "<group>"; };
-		F2D1D192227B67C6004ECC96 /* Bucket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bucket.swift; sourceTree = "<group>"; };
+		F2D1D192227B67C6004ECC96 /* BeadsSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeadsSet.swift; sourceTree = "<group>"; };
 		F2D1D199227B7F04004ECC96 /* SKNode+Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SKNode+Utility.swift"; sourceTree = "<group>"; };
 		F2D1D19A227B7F04004ECC96 /* AliveNotAlive2DScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AliveNotAlive2DScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -91,7 +93,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		F226285422AC2A530008E7F6 /* GameOver */ = {
+		F226285422AC2A530008E7F6 /* InfoPopUps */ = {
 			isa = PBXGroup;
 			children = (
 				F226285022ABFB750008E7F6 /* InfoPopUp.swift */,
@@ -99,7 +101,7 @@
 				F226287722B3AD590008E7F6 /* CorrectPopUp.xib */,
 				F226285122ABFB750008E7F6 /* GameOverPopUp.xib */,
 			);
-			path = GameOver;
+			path = InfoPopUps;
 			sourceTree = "<group>";
 		};
 		F226285D22AE1F920008E7F6 /* Fonts */ = {
@@ -120,6 +122,25 @@
 				F226284D22AB910B0008E7F6 /* AliveNotAliveQuestionPopUp.xib */,
 			);
 			path = AliveNotAlive;
+			sourceTree = "<group>";
+		};
+		F226288722B91D400008E7F6 /* BeadsSets */ = {
+			isa = PBXGroup;
+			children = (
+				F226288322B91D260008E7F6 /* BeadsSetsListViewController.swift */,
+				F226288422B91D260008E7F6 /* BeadsSetsListViewController.xib */,
+			);
+			path = BeadsSets;
+			sourceTree = "<group>";
+		};
+		F226288822B91D660008E7F6 /* PopUps */ = {
+			isa = PBXGroup;
+			children = (
+				F226285E22AE349D0008E7F6 /* AliveNotAlive */,
+				F226285422AC2A530008E7F6 /* InfoPopUps */,
+				F26958C822A8437700655AB2 /* AboutShadesmar */,
+			);
+			path = PopUps;
 			sourceTree = "<group>";
 		};
 		F26958C822A8437700655AB2 /* AboutShadesmar */ = {
@@ -166,8 +187,8 @@
 			isa = PBXGroup;
 			children = (
 				F272237C2255F7B000A6330D /* Bead.swift */,
-				F2D1D192227B67C6004ECC96 /* Bucket.swift */,
-				F21CEE86227ECBC600327051 /* Bucket+Values.swift */,
+				F226288122B7C27B0008E7F6 /* BeadProperty.swift */,
+				F2D1D192227B67C6004ECC96 /* BeadsSet.swift */,
 				F226286122AEB7FB0008E7F6 /* BeadViewModel.swift */,
 			);
 			path = Models;
@@ -179,7 +200,6 @@
 				F226287F22B6B1D70008E7F6 /* Beads - Properties.json */,
 				F226286D22B0274F0008E7F6 /* Beads - Emodji Set Beards.json */,
 				F226286F22B03C960008E7F6 /* Beads - Emodji Set Sweets.json */,
-				F226286522AEC2190008E7F6 /* Beads - Emodji Set.json */,
 				F226285D22AE1F920008E7F6 /* Fonts */,
 				F27223732255404A00A6330D /* LaunchScreen.storyboard */,
 				F27223712255404A00A6330D /* Assets.xcassets */,
@@ -200,11 +220,10 @@
 		F2D1D197227B7D7C004ECC96 /* Stories */ = {
 			isa = PBXGroup;
 			children = (
+				F226288722B91D400008E7F6 /* BeadsSets */,
 				F272236C2255404800A6330D /* MainViewController.swift */,
 				F272236E2255404800A6330D /* Main.storyboard */,
-				F226285E22AE349D0008E7F6 /* AliveNotAlive */,
-				F226285422AC2A530008E7F6 /* GameOver */,
-				F26958C822A8437700655AB2 /* AboutShadesmar */,
+				F226288822B91D660008E7F6 /* PopUps */,
 			);
 			path = Stories;
 			sourceTree = "<group>";
@@ -288,8 +307,8 @@
 				F226288022B6B1D70008E7F6 /* Beads - Properties.json in Resources */,
 				F226287C22B3CAF90008E7F6 /* FrakturOmniv1.otf in Resources */,
 				F27223722255404A00A6330D /* Assets.xcassets in Resources */,
+				F226288622B91D260008E7F6 /* BeadsSetsListViewController.xib in Resources */,
 				F226287022B03C960008E7F6 /* Beads - Emodji Set Sweets.json in Resources */,
-				F226286622AEC2190008E7F6 /* Beads - Emodji Set.json in Resources */,
 				F226284F22AB910B0008E7F6 /* AliveNotAliveQuestionPopUp.xib in Resources */,
 				F226286E22B0274F0008E7F6 /* Beads - Emodji Set Beards.json in Resources */,
 				F226285322ABFB750008E7F6 /* GameOverPopUp.xib in Resources */,
@@ -309,8 +328,9 @@
 				F272236D2255404800A6330D /* MainViewController.swift in Sources */,
 				F2D1D19D227B7F04004ECC96 /* AliveNotAlive2DScene.swift in Sources */,
 				F226285222ABFB750008E7F6 /* InfoPopUp.swift in Sources */,
-				F2D1D193227B67C6004ECC96 /* Bucket.swift in Sources */,
+				F2D1D193227B67C6004ECC96 /* BeadsSet.swift in Sources */,
 				F26958C622A8437100655AB2 /* AboutShadesmarViewController.swift in Sources */,
+				F226288522B91D260008E7F6 /* BeadsSetsListViewController.swift in Sources */,
 				F226286C22AED5D90008E7F6 /* Utils.swift in Sources */,
 				F226284E22AB910B0008E7F6 /* AliveNotAliveQuestionPopUp.swift in Sources */,
 				F226287222B157DD0008E7F6 /* SKNode+Actions.swift in Sources */,
@@ -319,7 +339,7 @@
 				F226286022AE41B50008E7F6 /* BeadNode.swift in Sources */,
 				F272236B2255404800A6330D /* AppDelegate.swift in Sources */,
 				F272237D2255F7B000A6330D /* Bead.swift in Sources */,
-				F21CEE87227ECBC600327051 /* Bucket+Values.swift in Sources */,
+				F226288222B7C27B0008E7F6 /* BeadProperty.swift in Sources */,
 				F226286222AEB7FB0008E7F6 /* BeadViewModel.swift in Sources */,
 				F2D1D19C227B7F04004ECC96 /* SKNode+Utility.swift in Sources */,
 			);

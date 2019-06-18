@@ -8,8 +8,12 @@
 
 import Foundation
 
-class Bucket: Decodable {
+class BeadsSet: Decodable {
     
+    var id: String?
+    var name: String?
+    
+    var beadIds: [String]?
     var beads: [Bead]?
     
 }
