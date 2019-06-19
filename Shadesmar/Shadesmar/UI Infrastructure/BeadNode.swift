@@ -37,10 +37,10 @@ class BeadNode: SKSpriteNode {
     func apearenceAnimation() {
         self.run(SKAction.fadeIn(withDuration: 1))
         
-        if viewModel.isAlive {
-            let action = SKAction.repeatForever(pulsar(percent: 0.98, duration: 0.5))
-            self.run(action)
-        }
+//        if viewModel.isAlive {
+//            let action = SKAction.repeatForever(pulsar(percent: 0.98, duration: 0.5))
+//            self.run(action)
+//        }
     }
     
     func disapearenceAnimation() {

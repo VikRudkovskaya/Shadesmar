@@ -16,5 +16,13 @@ class Bead: Decodable {
     
     var title: String?
     
+    var propertiesIDs: [String]?
     var properties: [BeadProperty]?
+    
+    enum CodingKeys : String, CodingKey {
+        case id
+        case textureName
+        case title
+        case propertiesIDs
+    }
 }

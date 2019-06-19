@@ -39,24 +39,24 @@ class MainViewController: UIViewController {
                 let vc = AliveNotAliveQuestionPopUp(viewModel: viewModel)
                 vc.aliveDidChose = { (viewModel, isAliveChose) in
                     
-                    if viewModel.isAlive == isAliveChose {
-                        // correct
-                        GameStateHolder.shared.correctDefinedBeads.append(viewModel)
-                        let infoPopUp = InfoPopUp(type: .Correct, message: "")
-                        infoPopUp.okCompletion = {
-                            let node = self.sceneView.scene?.childNode(withName: viewModel.textureName) as? BeadNode
-                            node?.disapearenceAnimation()
-                            
-                            
-                        }
-                        self.present(infoPopUp, animated: true, completion: nil)
-                        
-                    } else {
-                        // incorect
-                        GameStateHolder.shared.incorrectDefinedBeads.append(viewModel)
-                        let infoPopUp = InfoPopUp(type: .Incorrect, message: "")
-                        self.present(infoPopUp, animated: true, completion: nil)
-                    }
+//                    if viewModel.isAlive == isAliveChose {
+//                        // correct
+//                        GameStateHolder.shared.correctDefinedBeads.append(viewModel)
+//                        let infoPopUp = InfoPopUp(type: .Correct, message: "")
+//                        infoPopUp.okCompletion = {
+//                            let node = self.sceneView.scene?.childNode(withName: viewModel.textureName) as? BeadNode
+//                            node?.disapearenceAnimation()
+//
+//
+//                        }
+//                        self.present(infoPopUp, animated: true, completion: nil)
+//
+//                    } else {
+//                        // incorect
+//                        GameStateHolder.shared.incorrectDefinedBeads.append(viewModel)
+//                        let infoPopUp = InfoPopUp(type: .Incorrect, message: "")
+//                        self.present(infoPopUp, animated: true, completion: nil)
+//                    }
                 }
 
                 self.present(vc, animated: true, completion: nil)
