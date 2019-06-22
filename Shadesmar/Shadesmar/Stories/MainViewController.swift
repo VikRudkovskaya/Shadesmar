@@ -13,6 +13,7 @@ class MainViewController: UIViewController {
     
     @IBOutlet weak var sceneView: SKView!
     @IBOutlet weak var about: UIButton!
+    @IBOutlet weak var beadsButton: UIButton!
     
     @IBOutlet weak var bottomContainer: UIView!
     
@@ -38,6 +39,7 @@ class MainViewController: UIViewController {
             scene.beadDidTouch = {(viewModel) in
                 let vc = AliveNotAliveQuestionPopUp(viewModel: viewModel)
                 vc.aliveDidChose = { (viewModel, isAliveChose) in
+                    // TODO:
                     
 //                    if viewModel.isAlive == isAliveChose {
 //                        // correct
@@ -70,12 +72,12 @@ class MainViewController: UIViewController {
     }
 
     @IBAction func aboutTouchUpInside(_ sender: UIButton) {
-        let newScene = SKScene()
-        sceneView.presentScene(nil)
-        sceneView.presentScene(newScene)
+//        let newScene = SKScene()
+//        sceneView.presentScene(nil)
+//        sceneView.presentScene(newScene)
         
-//        let vc = AboutShadesmarViewController()
-//        self.present(vc, animated: true, completion: nil)
+        let vc = AboutShadesmarViewController()
+        self.present(vc, animated: true, completion: nil)
     }
     
 }

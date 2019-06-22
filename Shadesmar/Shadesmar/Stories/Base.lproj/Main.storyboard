@@ -21,10 +21,6 @@
                             <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg-main" translatesAutoresizingMaskIntoConstraints="NO" id="eA6-SM-OaN">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DyZ-xM-WGe" customClass="SKView">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Sc-ez-7PC">
                                 <rect key="frame" x="-1" y="805" width="416" height="92"/>
                                 <subviews>
@@ -47,21 +43,36 @@
                                         </constraints>
                                         <state key="normal" image="round-settings"/>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zeO-gA-PAr">
+                                        <rect key="frame" x="232" y="0.0" width="92" height="92"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="92" id="sVo-xG-8aR"/>
+                                            <constraint firstAttribute="width" constant="92" id="t1O-Q6-VVz"/>
+                                        </constraints>
+                                        <state key="normal" image="round-beads"/>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.9073362350435038" green="0.8972640070234128" blue="0.92302405834197998" alpha="0.24705882370471954" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="3TY-zJ-WEu" secondAttribute="trailing" id="3oC-MK-cW4"/>
                                     <constraint firstItem="elY-ef-gd1" firstAttribute="top" secondItem="3Sc-ez-7PC" secondAttribute="top" id="7IZ-81-zjy"/>
                                     <constraint firstAttribute="bottom" secondItem="elY-ef-gd1" secondAttribute="bottom" id="A82-kG-jKl"/>
+                                    <constraint firstItem="zeO-gA-PAr" firstAttribute="top" secondItem="3Sc-ez-7PC" secondAttribute="top" id="HCP-b7-76v"/>
+                                    <constraint firstAttribute="bottom" secondItem="zeO-gA-PAr" secondAttribute="bottom" id="Jc8-hD-4Vu"/>
                                     <constraint firstItem="3TY-zJ-WEu" firstAttribute="top" secondItem="3Sc-ez-7PC" secondAttribute="top" id="S9Y-ky-qo1"/>
                                     <constraint firstItem="elY-ef-gd1" firstAttribute="leading" secondItem="3Sc-ez-7PC" secondAttribute="leading" id="XjX-5H-7EL"/>
                                     <constraint firstAttribute="bottom" secondItem="3TY-zJ-WEu" secondAttribute="bottom" id="dC1-Vm-Bu7"/>
+                                    <constraint firstItem="3TY-zJ-WEu" firstAttribute="leading" secondItem="zeO-gA-PAr" secondAttribute="trailing" id="lm3-vB-Fdz"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <integer key="value" value="16"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DyZ-xM-WGe" customClass="SKView">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -82,6 +93,7 @@
                     </view>
                     <connections>
                         <outlet property="about" destination="elY-ef-gd1" id="iLr-JY-Pca"/>
+                        <outlet property="beadsButton" destination="zeO-gA-PAr" id="ySj-od-8ff"/>
                         <outlet property="bottomContainer" destination="3Sc-ez-7PC" id="pdd-lX-8U7"/>
                         <outlet property="sceneView" destination="DyZ-xM-WGe" id="IuT-Fd-C0o"/>
                     </connections>
@@ -94,6 +106,7 @@
     <resources>
         <image name="bg-main" width="400" height="700"/>
         <image name="round-about" width="246" height="246"/>
+        <image name="round-beads" width="246" height="246"/>
         <image name="round-settings" width="246" height="246"/>
     </resources>
 </document>
