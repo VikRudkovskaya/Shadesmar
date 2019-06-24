@@ -21,6 +21,10 @@
                             <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg-main" translatesAutoresizingMaskIntoConstraints="NO" id="eA6-SM-OaN">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DyZ-xM-WGe" customClass="SKView">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Sc-ez-7PC">
                                 <rect key="frame" x="-1" y="805" width="416" height="92"/>
                                 <subviews>
@@ -50,6 +54,9 @@
                                             <constraint firstAttribute="width" constant="92" id="t1O-Q6-VVz"/>
                                         </constraints>
                                         <state key="normal" image="round-beads"/>
+                                        <connections>
+                                            <action selector="beadsSetsTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UEI-3z-z60"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.9073362350435038" green="0.8972640070234128" blue="0.92302405834197998" alpha="0.24705882370471954" colorSpace="custom" customColorSpace="displayP3"/>
@@ -69,10 +76,6 @@
                                         <integer key="value" value="16"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DyZ-xM-WGe" customClass="SKView">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

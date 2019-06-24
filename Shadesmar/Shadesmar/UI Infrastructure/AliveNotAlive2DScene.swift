@@ -12,7 +12,7 @@ class AliveNotAlive2DScene: SKScene {
     
     var beadDidTouch: ((BeadViewModel)->())?
     
-    var service: BeadsService?
+    var service: BeadsServiceProvider?
     
     var backgroundNode: SKSpriteNode?
 
@@ -58,7 +58,7 @@ class AliveNotAlive2DScene: SKScene {
                 return
             }
         }
-        guard let beads = service?.bucket?.beads else {
+        guard let beads = service?.bucket?.beads, beads.count != 0 else {
             return
         }
         

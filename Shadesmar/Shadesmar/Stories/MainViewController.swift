@@ -17,12 +17,14 @@ class MainViewController: UIViewController {
     
     @IBOutlet weak var bottomContainer: UIView!
     
+    var beadsService: BeadsServiceProvider!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         bottomContainer.layer.maskedCorners = [.layerMaxXMinYCorner,.layerMinXMinYCorner]
         bottomContainer.layer.borderWidth = 1
-        bottomContainer.layer.borderColor = UIColor(red: 161 / 255.0, green: 184 / 255.0, blue: 192 / 255.0, alpha: 1.0).cgColor
+        bottomContainer.layer.borderColor = custom_grayblue.cgColor
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -32,8 +34,8 @@ class MainViewController: UIViewController {
             return
         }
         
-        let service = BeadsService()
-        service.bucket(successHandler: { (bucket) in
+        beadsService = BeadsServiceProvider()
+        beadsService.bucket(successHandler: { (bucket) in
             
             let scene = AliveNotAlive2DScene(size: self.sceneView.frame.size)
             scene.beadDidTouch = {(viewModel) in
@@ -63,7 +65,7 @@ class MainViewController: UIViewController {
 
                 self.present(vc, animated: true, completion: nil)
             }
-            scene.service = service
+            scene.service = self.beadsService
             self.sceneView.presentScene(scene)
             
         }) { (message) in
@@ -79,6 +81,13 @@ class MainViewController: UIViewController {
         let vc = AboutShadesmarViewController()
         self.present(vc, animated: true, completion: nil)
     }
+    
+    @IBAction func beadsSetsTouchUpInside(_ sender: UIButton) {
+        let vc = BeadsSetsListViewController(with: beadsService)
+        self.present(vc, animated: true, completion: nil)
+        
+    }
+    
     
 }
 

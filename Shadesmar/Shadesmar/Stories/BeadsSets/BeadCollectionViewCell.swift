@@ -10,6 +10,8 @@ import UIKit
 
 class BeadCollectionViewCell: UICollectionViewCell {
     
+    @IBOutlet weak var beadImageView: UIImageView!
+    
     class func reuseIdentifier() -> String {
         return "BeadCollectionViewCell_ID"
     }

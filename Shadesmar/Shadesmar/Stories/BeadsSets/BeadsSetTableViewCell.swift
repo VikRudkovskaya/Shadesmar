@@ -16,6 +16,10 @@ class BeadsSetTableViewCell: UITableViewCell {
     @IBOutlet weak var setTitleLabel: UILabel!
     @IBOutlet weak var beadsCollectionView: UICollectionView!
     
+    class func reuseIdentifier() -> String {
+        return "BeadsSetTableViewCell_ID"
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         
@@ -28,6 +32,8 @@ class BeadsSetTableViewCell: UITableViewCell {
     
     func setup(with set: BeadsSet) {
         model = set
+        
+        
     }
     
 }

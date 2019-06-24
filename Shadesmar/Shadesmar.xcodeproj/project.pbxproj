@@ -17,7 +17,7 @@
 		F226285C22AD61920008E7F6 /* Vtks Classical Hit.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F226285B22AD61910008E7F6 /* Vtks Classical Hit.ttf */; };
 		F226286022AE41B50008E7F6 /* BeadNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F226285F22AE41B50008E7F6 /* BeadNode.swift */; };
 		F226286222AEB7FB0008E7F6 /* BeadViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F226286122AEB7FB0008E7F6 /* BeadViewModel.swift */; };
-		F226286A22AECD0E0008E7F6 /* BeadsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F226286922AECD0E0008E7F6 /* BeadsService.swift */; };
+		F226286A22AECD0E0008E7F6 /* BeadsServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F226286922AECD0E0008E7F6 /* BeadsServiceProvider.swift */; };
 		F226286C22AED5D90008E7F6 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F226286B22AED5D90008E7F6 /* Utils.swift */; };
 		F226286E22B0274F0008E7F6 /* Beads - Emodji Set Beards.json in Resources */ = {isa = PBXBuildFile; fileRef = F226286D22B0274F0008E7F6 /* Beads - Emodji Set Beards.json */; };
 		F226287022B03C960008E7F6 /* Beads - Emodji Set Sweets.json in Resources */ = {isa = PBXBuildFile; fileRef = F226286F22B03C960008E7F6 /* Beads - Emodji Set Sweets.json */; };
@@ -45,6 +45,8 @@
 		F2D1D193227B67C6004ECC96 /* BeadsSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D1D192227B67C6004ECC96 /* BeadsSet.swift */; };
 		F2D1D19C227B7F04004ECC96 /* SKNode+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D1D199227B7F04004ECC96 /* SKNode+Utility.swift */; };
 		F2D1D19D227B7F04004ECC96 /* AliveNotAlive2DScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D1D19A227B7F04004ECC96 /* AliveNotAlive2DScene.swift */; };
+		F2DD37BA22BF795500FB16F3 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DD37B922BF795500FB16F3 /* Colors.swift */; };
+		F2DD37BC22C0EEFA00FB16F3 /* Beads - Emodji Set Sweets copy.json in Resources */ = {isa = PBXBuildFile; fileRef = F2DD37BB22C0EEFA00FB16F3 /* Beads - Emodji Set Sweets copy.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,7 +60,7 @@
 		F226285B22AD61910008E7F6 /* Vtks Classical Hit.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Vtks Classical Hit.ttf"; sourceTree = "<group>"; };
 		F226285F22AE41B50008E7F6 /* BeadNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeadNode.swift; sourceTree = "<group>"; };
 		F226286122AEB7FB0008E7F6 /* BeadViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeadViewModel.swift; sourceTree = "<group>"; };
-		F226286922AECD0E0008E7F6 /* BeadsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeadsService.swift; sourceTree = "<group>"; };
+		F226286922AECD0E0008E7F6 /* BeadsServiceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeadsServiceProvider.swift; sourceTree = "<group>"; };
 		F226286B22AED5D90008E7F6 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		F226286D22B0274F0008E7F6 /* Beads - Emodji Set Beards.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Beads - Emodji Set Beards.json"; sourceTree = "<group>"; };
 		F226286F22B03C960008E7F6 /* Beads - Emodji Set Sweets.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Beads - Emodji Set Sweets.json"; sourceTree = "<group>"; };
@@ -88,6 +90,8 @@
 		F2D1D192227B67C6004ECC96 /* BeadsSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeadsSet.swift; sourceTree = "<group>"; };
 		F2D1D199227B7F04004ECC96 /* SKNode+Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SKNode+Utility.swift"; sourceTree = "<group>"; };
 		F2D1D19A227B7F04004ECC96 /* AliveNotAlive2DScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AliveNotAlive2DScene.swift; sourceTree = "<group>"; };
+		F2DD37B922BF795500FB16F3 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		F2DD37BB22C0EEFA00FB16F3 /* Beads - Emodji Set Sweets copy.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Beads - Emodji Set Sweets copy.json"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +171,7 @@
 		F226289222BA75490008E7F6 /* Stubs */ = {
 			isa = PBXGroup;
 			children = (
+				F2DD37BB22C0EEFA00FB16F3 /* Beads - Emodji Set Sweets copy.json */,
 				F226287F22B6B1D70008E7F6 /* Beads - Properties.json */,
 				F226286D22B0274F0008E7F6 /* Beads - Emodji Set Beards.json */,
 				F226286F22B03C960008E7F6 /* Beads - Emodji Set Sweets.json */,
@@ -203,7 +208,7 @@
 			isa = PBXGroup;
 			children = (
 				F226287522B2365F0008E7F6 /* GameStateHolder.swift */,
-				F226286922AECD0E0008E7F6 /* BeadsService.swift */,
+				F226286922AECD0E0008E7F6 /* BeadsServiceProvider.swift */,
 				F226286B22AED5D90008E7F6 /* Utils.swift */,
 				F2D1D194227B7CCB004ECC96 /* Models */,
 				F2D1D198227B7DC6004ECC96 /* UI Infrastructure */,
@@ -263,6 +268,7 @@
 				F2D1D19A227B7F04004ECC96 /* AliveNotAlive2DScene.swift */,
 				F226287122B157DD0008E7F6 /* SKNode+Actions.swift */,
 				F2D1D199227B7F04004ECC96 /* SKNode+Utility.swift */,
+				F2DD37B922BF795500FB16F3 /* Colors.swift */,
 			);
 			path = "UI Infrastructure";
 			sourceTree = "<group>";
@@ -327,6 +333,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F226287A22B3AD6F0008E7F6 /* IncorrectPopUp.xib in Resources */,
+				F2DD37BC22C0EEFA00FB16F3 /* Beads - Emodji Set Sweets copy.json in Resources */,
 				F226285C22AD61920008E7F6 /* Vtks Classical Hit.ttf in Resources */,
 				F226287822B3AD590008E7F6 /* CorrectPopUp.xib in Resources */,
 				F226285622AD0BC60008E7F6 /* Beads.xcassets in Resources */,
@@ -356,6 +363,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F272236D2255404800A6330D /* MainViewController.swift in Sources */,
+				F2DD37BA22BF795500FB16F3 /* Colors.swift in Sources */,
 				F2D1D19D227B7F04004ECC96 /* AliveNotAlive2DScene.swift in Sources */,
 				F226285222ABFB750008E7F6 /* InfoPopUp.swift in Sources */,
 				F2D1D193227B67C6004ECC96 /* BeadsSet.swift in Sources */,
@@ -365,7 +373,7 @@
 				F226286C22AED5D90008E7F6 /* Utils.swift in Sources */,
 				F226284E22AB910B0008E7F6 /* AliveNotAliveQuestionPopUp.swift in Sources */,
 				F226287222B157DD0008E7F6 /* SKNode+Actions.swift in Sources */,
-				F226286A22AECD0E0008E7F6 /* BeadsService.swift in Sources */,
+				F226286A22AECD0E0008E7F6 /* BeadsServiceProvider.swift in Sources */,
 				F226287622B2365F0008E7F6 /* GameStateHolder.swift in Sources */,
 				F226286022AE41B50008E7F6 /* BeadNode.swift in Sources */,
 				F226288F22B9787A0008E7F6 /* BeadCollectionViewCell.swift in Sources */,
