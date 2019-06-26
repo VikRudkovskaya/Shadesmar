@@ -10,20 +10,18 @@ import Foundation
 
 class BeadsServiceProvider {
     
-    var beadsSets: [BeadsSet]?
+    // Все существующие сеты
+    var allBeadsSets: [BeadsSet] = []
     
-    var bucket: BeadsSet?
+    // Объединенный сет
+    var generalizedSet: BeadsSet {
+        return BeadsSet.generalizedBeadsSet(sets: allBeadsSets, name: "Общий сформированный сет", id: "-bbee03f5dbfaef9a742c7d88d6ad1fca")
+    }
     
     var allBeadProperties: [BeadProperty]?
-
-    func bucket(successHandler:@escaping (BeadsSet) -> (), errorHandler:@escaping (String) -> ()) {
-        
-        decodeItem(BeadsSet.self, fromFile: "Beads - Emodji Set Sweets", successHandler: { (beadsSet) in
-            self.bucket = beadsSet
-            successHandler(beadsSet)
-        }) { (message) in
-            errorHandler(message)
-        }
+    
+    private var beadsSetsJsonNames: [String] {
+        return ["Beads - Emodji Set Sweets", "Beads - Emodji Set Beards"]
     }
     
     // Список всех возможных свойств
@@ -38,14 +36,48 @@ class BeadsServiceProvider {
         
     }
     
-    // Список доступных наборов бусин
+    // Список всех доступных наборов бусин
     func loadBeadsSets(successHandler:@escaping ([BeadsSet]) -> (),
                        errorHandler:@escaping (String) -> ()) {
         
+        DispatchQueue.global(qos: .userInitiated).async {
+            let downloadGroup = DispatchGroup()
+            for jsonName in self.beadsSetsJsonNames {
+                downloadGroup.enter()
+                self.loadBeadSet(fromJson: jsonName, successHandler: { (beadsSet) in
+                    self.allBeadsSets.append(beadsSet)
+                    downloadGroup.leave()
+                }) { (message) in
+                    
+                }
+                downloadGroup.wait()
+            }
+        }
+        
+        DispatchQueue.main.async {
+            successHandler(self.allBeadsSets)
+        }
         
     }
     
-    func decodeItem<T>(_ item: T.Type, fromFile jsonFileName: String, successHandler:@escaping (T) -> (), errorHandler:@escaping (String) -> ()) where T : Decodable {
+    // Загрузка одного сета
+    func loadBeadSet(fromJson fileName: String,
+                     successHandler:@escaping (BeadsSet) -> (),
+                     errorHandler:@escaping (String) -> ()) {
+        
+        decodeItem(BeadsSet.self, fromFile: fileName, successHandler: { (beadsSet) in
+            successHandler(beadsSet)
+        }) { (message) in
+            errorHandler(message)
+        }
+    }
+    
+    // Извлечение модели из json-файла
+    func decodeItem<T>(_ item: T.Type,
+                       fromFile jsonFileName: String,
+                       successHandler:@escaping (T) -> (),
+                       errorHandler:@escaping (String) -> ()) where T : Decodable {
+        
         guard let jsonData = Utils.unarchiveJSON(from: jsonFileName) else {
             fatalError("Файл с именем \(jsonFileName) не найден")
         }
@@ -58,7 +90,6 @@ class BeadsServiceProvider {
             print("Decode Error: ", error)
         }
     }
-    
     
 }
 

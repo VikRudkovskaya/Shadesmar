@@ -27,12 +27,19 @@
                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="0oh-3f-jkH">
                         <rect key="frame" x="16" y="38.5" width="361" height="165"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="JOl-ng-Kbx">
-                            <size key="itemSize" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="165" id="OpM-T0-mic"/>
+                        </constraints>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="JOl-ng-Kbx">
+                            <size key="itemSize" width="200" height="200"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
+                        <connections>
+                            <outlet property="dataSource" destination="KGk-i7-Jjw" id="78u-eu-W8C"/>
+                            <outlet property="delegate" destination="KGk-i7-Jjw" id="Btx-5y-jWr"/>
+                        </connections>
                     </collectionView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Фрукты" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pme-eH-T0O">
                         <rect key="frame" x="16" y="8" width="349" height="22.5"/>
@@ -62,11 +69,11 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="beadsCollectionView" destination="0oh-3f-jkH" id="dSN-jT-Y1a"/>
+                <outlet property="beadsCollectionView" destination="0oh-3f-jkH" id="Qm8-WI-OvN"/>
                 <outlet property="separatorImageView" destination="UyB-jN-9kc" id="Z16-Pz-q2t"/>
                 <outlet property="setTitleLabel" destination="Pme-eH-T0O" id="KkO-TP-08D"/>
             </connections>
-            <point key="canvasLocation" x="92.028985507246389" y="95.758928571428569"/>
+            <point key="canvasLocation" x="78" y="66"/>
         </tableViewCell>
     </objects>
     <resources>

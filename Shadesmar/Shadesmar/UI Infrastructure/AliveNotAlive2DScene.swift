@@ -58,7 +58,7 @@ class AliveNotAlive2DScene: SKScene {
                 return
             }
         }
-        guard let beads = service?.bucket?.beads, beads.count != 0 else {
+        guard let beads = service?.generalizedSet.beads, beads.count != 0 else {
             return
         }
         
@@ -72,8 +72,6 @@ class AliveNotAlive2DScene: SKScene {
         addChild(bead)
         
         GameStateHolder.shared.displaingBeads.append(vm)
-        
-        
     }
     
 }

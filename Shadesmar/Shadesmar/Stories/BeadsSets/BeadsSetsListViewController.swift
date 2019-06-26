@@ -32,15 +32,16 @@ class BeadsSetsListViewController: UIViewController {
 }
 
 extension BeadsSetsListViewController: UITableViewDataSource {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return beadsService.allBeadsSets.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: BeadsSetTableViewCell.reuseIdentifier(), for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: BeadsSetTableViewCell.reuseIdentifier(), for: indexPath) as! BeadsSetTableViewCell
+        cell.setup(with: beadsService.allBeadsSets[indexPath.row])
         return cell
     }
-    
     
 }
 

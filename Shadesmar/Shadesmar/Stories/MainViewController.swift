@@ -25,6 +25,8 @@ class MainViewController: UIViewController {
         bottomContainer.layer.maskedCorners = [.layerMaxXMinYCorner,.layerMinXMinYCorner]
         bottomContainer.layer.borderWidth = 1
         bottomContainer.layer.borderColor = custom_grayblue.cgColor
+        
+        // TODO: progress bar
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -35,7 +37,7 @@ class MainViewController: UIViewController {
         }
         
         beadsService = BeadsServiceProvider()
-        beadsService.bucket(successHandler: { (bucket) in
+        beadsService.loadBeadsSets(successHandler: { (beadsSets) in
             
             let scene = AliveNotAlive2DScene(size: self.sceneView.frame.size)
             scene.beadDidTouch = {(viewModel) in

@@ -10,7 +10,7 @@ import UIKit
 
 class BeadsSetTableViewCell: UITableViewCell {
     
-    var model: BeadsSet?
+    var model: BeadsSet!
 
     @IBOutlet weak var separatorImageView: UIImageView!
     @IBOutlet weak var setTitleLabel: UILabel!
@@ -23,7 +23,8 @@ class BeadsSetTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        beadsCollectionView.register(BeadCollectionViewCell.self, forCellWithReuseIdentifier: BeadCollectionViewCell.reuseIdentifier())
+        let nib = UINib.init(nibName: "BeadCollectionViewCell", bundle: nil)
+        beadsCollectionView.register(nib, forCellWithReuseIdentifier: BeadCollectionViewCell.reuseIdentifier())
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -33,19 +34,23 @@ class BeadsSetTableViewCell: UITableViewCell {
     func setup(with set: BeadsSet) {
         model = set
         
-        
+        setTitleLabel.text = set.name
+        beadsCollectionView.reloadData()
     }
     
 }
 
 extension BeadsSetTableViewCell: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return model?.beads?.count ?? 0
+        guard let number = model.beads?.count else {
+            return 0
+        }
+        return number
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: BeadCollectionViewCell.reuseIdentifier(), for: indexPath) as! BeadCollectionViewCell
-        
+        cell.beadImageView.image = UIImage.init(named: model.beads?[indexPath.row].textureName ?? "")
         return cell
     }
     

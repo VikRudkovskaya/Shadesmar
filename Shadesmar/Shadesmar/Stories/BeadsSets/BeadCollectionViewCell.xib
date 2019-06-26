@@ -20,7 +20,10 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg-main" translatesAutoresizingMaskIntoConstraints="NO" id="mov-GS-pYF">
-                        <rect key="frame" x="0.0" y="0.0" width="236" height="246"/>
+                        <rect key="frame" x="0.0" y="10" width="236" height="236"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="mov-GS-pYF" secondAttribute="height" multiplier="1:1" id="c2r-6j-tpc"/>
+                        </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                 <integer key="value" value="16"/>
@@ -37,7 +40,10 @@
                         </constraints>
                     </imageView>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QWi-P2-BTj">
-                        <rect key="frame" x="16" y="32" width="204" height="192"/>
+                        <rect key="frame" x="22" y="32" width="192" height="192"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="QWi-P2-BTj" secondAttribute="height" multiplier="1:1" id="1FD-YB-QcN"/>
+                        </constraints>
                     </imageView>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rounds-decreasing" translatesAutoresizingMaskIntoConstraints="NO" id="2LD-IR-zsP">
                         <rect key="frame" x="-24.5" y="-16" width="285" height="32"/>
@@ -49,16 +55,15 @@
             </view>
             <constraints>
                 <constraint firstItem="QWi-P2-BTj" firstAttribute="top" secondItem="2LD-IR-zsP" secondAttribute="bottom" constant="16" id="4bi-L9-gTo"/>
-                <constraint firstItem="QWi-P2-BTj" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="16" id="4s4-a3-ADk"/>
                 <constraint firstItem="mov-GS-pYF" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="7cu-x2-z3F"/>
                 <constraint firstItem="PKu-nb-8nG" firstAttribute="centerY" secondItem="ZTg-uK-7eu" secondAttribute="centerY" id="Jas-TG-edb"/>
                 <constraint firstAttribute="bottom" secondItem="cpX-Cu-NYD" secondAttribute="bottom" constant="-8" id="PxK-Hs-DBe"/>
                 <constraint firstAttribute="trailing" secondItem="PKu-nb-8nG" secondAttribute="trailing" constant="-16" id="WGl-E1-Rsm"/>
+                <constraint firstItem="mov-GS-pYF" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="ZIe-yV-Cb1"/>
                 <constraint firstAttribute="bottom" secondItem="mov-GS-pYF" secondAttribute="bottom" id="Zwv-DM-enc"/>
                 <constraint firstItem="2LD-IR-zsP" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="fTx-SQ-Yxd"/>
-                <constraint firstItem="mov-GS-pYF" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="giQ-zq-fu5"/>
                 <constraint firstItem="PKu-nb-8nG" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="hiu-da-3HW"/>
-                <constraint firstAttribute="trailing" secondItem="mov-GS-pYF" secondAttribute="trailing" id="m6m-Hc-kEc"/>
+                <constraint firstItem="mov-GS-pYF" firstAttribute="centerY" secondItem="ZTg-uK-7eu" secondAttribute="centerY" id="jv1-OE-c3X"/>
                 <constraint firstItem="PKu-nb-8nG" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="-16" id="ooz-iC-Cgc"/>
                 <constraint firstItem="cpX-Cu-NYD" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="qFH-eg-qLt"/>
                 <constraint firstItem="2LD-IR-zsP" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="-16" id="vMp-nt-Mii"/>
