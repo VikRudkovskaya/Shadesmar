@@ -175,8 +175,8 @@
 		F226289222BA75490008E7F6 /* Stubs */ = {
 			isa = PBXGroup;
 			children = (
-				F2DD37BB22C0EEFA00FB16F3 /* Beads - Emodji Set Fruits.json */,
 				F226287F22B6B1D70008E7F6 /* Beads - Properties.json */,
+				F2DD37BB22C0EEFA00FB16F3 /* Beads - Emodji Set Fruits.json */,
 				F226286D22B0274F0008E7F6 /* Beads - Emodji Set Beards.json */,
 				F226286F22B03C960008E7F6 /* Beads - Emodji Set Sweets.json */,
 			);

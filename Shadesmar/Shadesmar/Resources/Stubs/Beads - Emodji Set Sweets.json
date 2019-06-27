@@ -1,5 +1,6 @@
 {
-    "beads" : [
+    "name": "Сладости",
+    "beads": [
         {
             "id": "10690760368bee893ac466d73eb6a604",
             "textureName": "bead-cupcake",

@@ -9,6 +9,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="GothicCyr.ttf">
+            <string>GothicCyr-Normal</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BeadsSetsListViewController" customModule="Shadesmar" customModuleProvider="target">
             <connections>
@@ -21,24 +26,60 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg-noize" translatesAutoresizingMaskIntoConstraints="NO" id="ZBG-qT-a4N">
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg-noize" translatesAutoresizingMaskIntoConstraints="NO" id="ZBG-qT-a4N">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                 </imageView>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="U5D-cV-s7p">
-                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="U5D-cV-s7p">
+                    <rect key="frame" x="0.0" y="124" width="414" height="738"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Wee-Ng-y0g"/>
+                        <outlet property="delegate" destination="-1" id="CqL-Ld-0DB"/>
+                    </connections>
                 </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0LO-0P-T50">
+                    <rect key="frame" x="0.0" y="44" width="414" height="80"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" text="Cеты бусин" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ACU-Nl-5lN">
+                            <rect key="frame" x="16" y="0.0" width="286" height="80"/>
+                            <fontDescription key="fontDescription" name="GothicCyr-Normal" family="GothicCyr" pointSize="29"/>
+                            <color key="textColor" red="0.15686274510000001" green="0.20392156859999999" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lfJ-rR-oZ7">
+                            <rect key="frame" x="334" y="0.0" width="80" height="80"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="80" id="iji-dT-JOy"/>
+                            </constraints>
+                            <state key="normal" image="round-plus"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.54109856869999995" green="0.66724948809999995" blue="0.7912729356" alpha="0.1386183647260274" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="2Wx-MR-5ZL"/>
+                        <constraint firstItem="lfJ-rR-oZ7" firstAttribute="centerY" secondItem="0LO-0P-T50" secondAttribute="centerY" id="9ri-Vb-oV6"/>
+                        <constraint firstItem="ACU-Nl-5lN" firstAttribute="leading" secondItem="0LO-0P-T50" secondAttribute="leading" constant="16" id="Mc0-c4-s5T"/>
+                        <constraint firstAttribute="trailing" secondItem="lfJ-rR-oZ7" secondAttribute="trailing" id="RMv-Wb-io8"/>
+                        <constraint firstItem="ACU-Nl-5lN" firstAttribute="top" secondItem="0LO-0P-T50" secondAttribute="top" id="XdA-Ih-bnb"/>
+                        <constraint firstItem="lfJ-rR-oZ7" firstAttribute="top" secondItem="0LO-0P-T50" secondAttribute="top" id="qJa-CB-ht1"/>
+                        <constraint firstItem="ACU-Nl-5lN" firstAttribute="centerY" secondItem="0LO-0P-T50" secondAttribute="centerY" id="uDa-Ti-stU"/>
+                        <constraint firstItem="lfJ-rR-oZ7" firstAttribute="leading" secondItem="ACU-Nl-5lN" secondAttribute="trailing" constant="32" id="zo8-BC-eUR"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="U5D-cV-s7p" firstAttribute="top" secondItem="0LO-0P-T50" secondAttribute="bottom" id="4Jg-XI-Iwh"/>
                 <constraint firstItem="ZBG-qT-a4N" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="9v7-Wp-uSw"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="U5D-cV-s7p" secondAttribute="bottom" id="D88-tX-jDt"/>
                 <constraint firstItem="U5D-cV-s7p" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="DH3-ar-zUP"/>
+                <constraint firstItem="0LO-0P-T50" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="EBe-a4-0HM"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="U5D-cV-s7p" secondAttribute="trailing" id="FBN-JC-fHn"/>
                 <constraint firstAttribute="bottom" secondItem="ZBG-qT-a4N" secondAttribute="bottom" id="FTl-nt-pL3"/>
+                <constraint firstItem="0LO-0P-T50" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="VuY-4j-GxM"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ZBG-qT-a4N" secondAttribute="trailing" id="ccV-ji-Pbq"/>
                 <constraint firstItem="ZBG-qT-a4N" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="eEd-sY-BMD"/>
-                <constraint firstItem="U5D-cV-s7p" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="zga-Nh-txK"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="0LO-0P-T50" secondAttribute="trailing" id="tGs-8O-WLc"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="137.68115942028987" y="148.66071428571428"/>
@@ -46,5 +87,6 @@
     </objects>
     <resources>
         <image name="bg-noize" width="200" height="350"/>
+        <image name="round-plus" width="246" height="246"/>
     </resources>
 </document>
