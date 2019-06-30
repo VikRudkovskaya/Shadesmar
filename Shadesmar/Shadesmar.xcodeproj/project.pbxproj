@@ -19,7 +19,7 @@
 		F226286222AEB7FB0008E7F6 /* BeadViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F226286122AEB7FB0008E7F6 /* BeadViewModel.swift */; };
 		F226286A22AECD0E0008E7F6 /* BeadsServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F226286922AECD0E0008E7F6 /* BeadsServiceProvider.swift */; };
 		F226286C22AED5D90008E7F6 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F226286B22AED5D90008E7F6 /* Utils.swift */; };
-		F226286E22B0274F0008E7F6 /* Beads - Emodji Set Beards.json in Resources */ = {isa = PBXBuildFile; fileRef = F226286D22B0274F0008E7F6 /* Beads - Emodji Set Beards.json */; };
+		F226286E22B0274F0008E7F6 /* Beads - Emodji Set Birds.json in Resources */ = {isa = PBXBuildFile; fileRef = F226286D22B0274F0008E7F6 /* Beads - Emodji Set Birds.json */; };
 		F226287022B03C960008E7F6 /* Beads - Emodji Set Sweets.json in Resources */ = {isa = PBXBuildFile; fileRef = F226286F22B03C960008E7F6 /* Beads - Emodji Set Sweets.json */; };
 		F226287222B157DD0008E7F6 /* SKNode+Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F226287122B157DD0008E7F6 /* SKNode+Actions.swift */; };
 		F226287622B2365F0008E7F6 /* GameStateHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F226287522B2365F0008E7F6 /* GameStateHolder.swift */; };
@@ -64,7 +64,7 @@
 		F226286122AEB7FB0008E7F6 /* BeadViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeadViewModel.swift; sourceTree = "<group>"; };
 		F226286922AECD0E0008E7F6 /* BeadsServiceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeadsServiceProvider.swift; sourceTree = "<group>"; };
 		F226286B22AED5D90008E7F6 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
-		F226286D22B0274F0008E7F6 /* Beads - Emodji Set Beards.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Beads - Emodji Set Beards.json"; sourceTree = "<group>"; };
+		F226286D22B0274F0008E7F6 /* Beads - Emodji Set Birds.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Beads - Emodji Set Birds.json"; sourceTree = "<group>"; };
 		F226286F22B03C960008E7F6 /* Beads - Emodji Set Sweets.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Beads - Emodji Set Sweets.json"; sourceTree = "<group>"; };
 		F226287122B157DD0008E7F6 /* SKNode+Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SKNode+Actions.swift"; sourceTree = "<group>"; };
 		F226287522B2365F0008E7F6 /* GameStateHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStateHolder.swift; sourceTree = "<group>"; };
@@ -177,7 +177,7 @@
 			children = (
 				F226287F22B6B1D70008E7F6 /* Beads - Properties.json */,
 				F2DD37BB22C0EEFA00FB16F3 /* Beads - Emodji Set Fruits.json */,
-				F226286D22B0274F0008E7F6 /* Beads - Emodji Set Beards.json */,
+				F226286D22B0274F0008E7F6 /* Beads - Emodji Set Birds.json */,
 				F226286F22B03C960008E7F6 /* Beads - Emodji Set Sweets.json */,
 			);
 			path = Stubs;
@@ -352,7 +352,7 @@
 				F226287022B03C960008E7F6 /* Beads - Emodji Set Sweets.json in Resources */,
 				F226289022B9787A0008E7F6 /* BeadCollectionViewCell.xib in Resources */,
 				F226284F22AB910B0008E7F6 /* AliveNotAliveQuestionPopUp.xib in Resources */,
-				F226286E22B0274F0008E7F6 /* Beads - Emodji Set Beards.json in Resources */,
+				F226286E22B0274F0008E7F6 /* Beads - Emodji Set Birds.json in Resources */,
 				F226285322ABFB750008E7F6 /* GameOverPopUp.xib in Resources */,
 				F226288C22B96E3A0008E7F6 /* BeadsSetTableViewCell.xib in Resources */,
 				F26958C722A8437100655AB2 /* AboutShadesmarViewController.xib in Resources */,

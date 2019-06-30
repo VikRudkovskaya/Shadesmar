@@ -55,21 +55,21 @@
         },
         
         {
-            "id": "kBeard_d0384a5f433a948be7f6ebe19f77db89",
+            "id": "kBird_d0384a5f433a948be7f6ebe19f77db89",
             "name": "Птица",
-            "nameKey": "kBeard"
+            "nameKey": "kBird"
         },
         
         {
-            "id": "kSweats_b52517b000a33eabf97715d6ca05ab54",
-            "name": "Сладости",
-            "nameKey": "kSweats"
+            "id": "kSweat_b52517b000a33eabf97715d6ca05ab54",
+            "name": "Сладость",
+            "nameKey": "kSweat"
         },
         
         {
-            "id": "kFruits_32f873f12a3ca779069e1e709990619d",
-            "name": "Фрукты",
-            "nameKey": "kFruits"
+            "id": "kFruit_32f873f12a3ca779069e1e709990619d",
+            "name": "Фрукт",
+            "nameKey": "kFruit"
         }
         
     ]

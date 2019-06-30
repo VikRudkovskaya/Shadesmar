@@ -25,13 +25,13 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="0oh-3f-jkH">
-                        <rect key="frame" x="4" y="51.5" width="399" height="140"/>
+                        <rect key="frame" x="4" y="71.5" width="399" height="128"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="140" id="enp-0Z-LIX"/>
+                            <constraint firstAttribute="height" constant="128" id="enp-0Z-LIX"/>
                         </constraints>
-                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="JOl-ng-Kbx">
-                            <size key="itemSize" width="140" height="140"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="Sc8-Ma-JIa">
+                            <size key="itemSize" width="128" height="128"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -41,31 +41,39 @@
                             <outlet property="delegate" destination="KGk-i7-Jjw" id="Btx-5y-jWr"/>
                         </connections>
                     </collectionView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Фрукты" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pme-eH-T0O">
-                        <rect key="frame" x="16" y="8" width="371" height="35.5"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" text="Фрукты" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pme-eH-T0O">
+                        <rect key="frame" x="16" y="8" width="80" height="61.5"/>
                         <fontDescription key="fontDescription" name="CyrillicGoth" family="CyrillicGoth" pointSize="21"/>
                         <color key="textColor" red="0.15686274510000001" green="0.20392156859999999" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="separator" translatesAutoresizingMaskIntoConstraints="NO" id="UyB-jN-9kc">
-                        <rect key="frame" x="8" y="195.5" width="395" height="12"/>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.55000000000000004" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="separator-10" translatesAutoresizingMaskIntoConstraints="NO" id="UyB-jN-9kc">
+                        <rect key="frame" x="0.0" y="199.5" width="403" height="12"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="12" id="ZbM-wH-YfH"/>
+                        </constraints>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="round-notAlive" translatesAutoresizingMaskIntoConstraints="NO" id="Odt-8z-WJ1">
+                        <rect key="frame" x="96" y="20" width="42" height="42"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="42" id="8N2-TH-R7r"/>
+                            <constraint firstAttribute="height" constant="42" id="Lmu-IM-azG"/>
                         </constraints>
                     </imageView>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
-                    <constraint firstAttribute="trailing" secondItem="Pme-eH-T0O" secondAttribute="trailing" constant="16" id="1ws-Rq-13w"/>
-                    <constraint firstItem="UyB-jN-9kc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="3ey-DK-uHm"/>
-                    <constraint firstAttribute="bottom" secondItem="UyB-jN-9kc" secondAttribute="bottom" constant="6" id="P7O-Vi-GpE"/>
+                    <constraint firstItem="UyB-jN-9kc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="3ey-DK-uHm"/>
+                    <constraint firstItem="Odt-8z-WJ1" firstAttribute="centerY" secondItem="Pme-eH-T0O" secondAttribute="centerY" constant="2" id="6yY-gp-36J"/>
+                    <constraint firstAttribute="bottom" secondItem="UyB-jN-9kc" secondAttribute="bottom" constant="2" id="P7O-Vi-GpE"/>
                     <constraint firstItem="Pme-eH-T0O" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="T6Z-s1-Gty"/>
                     <constraint firstItem="Pme-eH-T0O" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="cFM-wF-gXI"/>
-                    <constraint firstItem="UyB-jN-9kc" firstAttribute="top" secondItem="0oh-3f-jkH" secondAttribute="bottom" constant="4" id="hKO-fI-VMf"/>
+                    <constraint firstItem="UyB-jN-9kc" firstAttribute="top" secondItem="0oh-3f-jkH" secondAttribute="bottom" id="hKO-fI-VMf"/>
                     <constraint firstAttribute="trailing" secondItem="0oh-3f-jkH" secondAttribute="trailing" id="k9g-vm-Yf6"/>
                     <constraint firstItem="0oh-3f-jkH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="4" id="odt-dN-ZRC"/>
                     <constraint firstAttribute="trailing" secondItem="UyB-jN-9kc" secondAttribute="trailing" id="ppE-wK-LsH"/>
-                    <constraint firstItem="0oh-3f-jkH" firstAttribute="top" secondItem="Pme-eH-T0O" secondAttribute="bottom" constant="8" id="ti9-df-W9b"/>
+                    <constraint firstItem="0oh-3f-jkH" firstAttribute="top" secondItem="Pme-eH-T0O" secondAttribute="bottom" constant="2" id="ti9-df-W9b"/>
+                    <constraint firstItem="Odt-8z-WJ1" firstAttribute="leading" secondItem="Pme-eH-T0O" secondAttribute="trailing" id="vMK-0O-TmZ"/>
                 </constraints>
             </tableViewCellContentView>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -79,6 +87,7 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="separator" width="274" height="19"/>
+        <image name="round-notAlive" width="522" height="521"/>
+        <image name="separator-10" width="544" height="33"/>
     </resources>
 </document>

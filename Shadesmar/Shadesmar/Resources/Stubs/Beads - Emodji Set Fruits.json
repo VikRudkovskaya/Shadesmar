@@ -1,6 +1,25 @@
 {
     "name": "Фрукты",
     "beads" : [
+        {
+            "id": "bead-strawberry",
+            "textureName": "bead-strawberry",
+            "title": "Клубника",
+            "propertiesIDs": ["kNotAlive_55a823d1dc941dad63171ccdd94ac220", "kEatable_43ce9a9d71ceaf42703a9f9e302f2751"]
+        },
         
+        {
+            "id": "bead-apricot",
+            "textureName": "bead-apricot",
+            "title": "Абрикос",
+            "propertiesIDs": ["kNotAlive_55a823d1dc941dad63171ccdd94ac220", "kEatable_43ce9a9d71ceaf42703a9f9e302f2751", "kFruit_32f873f12a3ca779069e1e709990619d"]
+        },
+        
+        {
+            "id": "bead-",
+            "textureName": "bead-",
+            "title": "",
+            "propertiesIDs": ["kNotAlive_55a823d1dc941dad63171ccdd94ac220", "kEatable_43ce9a9d71ceaf42703a9f9e302f2751", "kFruit_32f873f12a3ca779069e1e709990619d"]
+        }
     ]
 }

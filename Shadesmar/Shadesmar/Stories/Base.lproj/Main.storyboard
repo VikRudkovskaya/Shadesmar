@@ -26,50 +26,48 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Sc-ez-7PC">
-                                <rect key="frame" x="-1" y="805" width="416" height="92"/>
+                                <rect key="frame" x="-1" y="793" width="416" height="104"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="elY-ef-gd1">
-                                        <rect key="frame" x="0.0" y="0.0" width="92" height="92"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="92" id="M1i-Yc-2gs"/>
-                                            <constraint firstAttribute="width" constant="92" id="pvX-tG-IdP"/>
-                                        </constraints>
-                                        <state key="normal" image="round-about"/>
-                                        <connections>
-                                            <action selector="aboutTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gFb-8a-086"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3TY-zJ-WEu">
-                                        <rect key="frame" x="324" y="0.0" width="92" height="92"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="92" id="AQG-mV-3a5"/>
-                                            <constraint firstAttribute="width" constant="92" id="oze-xs-CqZ"/>
-                                        </constraints>
-                                        <state key="normal" image="round-settings"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zeO-gA-PAr">
-                                        <rect key="frame" x="232" y="0.0" width="92" height="92"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="92" id="sVo-xG-8aR"/>
-                                            <constraint firstAttribute="width" constant="92" id="t1O-Q6-VVz"/>
-                                        </constraints>
-                                        <state key="normal" image="round-beads"/>
-                                        <connections>
-                                            <action selector="beadsSetsTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UEI-3z-z60"/>
-                                        </connections>
-                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="mye-YM-DbJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="416" height="104"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="elY-ef-gd1">
+                                                <rect key="frame" x="0.0" y="0.0" width="104" height="104"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="elY-ef-gd1" secondAttribute="height" multiplier="1:1" id="r4L-ct-w1j"/>
+                                                </constraints>
+                                                <state key="normal" image="round-about"/>
+                                                <connections>
+                                                    <action selector="aboutTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gFb-8a-086"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oyg-HE-u0Y">
+                                                <rect key="frame" x="104" y="0.0" width="104" height="104"/>
+                                                <state key="normal" image="round-beads"/>
+                                                <connections>
+                                                    <action selector="beadsSetsTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XjO-5t-pP8"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zeO-gA-PAr">
+                                                <rect key="frame" x="208" y="0.0" width="104" height="104"/>
+                                                <state key="normal" image="round-beads"/>
+                                                <connections>
+                                                    <action selector="beadsSetsTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UEI-3z-z60"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3TY-zJ-WEu">
+                                                <rect key="frame" x="312" y="0.0" width="104" height="104"/>
+                                                <state key="normal" image="round-settings"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.9073362350435038" green="0.8972640070234128" blue="0.92302405834197998" alpha="0.24705882370471954" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="3TY-zJ-WEu" secondAttribute="trailing" id="3oC-MK-cW4"/>
-                                    <constraint firstItem="elY-ef-gd1" firstAttribute="top" secondItem="3Sc-ez-7PC" secondAttribute="top" id="7IZ-81-zjy"/>
-                                    <constraint firstAttribute="bottom" secondItem="elY-ef-gd1" secondAttribute="bottom" id="A82-kG-jKl"/>
-                                    <constraint firstItem="zeO-gA-PAr" firstAttribute="top" secondItem="3Sc-ez-7PC" secondAttribute="top" id="HCP-b7-76v"/>
-                                    <constraint firstAttribute="bottom" secondItem="zeO-gA-PAr" secondAttribute="bottom" id="Jc8-hD-4Vu"/>
-                                    <constraint firstItem="3TY-zJ-WEu" firstAttribute="top" secondItem="3Sc-ez-7PC" secondAttribute="top" id="S9Y-ky-qo1"/>
-                                    <constraint firstItem="elY-ef-gd1" firstAttribute="leading" secondItem="3Sc-ez-7PC" secondAttribute="leading" id="XjX-5H-7EL"/>
-                                    <constraint firstAttribute="bottom" secondItem="3TY-zJ-WEu" secondAttribute="bottom" id="dC1-Vm-Bu7"/>
-                                    <constraint firstItem="3TY-zJ-WEu" firstAttribute="leading" secondItem="zeO-gA-PAr" secondAttribute="trailing" id="lm3-vB-Fdz"/>
+                                    <constraint firstItem="mye-YM-DbJ" firstAttribute="top" secondItem="3Sc-ez-7PC" secondAttribute="top" id="AHk-i4-LUv"/>
+                                    <constraint firstAttribute="trailing" secondItem="mye-YM-DbJ" secondAttribute="trailing" id="Abg-0h-tvq"/>
+                                    <constraint firstAttribute="bottom" secondItem="mye-YM-DbJ" secondAttribute="bottom" id="HKo-Hn-g1g"/>
+                                    <constraint firstItem="mye-YM-DbJ" firstAttribute="leading" secondItem="3Sc-ez-7PC" secondAttribute="leading" id="f5h-66-DD9"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
