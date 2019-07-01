@@ -60,11 +60,17 @@
                             <constraint firstAttribute="height" constant="42" id="Lmu-IM-azG"/>
                         </constraints>
                     </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lze-6o-hqy">
+                        <rect key="frame" x="341" y="24" width="46" height="30"/>
+                        <state key="normal" title="Button"/>
+                    </button>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
                     <constraint firstItem="UyB-jN-9kc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="3ey-DK-uHm"/>
+                    <constraint firstItem="lze-6o-hqy" firstAttribute="centerY" secondItem="Pme-eH-T0O" secondAttribute="centerY" id="4B5-1q-tCb"/>
                     <constraint firstItem="Odt-8z-WJ1" firstAttribute="centerY" secondItem="Pme-eH-T0O" secondAttribute="centerY" constant="2" id="6yY-gp-36J"/>
+                    <constraint firstAttribute="trailing" secondItem="lze-6o-hqy" secondAttribute="trailing" constant="16" id="Ny6-Ew-sPY"/>
                     <constraint firstAttribute="bottom" secondItem="UyB-jN-9kc" secondAttribute="bottom" constant="2" id="P7O-Vi-GpE"/>
                     <constraint firstItem="Pme-eH-T0O" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="T6Z-s1-Gty"/>
                     <constraint firstItem="Pme-eH-T0O" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="cFM-wF-gXI"/>

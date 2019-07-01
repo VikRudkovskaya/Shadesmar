@@ -49,6 +49,7 @@
 		F2DD37BC22C0EEFA00FB16F3 /* Beads - Emodji Set Fruits.json in Resources */ = {isa = PBXBuildFile; fileRef = F2DD37BB22C0EEFA00FB16F3 /* Beads - Emodji Set Fruits.json */; };
 		F2DD37BE22C3662300FB16F3 /* BeadsContentFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DD37BD22C3662300FB16F3 /* BeadsContentFactory.swift */; };
 		F2DD37C022C3938C00FB16F3 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DD37BF22C3938C00FB16F3 /* Game.swift */; };
+		F2FDD69B22CA6630004EED3F /* Arrows.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2FDD69A22CA662F004EED3F /* Arrows.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -96,6 +97,7 @@
 		F2DD37BB22C0EEFA00FB16F3 /* Beads - Emodji Set Fruits.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Beads - Emodji Set Fruits.json"; sourceTree = "<group>"; };
 		F2DD37BD22C3662300FB16F3 /* BeadsContentFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeadsContentFactory.swift; sourceTree = "<group>"; };
 		F2DD37BF22C3938C00FB16F3 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		F2FDD69A22CA662F004EED3F /* Arrows.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Arrows.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +168,7 @@
 		F226289122BA752F0008E7F6 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				F2FDD69A22CA662F004EED3F /* Arrows.xcassets */,
 				F27223712255404A00A6330D /* Assets.xcassets */,
 				F226285522AD0BC60008E7F6 /* Beads.xcassets */,
 			);
@@ -340,6 +343,7 @@
 			files = (
 				F226287A22B3AD6F0008E7F6 /* IncorrectPopUp.xib in Resources */,
 				F2DD37BC22C0EEFA00FB16F3 /* Beads - Emodji Set Fruits.json in Resources */,
+				F2FDD69B22CA6630004EED3F /* Arrows.xcassets in Resources */,
 				F226285C22AD61920008E7F6 /* Vtks Classical Hit.ttf in Resources */,
 				F226287822B3AD590008E7F6 /* CorrectPopUp.xib in Resources */,
 				F226285622AD0BC60008E7F6 /* Beads.xcassets in Resources */,
