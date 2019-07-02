@@ -1,0 +1,33 @@
+{
+    "name": "Ягоды",
+    "beads" : [
+        {
+            "id": "bead-strawberry",
+            "textureName": "bead-strawberry",
+            "title": "Клубника",
+            "propertiesIDs": ["kNotAlive_55a823d1dc941dad63171ccdd94ac220", "kEatable_43ce9a9d71ceaf42703a9f9e302f2751"]
+        },
+                
+        {
+            "id": "bead-cherry",
+            "textureName": "bead-cherry",
+            "title": "Вишня",
+            "propertiesIDs": ["kNotAlive_55a823d1dc941dad63171ccdd94ac220", "kEatable_43ce9a9d71ceaf42703a9f9e302f2751", ""]
+        },
+        
+        {
+            "id": "bead-grapes",
+            "textureName": "bead-grapes",
+            "title": "Виноград",
+            "propertiesIDs": ["kNotAlive_55a823d1dc941dad63171ccdd94ac220", "kEatable_43ce9a9d71ceaf42703a9f9e302f2751", ""]
+        },
+        
+        {
+            "id": "bead-watermelon",
+            "textureName": "bead-watermelon",
+            "title": "Арбуз",
+            "propertiesIDs": ["kNotAlive_55a823d1dc941dad63171ccdd94ac220", "kEatable_43ce9a9d71ceaf42703a9f9e302f2751", ""]
+        }
+        
+    ]
+}

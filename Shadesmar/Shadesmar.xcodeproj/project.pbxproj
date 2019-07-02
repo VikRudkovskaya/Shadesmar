@@ -50,6 +50,9 @@
 		F2DD37BE22C3662300FB16F3 /* BeadsContentFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DD37BD22C3662300FB16F3 /* BeadsContentFactory.swift */; };
 		F2DD37C022C3938C00FB16F3 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DD37BF22C3938C00FB16F3 /* Game.swift */; };
 		F2FDD69B22CA6630004EED3F /* Arrows.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2FDD69A22CA662F004EED3F /* Arrows.xcassets */; };
+		F2FDD69D22CB4006004EED3F /* Beads - Emodji Set Berries.json in Resources */ = {isa = PBXBuildFile; fileRef = F2FDD69C22CB4006004EED3F /* Beads - Emodji Set Berries.json */; };
+		F2FDD6A522CB93D6004EED3F /* GamesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FDD6A322CB93D6004EED3F /* GamesListViewController.swift */; };
+		F2FDD6A622CB93D6004EED3F /* GamesListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2FDD6A422CB93D6004EED3F /* GamesListViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -98,6 +101,9 @@
 		F2DD37BD22C3662300FB16F3 /* BeadsContentFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeadsContentFactory.swift; sourceTree = "<group>"; };
 		F2DD37BF22C3938C00FB16F3 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		F2FDD69A22CA662F004EED3F /* Arrows.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Arrows.xcassets; sourceTree = "<group>"; };
+		F2FDD69C22CB4006004EED3F /* Beads - Emodji Set Berries.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Beads - Emodji Set Berries.json"; sourceTree = "<group>"; };
+		F2FDD6A322CB93D6004EED3F /* GamesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesListViewController.swift; sourceTree = "<group>"; };
+		F2FDD6A422CB93D6004EED3F /* GamesListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GamesListViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +186,7 @@
 			children = (
 				F226287F22B6B1D70008E7F6 /* Beads - Properties.json */,
 				F2DD37BB22C0EEFA00FB16F3 /* Beads - Emodji Set Fruits.json */,
+				F2FDD69C22CB4006004EED3F /* Beads - Emodji Set Berries.json */,
 				F226286D22B0274F0008E7F6 /* Beads - Emodji Set Birds.json */,
 				F226286F22B03C960008E7F6 /* Beads - Emodji Set Sweets.json */,
 			);
@@ -264,6 +271,7 @@
 			children = (
 				F272236C2255404800A6330D /* MainViewController.swift */,
 				F272236E2255404800A6330D /* Main.storyboard */,
+				F2FDD69E22CB9331004EED3F /* GamesList */,
 				F226288722B91D400008E7F6 /* BeadsSets */,
 				F226288822B91D660008E7F6 /* PopUps */,
 			);
@@ -280,6 +288,15 @@
 				F2DD37B922BF795500FB16F3 /* Colors.swift */,
 			);
 			path = "UI Infrastructure";
+			sourceTree = "<group>";
+		};
+		F2FDD69E22CB9331004EED3F /* GamesList */ = {
+			isa = PBXGroup;
+			children = (
+				F2FDD6A322CB93D6004EED3F /* GamesListViewController.swift */,
+				F2FDD6A422CB93D6004EED3F /* GamesListViewController.xib */,
+			);
+			path = GamesList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -342,6 +359,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F226287A22B3AD6F0008E7F6 /* IncorrectPopUp.xib in Resources */,
+				F2FDD6A622CB93D6004EED3F /* GamesListViewController.xib in Resources */,
 				F2DD37BC22C0EEFA00FB16F3 /* Beads - Emodji Set Fruits.json in Resources */,
 				F2FDD69B22CA6630004EED3F /* Arrows.xcassets in Resources */,
 				F226285C22AD61920008E7F6 /* Vtks Classical Hit.ttf in Resources */,
@@ -362,6 +380,7 @@
 				F26958C722A8437100655AB2 /* AboutShadesmarViewController.xib in Resources */,
 				F27223702255404800A6330D /* Main.storyboard in Resources */,
 				F226285A22AD60180008E7F6 /* GothicCyr.ttf in Resources */,
+				F2FDD69D22CB4006004EED3F /* Beads - Emodji Set Berries.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,6 +405,7 @@
 				F226286A22AECD0E0008E7F6 /* BeadsServiceProvider.swift in Sources */,
 				F226287622B2365F0008E7F6 /* GameStateHolder.swift in Sources */,
 				F226286022AE41B50008E7F6 /* BeadNode.swift in Sources */,
+				F2FDD6A522CB93D6004EED3F /* GamesListViewController.swift in Sources */,
 				F2DD37BE22C3662300FB16F3 /* BeadsContentFactory.swift in Sources */,
 				F226288F22B9787A0008E7F6 /* BeadCollectionViewCell.swift in Sources */,
 				F272236B2255404800A6330D /* AppDelegate.swift in Sources */,

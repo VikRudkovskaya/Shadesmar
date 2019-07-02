@@ -21,7 +21,7 @@ class BeadsServiceProvider {
     var allBeadProperties: [BeadProperty]?
     
     private var beadsSetsJsonNames: [String] {
-        return ["Beads - Emodji Set Sweets", "Beads - Emodji Set Beards", "Beads - Emodji Set Fruits"]
+        return ["Beads - Emodji Set Sweets", "Beads - Emodji Set Birds", "Beads - Emodji Set Fruits", "Beads - Emodji Set Berries"]
     }
     
     // Список всех возможных свойств

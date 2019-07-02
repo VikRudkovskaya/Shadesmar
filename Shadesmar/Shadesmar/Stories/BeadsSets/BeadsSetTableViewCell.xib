@@ -54,25 +54,38 @@
                         </constraints>
                     </imageView>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="round-notAlive" translatesAutoresizingMaskIntoConstraints="NO" id="Odt-8z-WJ1">
-                        <rect key="frame" x="96" y="20" width="42" height="42"/>
+                        <rect key="frame" x="96" y="23" width="36" height="36"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="42" id="8N2-TH-R7r"/>
-                            <constraint firstAttribute="height" constant="42" id="Lmu-IM-azG"/>
+                            <constraint firstAttribute="width" constant="36" id="8N2-TH-R7r"/>
+                            <constraint firstAttribute="height" constant="36" id="Lmu-IM-azG"/>
                         </constraints>
                     </imageView>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lze-6o-hqy">
-                        <rect key="frame" x="341" y="24" width="46" height="30"/>
-                        <state key="normal" title="Button"/>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lze-6o-hqy">
+                        <rect key="frame" x="343" y="26" width="60" height="26"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="Scv-I1-bbQ"/>
+                        </constraints>
+                        <color key="tintColor" red="0.0" green="0.15953743462887179" blue="0.20887484975989845" alpha="0.30289490582739725" colorSpace="custom" customColorSpace="displayP3"/>
+                        <inset key="imageEdgeInsets" minX="42" minY="6" maxX="8" maxY="6"/>
+                        <state key="normal" image="double_arrow_right"/>
                     </button>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="round-alife" translatesAutoresizingMaskIntoConstraints="NO" id="Z7S-wL-tby">
+                        <rect key="frame" x="124" y="22" width="38" height="38"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="38" id="2Ep-KG-mgn"/>
+                            <constraint firstAttribute="width" constant="38" id="X35-jR-lX6"/>
+                        </constraints>
+                    </imageView>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
                     <constraint firstItem="UyB-jN-9kc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="3ey-DK-uHm"/>
                     <constraint firstItem="lze-6o-hqy" firstAttribute="centerY" secondItem="Pme-eH-T0O" secondAttribute="centerY" id="4B5-1q-tCb"/>
                     <constraint firstItem="Odt-8z-WJ1" firstAttribute="centerY" secondItem="Pme-eH-T0O" secondAttribute="centerY" constant="2" id="6yY-gp-36J"/>
-                    <constraint firstAttribute="trailing" secondItem="lze-6o-hqy" secondAttribute="trailing" constant="16" id="Ny6-Ew-sPY"/>
+                    <constraint firstAttribute="trailing" secondItem="lze-6o-hqy" secondAttribute="trailing" id="Ny6-Ew-sPY"/>
                     <constraint firstAttribute="bottom" secondItem="UyB-jN-9kc" secondAttribute="bottom" constant="2" id="P7O-Vi-GpE"/>
                     <constraint firstItem="Pme-eH-T0O" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="T6Z-s1-Gty"/>
+                    <constraint firstItem="Z7S-wL-tby" firstAttribute="centerY" secondItem="Pme-eH-T0O" secondAttribute="centerY" constant="2" id="X0V-DS-MB9"/>
                     <constraint firstItem="Pme-eH-T0O" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="cFM-wF-gXI"/>
                     <constraint firstItem="UyB-jN-9kc" firstAttribute="top" secondItem="0oh-3f-jkH" secondAttribute="bottom" id="hKO-fI-VMf"/>
                     <constraint firstAttribute="trailing" secondItem="0oh-3f-jkH" secondAttribute="trailing" id="k9g-vm-Yf6"/>
@@ -80,6 +93,7 @@
                     <constraint firstAttribute="trailing" secondItem="UyB-jN-9kc" secondAttribute="trailing" id="ppE-wK-LsH"/>
                     <constraint firstItem="0oh-3f-jkH" firstAttribute="top" secondItem="Pme-eH-T0O" secondAttribute="bottom" constant="2" id="ti9-df-W9b"/>
                     <constraint firstItem="Odt-8z-WJ1" firstAttribute="leading" secondItem="Pme-eH-T0O" secondAttribute="trailing" id="vMK-0O-TmZ"/>
+                    <constraint firstItem="Z7S-wL-tby" firstAttribute="leading" secondItem="Odt-8z-WJ1" secondAttribute="trailing" constant="-8" id="voa-Zt-fOB"/>
                 </constraints>
             </tableViewCellContentView>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -93,6 +107,8 @@
         </tableViewCell>
     </objects>
     <resources>
+        <image name="double_arrow_right" width="20" height="26"/>
+        <image name="round-alife" width="522" height="521"/>
         <image name="round-notAlive" width="522" height="521"/>
         <image name="separator-10" width="544" height="33"/>
     </resources>

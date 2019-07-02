@@ -16,5 +16,11 @@ enum GameType: String, Decodable {
 
 class Game: Decodable {
     var type: GameType?
+    
     var name: String?
+    
+    var rulesDescription: String?
+    
+    // Какими свойствами бусин оперирует игра
+    var affectedProperties: [BeadProperty]?
 }

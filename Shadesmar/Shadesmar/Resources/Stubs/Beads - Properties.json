@@ -70,6 +70,12 @@
             "id": "kFruit_32f873f12a3ca779069e1e709990619d",
             "name": "Фрукт",
             "nameKey": "kFruit"
+        },
+        
+        {
+            "id": "ID-Berries",
+            "name": "Ягоды",
+            "nameKey": "kBerries"
         }
         
     ]
