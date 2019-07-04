@@ -53,6 +53,9 @@
 		F2FDD69D22CB4006004EED3F /* Beads - Emodji Set Berries.json in Resources */ = {isa = PBXBuildFile; fileRef = F2FDD69C22CB4006004EED3F /* Beads - Emodji Set Berries.json */; };
 		F2FDD6A522CB93D6004EED3F /* GamesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FDD6A322CB93D6004EED3F /* GamesListViewController.swift */; };
 		F2FDD6A622CB93D6004EED3F /* GamesListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2FDD6A422CB93D6004EED3F /* GamesListViewController.xib */; };
+		F2FDD6A822CBA5F6004EED3F /* GamesContentProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FDD6A722CBA5F6004EED3F /* GamesContentProvider.swift */; };
+		F2FDD6AE22CC9DE5004EED3F /* BeadDetailsPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FDD6AC22CC9DE5004EED3F /* BeadDetailsPopUp.swift */; };
+		F2FDD6AF22CC9DE5004EED3F /* BeadDetailsPopUp.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2FDD6AD22CC9DE5004EED3F /* BeadDetailsPopUp.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -104,6 +107,9 @@
 		F2FDD69C22CB4006004EED3F /* Beads - Emodji Set Berries.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Beads - Emodji Set Berries.json"; sourceTree = "<group>"; };
 		F2FDD6A322CB93D6004EED3F /* GamesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesListViewController.swift; sourceTree = "<group>"; };
 		F2FDD6A422CB93D6004EED3F /* GamesListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GamesListViewController.xib; sourceTree = "<group>"; };
+		F2FDD6A722CBA5F6004EED3F /* GamesContentProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesContentProvider.swift; sourceTree = "<group>"; };
+		F2FDD6AC22CC9DE5004EED3F /* BeadDetailsPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeadDetailsPopUp.swift; sourceTree = "<group>"; };
+		F2FDD6AD22CC9DE5004EED3F /* BeadDetailsPopUp.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BeadDetailsPopUp.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,12 +157,9 @@
 		F226288722B91D400008E7F6 /* BeadsSets */ = {
 			isa = PBXGroup;
 			children = (
-				F226288322B91D260008E7F6 /* BeadsSetsListViewController.swift */,
-				F226288422B91D260008E7F6 /* BeadsSetsListViewController.xib */,
-				F226288922B96E3A0008E7F6 /* BeadsSetTableViewCell.swift */,
-				F226288A22B96E3A0008E7F6 /* BeadsSetTableViewCell.xib */,
-				F226288D22B9787A0008E7F6 /* BeadCollectionViewCell.swift */,
-				F226288E22B9787A0008E7F6 /* BeadCollectionViewCell.xib */,
+				F2FDD6AB22CC9DC6004EED3F /* BeadDetails */,
+				F2FDD6AA22CC9DB9004EED3F /* BeadSetDetails */,
+				F2FDD6A922CC9DA6004EED3F /* BeadsSetsList */,
 			);
 			path = BeadsSets;
 			sourceTree = "<group>";
@@ -222,6 +225,7 @@
 			isa = PBXGroup;
 			children = (
 				F226287522B2365F0008E7F6 /* GameStateHolder.swift */,
+				F2FDD6A722CBA5F6004EED3F /* GamesContentProvider.swift */,
 				F226286922AECD0E0008E7F6 /* BeadsServiceProvider.swift */,
 				F2DD37BD22C3662300FB16F3 /* BeadsContentFactory.swift */,
 				F226286B22AED5D90008E7F6 /* Utils.swift */,
@@ -299,6 +303,35 @@
 			path = GamesList;
 			sourceTree = "<group>";
 		};
+		F2FDD6A922CC9DA6004EED3F /* BeadsSetsList */ = {
+			isa = PBXGroup;
+			children = (
+				F226288322B91D260008E7F6 /* BeadsSetsListViewController.swift */,
+				F226288422B91D260008E7F6 /* BeadsSetsListViewController.xib */,
+				F226288922B96E3A0008E7F6 /* BeadsSetTableViewCell.swift */,
+				F226288A22B96E3A0008E7F6 /* BeadsSetTableViewCell.xib */,
+				F226288D22B9787A0008E7F6 /* BeadCollectionViewCell.swift */,
+				F226288E22B9787A0008E7F6 /* BeadCollectionViewCell.xib */,
+			);
+			path = BeadsSetsList;
+			sourceTree = "<group>";
+		};
+		F2FDD6AA22CC9DB9004EED3F /* BeadSetDetails */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BeadSetDetails;
+			sourceTree = "<group>";
+		};
+		F2FDD6AB22CC9DC6004EED3F /* BeadDetails */ = {
+			isa = PBXGroup;
+			children = (
+				F2FDD6AC22CC9DE5004EED3F /* BeadDetailsPopUp.swift */,
+				F2FDD6AD22CC9DE5004EED3F /* BeadDetailsPopUp.xib */,
+			);
+			path = BeadDetails;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -361,6 +394,7 @@
 				F226287A22B3AD6F0008E7F6 /* IncorrectPopUp.xib in Resources */,
 				F2FDD6A622CB93D6004EED3F /* GamesListViewController.xib in Resources */,
 				F2DD37BC22C0EEFA00FB16F3 /* Beads - Emodji Set Fruits.json in Resources */,
+				F2FDD6AF22CC9DE5004EED3F /* BeadDetailsPopUp.xib in Resources */,
 				F2FDD69B22CA6630004EED3F /* Arrows.xcassets in Resources */,
 				F226285C22AD61920008E7F6 /* Vtks Classical Hit.ttf in Resources */,
 				F226287822B3AD590008E7F6 /* CorrectPopUp.xib in Resources */,
@@ -407,6 +441,8 @@
 				F226286022AE41B50008E7F6 /* BeadNode.swift in Sources */,
 				F2FDD6A522CB93D6004EED3F /* GamesListViewController.swift in Sources */,
 				F2DD37BE22C3662300FB16F3 /* BeadsContentFactory.swift in Sources */,
+				F2FDD6A822CBA5F6004EED3F /* GamesContentProvider.swift in Sources */,
+				F2FDD6AE22CC9DE5004EED3F /* BeadDetailsPopUp.swift in Sources */,
 				F226288F22B9787A0008E7F6 /* BeadCollectionViewCell.swift in Sources */,
 				F272236B2255404800A6330D /* AppDelegate.swift in Sources */,
 				F2DD37C022C3938C00FB16F3 /* Game.swift in Sources */,

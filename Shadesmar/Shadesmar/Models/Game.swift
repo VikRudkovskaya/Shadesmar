@@ -21,6 +21,9 @@ class Game: Decodable {
     
     var rulesDescription: String?
     
+    // На каком сете играем
+    var gameBeadsSet: BeadsSet?
+    
     // Какими свойствами бусин оперирует игра
     var affectedProperties: [BeadProperty]?
 }
