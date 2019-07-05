@@ -43,9 +43,9 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oyg-HE-u0Y">
                                                 <rect key="frame" x="104" y="0.0" width="104" height="104"/>
-                                                <state key="normal" image="round-beads"/>
+                                                <state key="normal" image="round-game"/>
                                                 <connections>
-                                                    <action selector="beadsSetsTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XjO-5t-pP8"/>
+                                                    <action selector="gamesListTouchUpoInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pHA-nx-ThW"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zeO-gA-PAr">
@@ -108,6 +108,7 @@
         <image name="bg-main" width="400" height="700"/>
         <image name="round-about" width="246" height="246"/>
         <image name="round-beads" width="246" height="246"/>
+        <image name="round-game" width="492" height="491"/>
         <image name="round-settings" width="246" height="246"/>
     </resources>
 </document>

@@ -90,6 +90,10 @@ class MainViewController: UIViewController {
         
     }
     
+    @IBAction func gamesListTouchUpoInside(_ sender: UIButton) {
+        let vc = GamesListViewController()
+        self.present(vc, animated: true, completion: nil)
+    }
     
 }
 
