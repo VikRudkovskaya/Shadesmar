@@ -35,7 +35,7 @@
                 <view contentMode="scaleToFill" verticalHuggingPriority="249" verticalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="pY4-Bg-ZCm">
                     <rect key="frame" x="0.0" y="20" width="375" height="38.5"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="252" text="Список игр" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="669-V5-IUF">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="252" text="Games" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="669-V5-IUF">
                             <rect key="frame" x="32" y="0.0" width="311" height="38.5"/>
                             <fontDescription key="fontDescription" name="GothicCyr-Normal" family="GothicCyr" pointSize="27"/>
                             <color key="textColor" red="0.15686274510000001" green="0.20392156859999999" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
@@ -70,6 +70,10 @@
                         <constraint firstAttribute="width" constant="220" id="cqM-3U-eYT"/>
                     </constraints>
                 </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="NRP-NU-Ai9">
+                    <rect key="frame" x="0.0" y="58.5" width="375" height="376.5"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
@@ -79,11 +83,14 @@
                 <constraint firstItem="y5F-Yb-mqb" firstAttribute="leading" secondItem="J5s-QX-abA" secondAttribute="leading" id="8Hu-C9-fHR"/>
                 <constraint firstItem="pY4-Bg-ZCm" firstAttribute="top" secondItem="J5s-QX-abA" secondAttribute="top" id="8Vg-dh-ghi"/>
                 <constraint firstItem="x47-LE-rJK" firstAttribute="top" secondItem="5MD-BV-7VV" secondAttribute="top" id="9v4-2w-iao"/>
+                <constraint firstItem="QJ2-1S-MWt" firstAttribute="top" secondItem="NRP-NU-Ai9" secondAttribute="bottom" constant="20" id="FF1-sr-gDn"/>
                 <constraint firstItem="QJ2-1S-MWt" firstAttribute="width" secondItem="kuH-da-TPb" secondAttribute="width" id="Lgv-dh-y14"/>
+                <constraint firstItem="NRP-NU-Ai9" firstAttribute="leading" secondItem="J5s-QX-abA" secondAttribute="leading" id="N0h-ah-QXu"/>
                 <constraint firstItem="J5s-QX-abA" firstAttribute="trailing" secondItem="y5F-Yb-mqb" secondAttribute="trailing" id="PjF-IH-P6d"/>
                 <constraint firstItem="x47-LE-rJK" firstAttribute="height" secondItem="gkV-MA-SBS" secondAttribute="height" id="RdK-Ch-7ub"/>
                 <constraint firstItem="gkV-MA-SBS" firstAttribute="leading" secondItem="5MD-BV-7VV" secondAttribute="leading" constant="-22" id="TBK-l0-9C3"/>
                 <constraint firstItem="AYZ-nj-nJx" firstAttribute="leading" secondItem="J5s-QX-abA" secondAttribute="leading" id="Y6K-t0-5iZ"/>
+                <constraint firstItem="NRP-NU-Ai9" firstAttribute="trailing" secondItem="J5s-QX-abA" secondAttribute="trailing" id="Ydh-t4-E5k"/>
                 <constraint firstAttribute="bottom" secondItem="kuH-da-TPb" secondAttribute="bottom" constant="-8" id="ZFg-lZ-koV"/>
                 <constraint firstAttribute="bottom" secondItem="AYZ-nj-nJx" secondAttribute="bottom" id="akG-BW-GCK"/>
                 <constraint firstItem="gkV-MA-SBS" firstAttribute="top" secondItem="5MD-BV-7VV" secondAttribute="top" id="bJc-6B-e0B"/>
@@ -92,13 +99,14 @@
                 <constraint firstItem="kuH-da-TPb" firstAttribute="leading" secondItem="5MD-BV-7VV" secondAttribute="leading" constant="-24" id="eiK-7Q-wN1"/>
                 <constraint firstItem="J5s-QX-abA" firstAttribute="trailing" secondItem="pY4-Bg-ZCm" secondAttribute="trailing" id="kAN-Pk-CCe"/>
                 <constraint firstAttribute="trailing" secondItem="x47-LE-rJK" secondAttribute="trailing" constant="-22" id="nwq-ge-i7h"/>
+                <constraint firstItem="NRP-NU-Ai9" firstAttribute="top" secondItem="pY4-Bg-ZCm" secondAttribute="bottom" id="v3N-ym-mvd"/>
                 <constraint firstItem="pY4-Bg-ZCm" firstAttribute="leading" secondItem="J5s-QX-abA" secondAttribute="leading" id="vdm-Ln-UN5"/>
                 <constraint firstAttribute="trailing" secondItem="QJ2-1S-MWt" secondAttribute="trailing" constant="-24" id="wWw-Ze-dsS"/>
                 <constraint firstItem="y5F-Yb-mqb" firstAttribute="top" secondItem="5MD-BV-7VV" secondAttribute="top" id="y0V-dD-WLM"/>
                 <constraint firstItem="x47-LE-rJK" firstAttribute="width" secondItem="gkV-MA-SBS" secondAttribute="width" id="zcr-Ef-CLb"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="J5s-QX-abA"/>
-            <point key="canvasLocation" x="136.80000000000001" y="144.82758620689657"/>
+            <point key="canvasLocation" x="136.80000000000001" y="144.3778110944528"/>
         </view>
     </objects>
     <resources>
