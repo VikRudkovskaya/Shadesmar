@@ -9,3 +9,5 @@
 import UIKit
 
 let custom_grayblue = UIColor(red: 161 / 255.0, green: 184 / 255.0, blue: 192 / 255.0, alpha: 1.0)
+
+let custom_bloodred = UIColor(red: 120 / 255.0, green: 24 / 255.0, blue: 24 / 255.0, alpha: 1.0)

@@ -56,6 +56,7 @@
 		F2FDD6A822CBA5F6004EED3F /* GamesContentProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FDD6A722CBA5F6004EED3F /* GamesContentProvider.swift */; };
 		F2FDD6AE22CC9DE5004EED3F /* BeadDetailsPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FDD6AC22CC9DE5004EED3F /* BeadDetailsPopUp.swift */; };
 		F2FDD6AF22CC9DE5004EED3F /* BeadDetailsPopUp.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2FDD6AD22CC9DE5004EED3F /* BeadDetailsPopUp.xib */; };
+		F2FDD6B122D5E290004EED3F /* NavigationWithBottomImageButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FDD6B022D5E290004EED3F /* NavigationWithBottomImageButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -110,6 +111,7 @@
 		F2FDD6A722CBA5F6004EED3F /* GamesContentProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesContentProvider.swift; sourceTree = "<group>"; };
 		F2FDD6AC22CC9DE5004EED3F /* BeadDetailsPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeadDetailsPopUp.swift; sourceTree = "<group>"; };
 		F2FDD6AD22CC9DE5004EED3F /* BeadDetailsPopUp.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BeadDetailsPopUp.xib; sourceTree = "<group>"; };
+		F2FDD6B022D5E290004EED3F /* NavigationWithBottomImageButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationWithBottomImageButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -285,6 +287,7 @@
 		F2D1D198227B7DC6004ECC96 /* UI Infrastructure */ = {
 			isa = PBXGroup;
 			children = (
+				F2FDD6B022D5E290004EED3F /* NavigationWithBottomImageButton.swift */,
 				F226285F22AE41B50008E7F6 /* BeadNode.swift */,
 				F2D1D19A227B7F04004ECC96 /* AliveNotAlive2DScene.swift */,
 				F226287122B157DD0008E7F6 /* SKNode+Actions.swift */,
@@ -437,6 +440,7 @@
 				F226284E22AB910B0008E7F6 /* AliveNotAliveQuestionPopUp.swift in Sources */,
 				F226287222B157DD0008E7F6 /* SKNode+Actions.swift in Sources */,
 				F226286A22AECD0E0008E7F6 /* BeadsServiceProvider.swift in Sources */,
+				F2FDD6B122D5E290004EED3F /* NavigationWithBottomImageButton.swift in Sources */,
 				F226287622B2365F0008E7F6 /* GameStateHolder.swift in Sources */,
 				F226286022AE41B50008E7F6 /* BeadNode.swift in Sources */,
 				F2FDD6A522CB93D6004EED3F /* GamesListViewController.swift in Sources */,
