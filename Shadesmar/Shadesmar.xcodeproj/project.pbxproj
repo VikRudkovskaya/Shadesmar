@@ -57,6 +57,9 @@
 		F2FDD6AE22CC9DE5004EED3F /* BeadDetailsPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FDD6AC22CC9DE5004EED3F /* BeadDetailsPopUp.swift */; };
 		F2FDD6AF22CC9DE5004EED3F /* BeadDetailsPopUp.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2FDD6AD22CC9DE5004EED3F /* BeadDetailsPopUp.xib */; };
 		F2FDD6B122D5E290004EED3F /* NavigationWithBottomImageButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FDD6B022D5E290004EED3F /* NavigationWithBottomImageButton.swift */; };
+		F2FDD6B522D7BF95004EED3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2FDD6B322D7BF95004EED3F /* Assets.xcassets */; };
+		F2FDD6B722D7C6CF004EED3F /* MyParticle1.sks in Resources */ = {isa = PBXBuildFile; fileRef = F2FDD6B622D7C6CF004EED3F /* MyParticle1.sks */; };
+		F2FDD6B922D7C75C004EED3F /* MyParticle111.sks in Resources */ = {isa = PBXBuildFile; fileRef = F2FDD6B822D7C75C004EED3F /* MyParticle111.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -112,6 +115,9 @@
 		F2FDD6AC22CC9DE5004EED3F /* BeadDetailsPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeadDetailsPopUp.swift; sourceTree = "<group>"; };
 		F2FDD6AD22CC9DE5004EED3F /* BeadDetailsPopUp.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BeadDetailsPopUp.xib; sourceTree = "<group>"; };
 		F2FDD6B022D5E290004EED3F /* NavigationWithBottomImageButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationWithBottomImageButton.swift; sourceTree = "<group>"; };
+		F2FDD6B322D7BF95004EED3F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F2FDD6B622D7C6CF004EED3F /* MyParticle1.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MyParticle1.sks; sourceTree = "<group>"; };
+		F2FDD6B822D7C75C004EED3F /* MyParticle111.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MyParticle111.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -293,6 +299,9 @@
 				F226287122B157DD0008E7F6 /* SKNode+Actions.swift */,
 				F2D1D199227B7F04004ECC96 /* SKNode+Utility.swift */,
 				F2DD37B922BF795500FB16F3 /* Colors.swift */,
+				F2FDD6B622D7C6CF004EED3F /* MyParticle1.sks */,
+				F2FDD6B822D7C75C004EED3F /* MyParticle111.sks */,
+				F2FDD6B322D7BF95004EED3F /* Assets.xcassets */,
 			);
 			path = "UI Infrastructure";
 			sourceTree = "<group>";
@@ -400,6 +409,8 @@
 				F2FDD6AF22CC9DE5004EED3F /* BeadDetailsPopUp.xib in Resources */,
 				F2FDD69B22CA6630004EED3F /* Arrows.xcassets in Resources */,
 				F226285C22AD61920008E7F6 /* Vtks Classical Hit.ttf in Resources */,
+				F2FDD6B522D7BF95004EED3F /* Assets.xcassets in Resources */,
+				F2FDD6B722D7C6CF004EED3F /* MyParticle1.sks in Resources */,
 				F226287822B3AD590008E7F6 /* CorrectPopUp.xib in Resources */,
 				F226285622AD0BC60008E7F6 /* Beads.xcassets in Resources */,
 				F226285922AD60180008E7F6 /* Cyrillicgoth.ttf in Resources */,
@@ -410,6 +421,7 @@
 				F226288622B91D260008E7F6 /* BeadsSetsListViewController.xib in Resources */,
 				F226287022B03C960008E7F6 /* Beads - Emodji Set Sweets.json in Resources */,
 				F226289022B9787A0008E7F6 /* BeadCollectionViewCell.xib in Resources */,
+				F2FDD6B922D7C75C004EED3F /* MyParticle111.sks in Resources */,
 				F226284F22AB910B0008E7F6 /* AliveNotAliveQuestionPopUp.xib in Resources */,
 				F226286E22B0274F0008E7F6 /* Beads - Emodji Set Birds.json in Resources */,
 				F226285322ABFB750008E7F6 /* GameOverPopUp.xib in Resources */,

@@ -29,7 +29,7 @@ class GamesListViewController: UIViewController {
     
     
     @IBAction func backTouchUpImaside(_ sender: NavigationWithBottomImageButton) {
-        
+        self.dismiss(animated: true, completion: nil)
     }
     
 }
