@@ -14,7 +14,6 @@ class AboutShadesmarViewController: UIViewController {
     @IBOutlet weak var topLeftYellowImageView: UIImageView!
     
     @IBOutlet weak var topRightImageView: UIImageView!
-    @IBOutlet weak var topRightToImageView: UIImageView!
     
     @IBOutlet weak var rightImageView: UIImageView!
     
@@ -47,8 +46,7 @@ class AboutShadesmarViewController: UIViewController {
         }, completion: nil)
         
         UIView.animate(withDuration: 10, delay: 0.5, options: .curveEaseOut, animations: {
-            self.topRightImageView.alpha = 0.0
-            self.topRightToImageView.alpha = 1.0
+            self.topRightImageView.alpha = 1.0
         }, completion: nil)
         
         UIView.animate(withDuration: 2.0, delay: 0, options: [.repeat, .autoreverse], animations: {

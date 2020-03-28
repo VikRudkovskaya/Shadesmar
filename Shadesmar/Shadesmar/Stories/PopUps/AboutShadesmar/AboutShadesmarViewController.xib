@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina5_5" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -20,8 +18,7 @@
                 <outlet property="rightImageView" destination="nR2-cS-JqX" id="HUM-xg-7Je"/>
                 <outlet property="topLeftImageView" destination="uro-Uo-KIX" id="upC-br-6UP"/>
                 <outlet property="topLeftYellowImageView" destination="F2u-ft-XFD" id="IJC-Db-g9x"/>
-                <outlet property="topRightImageView" destination="mCa-BK-QAM" id="Tf5-gS-CAw"/>
-                <outlet property="topRightToImageView" destination="Vkt-xI-kWs" id="fMS-8g-cLW"/>
+                <outlet property="topRightImageView" destination="Vkt-xI-kWs" id="fMS-8g-cLW"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -38,7 +35,7 @@
                     </connections>
                 </imageView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bfI-7V-O62">
-                    <rect key="frame" x="47" y="104" width="320" height="548"/>
+                    <rect key="frame" x="47" y="94" width="320" height="548"/>
                     <subviews>
                         <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg-pop-up" translatesAutoresizingMaskIntoConstraints="NO" id="yUo-cj-bsq">
                             <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
@@ -47,9 +44,9 @@
                             </connections>
                         </imageView>
                         <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a3V-l1-kvn">
-                            <rect key="frame" x="48" y="133" width="236" height="373"/>
+                            <rect key="frame" x="48" y="121" width="236" height="385"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wrM-E9-9XY">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wrM-E9-9XY">
                                     <rect key="frame" x="0.0" y="0.0" width="236" height="368.33333333333331"/>
                                     <string key="text">Шейдсмар – это место в сфере Разума, являющееся когнитивным отражением физической реальности мира Рошара. Географически Шейдсмар выступает как инверсия континента Рошара, где землей являются моря, реки и океаны на Рошаре, а морем земли.
 
@@ -69,16 +66,10 @@
                                 <constraint firstItem="wrM-E9-9XY" firstAttribute="top" secondItem="a3V-l1-kvn" secondAttribute="top" id="omb-2p-9LI"/>
                             </constraints>
                         </scrollView>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tentacles_top_right_to" translatesAutoresizingMaskIntoConstraints="NO" id="Vkt-xI-kWs">
-                            <rect key="frame" x="101" y="8" width="235" height="87"/>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tentacles_top_right" translatesAutoresizingMaskIntoConstraints="NO" id="Vkt-xI-kWs">
+                            <rect key="frame" x="101" y="-8" width="235" height="87"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="87" id="YxG-FG-zlM"/>
-                            </constraints>
-                        </imageView>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tentacles_top_right_from" translatesAutoresizingMaskIntoConstraints="NO" id="mCa-BK-QAM">
-                            <rect key="frame" x="101" y="8" width="235" height="87"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="87" id="833-b9-h0x"/>
                             </constraints>
                         </imageView>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tentacles_top_left" translatesAutoresizingMaskIntoConstraints="NO" id="uro-Uo-KIX">
@@ -112,21 +103,21 @@
                             <rect key="frame" x="219" y="451" width="121" height="117"/>
                         </imageView>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tentacles-bottom-left" translatesAutoresizingMaskIntoConstraints="NO" id="VRg-tJ-P7T">
-                            <rect key="frame" x="-20" y="452" width="244" height="100"/>
+                            <rect key="frame" x="-32" y="456" width="244" height="100"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="244" id="PTh-wn-mwz"/>
                                 <constraint firstAttribute="height" constant="100" id="mSD-jA-baQ"/>
                             </constraints>
                         </imageView>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Shadesmar" translatesAutoresizingMaskIntoConstraints="NO" id="ZZh-sI-aRK">
-                            <rect key="frame" x="77.666666666666686" y="71" width="165" height="54"/>
+                            <rect key="frame" x="77.666666666666686" y="69" width="165" height="32"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="165" id="ev3-Wx-IrD"/>
-                                <constraint firstAttribute="height" constant="54" id="pu8-HJ-FEl"/>
+                                <constraint firstAttribute="height" constant="32" id="pu8-HJ-FEl"/>
                             </constraints>
                         </imageView>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tentacles-right" translatesAutoresizingMaskIntoConstraints="NO" id="nR2-cS-JqX">
-                            <rect key="frame" x="272" y="71" width="100" height="400"/>
+                            <rect key="frame" x="272" y="63" width="100" height="408"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="100" id="xlN-J4-5wJ"/>
                             </constraints>
@@ -137,39 +128,36 @@
                         <constraint firstItem="a3V-l1-kvn" firstAttribute="leading" secondItem="x93-bh-glK" secondAttribute="trailing" id="2u4-ZA-6eU"/>
                         <constraint firstItem="F2u-ft-XFD" firstAttribute="top" secondItem="bfI-7V-O62" secondAttribute="top" constant="-12" id="4ZI-FM-AcO"/>
                         <constraint firstItem="yUo-cj-bsq" firstAttribute="top" secondItem="bfI-7V-O62" secondAttribute="top" id="6X3-gr-Yrj"/>
-                        <constraint firstItem="mCa-BK-QAM" firstAttribute="leading" secondItem="uro-Uo-KIX" secondAttribute="trailing" id="7Vr-lp-wUr"/>
                         <constraint firstAttribute="bottom" secondItem="a3V-l1-kvn" secondAttribute="bottom" constant="42" id="87r-Eg-7HO"/>
                         <constraint firstItem="ZZh-sI-aRK" firstAttribute="centerX" secondItem="bfI-7V-O62" secondAttribute="centerX" id="AZL-pT-ASF"/>
                         <constraint firstAttribute="bottom" secondItem="A3q-qH-idp" secondAttribute="bottom" constant="-20" id="B2x-sa-D4o"/>
-                        <constraint firstItem="Vkt-xI-kWs" firstAttribute="top" secondItem="bfI-7V-O62" secondAttribute="top" constant="8" id="CD0-SD-6lP"/>
+                        <constraint firstItem="Vkt-xI-kWs" firstAttribute="top" secondItem="bfI-7V-O62" secondAttribute="top" constant="-8" id="CD0-SD-6lP"/>
+                        <constraint firstItem="ZZh-sI-aRK" firstAttribute="top" secondItem="Vkt-xI-kWs" secondAttribute="bottom" constant="-10" id="E3r-5G-3ui"/>
                         <constraint firstAttribute="trailing" secondItem="yUo-cj-bsq" secondAttribute="trailing" id="GXn-yP-3XA"/>
-                        <constraint firstItem="nR2-cS-JqX" firstAttribute="top" secondItem="Vkt-xI-kWs" secondAttribute="bottom" constant="-24" id="Lqj-j1-eS4"/>
-                        <constraint firstItem="ZZh-sI-aRK" firstAttribute="top" secondItem="mCa-BK-QAM" secondAttribute="bottom" constant="-24" id="Nh7-Xs-zhG"/>
+                        <constraint firstItem="nR2-cS-JqX" firstAttribute="top" secondItem="Vkt-xI-kWs" secondAttribute="bottom" constant="-16" id="Lqj-j1-eS4"/>
                         <constraint firstItem="nR2-cS-JqX" firstAttribute="leading" secondItem="a3V-l1-kvn" secondAttribute="trailing" constant="-12" id="NlF-hs-UNq"/>
                         <constraint firstAttribute="bottom" secondItem="yUo-cj-bsq" secondAttribute="bottom" id="PAP-D1-88x"/>
                         <constraint firstAttribute="width" constant="320" id="R3P-nB-Iz7"/>
                         <constraint firstItem="A3q-qH-idp" firstAttribute="top" secondItem="nR2-cS-JqX" secondAttribute="bottom" constant="-20" id="RLX-3M-fw3"/>
-                        <constraint firstItem="VRg-tJ-P7T" firstAttribute="leading" secondItem="bfI-7V-O62" secondAttribute="leading" constant="-20" id="T2u-Jq-Tkk"/>
+                        <constraint firstItem="VRg-tJ-P7T" firstAttribute="leading" secondItem="bfI-7V-O62" secondAttribute="leading" constant="-32" id="T2u-Jq-Tkk"/>
                         <constraint firstAttribute="trailing" secondItem="Vkt-xI-kWs" secondAttribute="trailing" constant="-16" id="Vef-mI-Cyo"/>
                         <constraint firstItem="uro-Uo-KIX" firstAttribute="leading" secondItem="bfI-7V-O62" secondAttribute="leading" constant="-20" id="WRR-Dj-vrb"/>
-                        <constraint firstItem="a3V-l1-kvn" firstAttribute="top" secondItem="ZZh-sI-aRK" secondAttribute="bottom" constant="8" id="Wqi-5v-IXt"/>
+                        <constraint firstItem="a3V-l1-kvn" firstAttribute="top" secondItem="ZZh-sI-aRK" secondAttribute="bottom" constant="20" id="Wqi-5v-IXt"/>
                         <constraint firstItem="852-uE-ekp" firstAttribute="height" secondItem="uro-Uo-KIX" secondAttribute="height" id="XDs-S3-5vw"/>
                         <constraint firstItem="Vkt-xI-kWs" firstAttribute="leading" secondItem="uro-Uo-KIX" secondAttribute="trailing" id="Yfi-gw-mek"/>
                         <constraint firstAttribute="trailing" secondItem="nR2-cS-JqX" secondAttribute="trailing" constant="-52" id="ahA-dA-7Oq"/>
                         <constraint firstItem="yUo-cj-bsq" firstAttribute="leading" secondItem="bfI-7V-O62" secondAttribute="leading" id="axV-ER-spW"/>
-                        <constraint firstAttribute="bottom" secondItem="VRg-tJ-P7T" secondAttribute="bottom" constant="-4" id="bc7-MF-zf1"/>
+                        <constraint firstAttribute="bottom" secondItem="VRg-tJ-P7T" secondAttribute="bottom" constant="-8" id="bc7-MF-zf1"/>
                         <constraint firstAttribute="height" constant="548" id="cB5-kh-mDg"/>
-                        <constraint firstAttribute="trailing" secondItem="mCa-BK-QAM" secondAttribute="trailing" constant="-16" id="eEk-F0-Dcc"/>
                         <constraint firstItem="F2u-ft-XFD" firstAttribute="leading" secondItem="bfI-7V-O62" secondAttribute="leading" constant="-20" id="ebD-Tl-sss"/>
                         <constraint firstItem="x93-bh-glK" firstAttribute="leading" secondItem="bfI-7V-O62" secondAttribute="leading" constant="-52" id="fHz-fc-7ru"/>
                         <constraint firstItem="852-uE-ekp" firstAttribute="width" secondItem="uro-Uo-KIX" secondAttribute="width" id="fXZ-vd-wjG"/>
-                        <constraint firstItem="VRg-tJ-P7T" firstAttribute="top" secondItem="x93-bh-glK" secondAttribute="bottom" constant="-20" id="mzS-gL-dBz"/>
+                        <constraint firstItem="VRg-tJ-P7T" firstAttribute="top" secondItem="x93-bh-glK" secondAttribute="bottom" constant="-16" id="mzS-gL-dBz"/>
                         <constraint firstAttribute="bottom" secondItem="852-uE-ekp" secondAttribute="bottom" constant="-20" id="oWi-D9-wRi"/>
                         <constraint firstItem="x93-bh-glK" firstAttribute="top" secondItem="uro-Uo-KIX" secondAttribute="bottom" constant="-16" id="t6N-eJ-vMX"/>
                         <constraint firstItem="uro-Uo-KIX" firstAttribute="top" secondItem="bfI-7V-O62" secondAttribute="top" constant="-12" id="tG3-Wz-VlP"/>
                         <constraint firstAttribute="trailing" secondItem="A3q-qH-idp" secondAttribute="trailing" constant="-20" id="uzW-TO-OC6"/>
                         <constraint firstAttribute="trailing" secondItem="852-uE-ekp" secondAttribute="trailing" constant="-20" id="wWN-81-lCI"/>
-                        <constraint firstItem="mCa-BK-QAM" firstAttribute="top" secondItem="bfI-7V-O62" secondAttribute="top" constant="8" id="x1o-yo-rtn"/>
                     </constraints>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -188,7 +176,7 @@
                 <constraint firstItem="bfI-7V-O62" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="igS-GD-1S0"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="129" y="123"/>
+            <point key="canvasLocation" x="128.98550724637681" y="122.28260869565219"/>
         </view>
         <tapGestureRecognizer id="3lN-ei-mEy">
             <connections>
@@ -205,14 +193,13 @@
         <image name="Shadesmar" width="297" height="81"/>
         <image name="bg-noize" width="200" height="350"/>
         <image name="bg-pop-up" width="928" height="1159"/>
-        <image name="tentacles-bottom-left" width="1271" height="632"/>
+        <image name="tentacles-bottom-left" width="1366" height="653"/>
         <image name="tentacles-bottom-right-from" width="471" height="470"/>
         <image name="tentacles-bottom-right-to" width="471" height="470"/>
         <image name="tentacles-left" width="401" height="1393"/>
         <image name="tentacles-right" width="401" height="1786"/>
         <image name="tentacles_top_left" width="467" height="497"/>
         <image name="tentacles_top_left_yellow" width="467" height="497"/>
-        <image name="tentacles_top_right_from" width="1161" height="451"/>
-        <image name="tentacles_top_right_to" width="1161" height="451"/>
+        <image name="tentacles_top_right" width="695" height="258"/>
     </resources>
 </document>

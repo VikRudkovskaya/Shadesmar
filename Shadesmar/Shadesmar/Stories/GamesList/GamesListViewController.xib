@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -35,11 +33,11 @@
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                 </imageView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y5F-Yb-mqb">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="20"/>
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="0.0"/>
                     <color key="backgroundColor" red="0.53716045205061658" green="0.65886452716866972" blue="0.7912729356" alpha="0.026300299631506846" colorSpace="custom" customColorSpace="displayP3"/>
                 </view>
                 <view contentMode="scaleToFill" verticalHuggingPriority="249" verticalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="pY4-Bg-ZCm">
-                    <rect key="frame" x="0.0" y="20" width="375" height="31.5"/>
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="31.5"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="252" text="Games" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="669-V5-IUF">
                             <rect key="frame" x="32" y="0.0" width="311" height="31.5"/>
@@ -84,7 +82,7 @@
                     </connections>
                 </button>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="NRP-NU-Ai9">
-                    <rect key="frame" x="0.0" y="51.5" width="375" height="383.5"/>
+                    <rect key="frame" x="0.0" y="31.5" width="375" height="403.5"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </tableView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5bl-nS-sEU" customClass="NavigationWithBottomImageButton" customModule="Shadesmar" customModuleProvider="target">
@@ -99,7 +97,7 @@
                     </state>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aus-uf-QJr">
-                    <rect key="frame" x="123.5" y="563" width="128" height="128"/>
+                    <rect key="frame" x="67.5" y="451" width="240" height="240"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="aus-uf-QJr" secondAttribute="height" multiplier="1:1" id="oVA-h9-xum"/>
                     </constraints>
@@ -167,7 +165,7 @@
     </objects>
     <resources>
         <image name="bg-noize" width="200" height="350"/>
-        <image name="decor-ornament-lines-crossed-swords" width="662" height="584"/>
+        <image name="decor-ornament-lines-crossed-swords" width="626" height="549"/>
         <image name="decor-ornament-tentacles-bottom-left" width="630" height="691"/>
         <image name="decor-ornament-tentacles-bottom-right" width="630" height="691"/>
         <image name="decor-ornament-tentacles-top-left" width="630" height="691"/>
