@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina5_5" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -33,14 +31,14 @@
                     <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                 </imageView>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.14999999999999999" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1qc-n6-d7T" userLabel="separator">
-                    <rect key="frame" x="0.0" y="100" width="414" height="1"/>
+                    <rect key="frame" x="0.0" y="80" width="414" height="1"/>
                     <color key="backgroundColor" red="0.0" green="0.14705925919999999" blue="0.24208788910000001" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="displayP3"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="1" id="8zK-KE-hEd"/>
                     </constraints>
                 </imageView>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="U5D-cV-s7p">
-                    <rect key="frame" x="0.0" y="101" width="414" height="635"/>
+                    <rect key="frame" x="0.0" y="81" width="414" height="655"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="Wee-Ng-y0g"/>
@@ -48,7 +46,7 @@
                     </connections>
                 </tableView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0LO-0P-T50">
-                    <rect key="frame" x="0.0" y="20" width="414" height="80"/>
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
                     <subviews>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tentacles-top-left-2" translatesAutoresizingMaskIntoConstraints="NO" id="PNp-dp-wnq">
                             <rect key="frame" x="-12" y="0.0" width="70" height="104"/>
@@ -124,7 +122,7 @@
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m4n-Am-ak3">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="20"/>
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="0.0"/>
                     <color key="backgroundColor" red="0.54109856869999995" green="0.66724948809999995" blue="0.7912729356" alpha="0.1386183647" colorSpace="custom" customColorSpace="displayP3"/>
                 </view>
             </subviews>

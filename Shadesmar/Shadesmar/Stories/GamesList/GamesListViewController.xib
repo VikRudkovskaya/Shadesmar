@@ -37,10 +37,10 @@
                     <color key="backgroundColor" red="0.53716045205061658" green="0.65886452716866972" blue="0.7912729356" alpha="0.026300299631506846" colorSpace="custom" customColorSpace="displayP3"/>
                 </view>
                 <view contentMode="scaleToFill" verticalHuggingPriority="249" verticalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="pY4-Bg-ZCm">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="31.5"/>
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="252" text="Games" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="669-V5-IUF">
-                            <rect key="frame" x="32" y="0.0" width="311" height="31.5"/>
+                            <rect key="frame" x="32" y="0.0" width="311" height="50"/>
                             <fontDescription key="fontDescription" name="GothicCyr-Normal" family="GothicCyr" pointSize="27"/>
                             <color key="textColor" red="0.15686274510000001" green="0.20392156859999999" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
@@ -49,6 +49,7 @@
                     <color key="backgroundColor" red="0.54109856869999995" green="0.66724948809999995" blue="0.7912729356" alpha="0.03290881846712327" colorSpace="custom" customColorSpace="displayP3"/>
                     <constraints>
                         <constraint firstItem="669-V5-IUF" firstAttribute="top" secondItem="pY4-Bg-ZCm" secondAttribute="top" id="KY4-K2-QDq"/>
+                        <constraint firstAttribute="height" constant="50" id="R94-sr-Z0h"/>
                         <constraint firstAttribute="bottom" secondItem="669-V5-IUF" secondAttribute="bottom" id="jxr-Rg-dHM"/>
                         <constraint firstItem="669-V5-IUF" firstAttribute="leading" secondItem="pY4-Bg-ZCm" secondAttribute="leading" constant="32" id="lUI-GA-FDc"/>
                         <constraint firstItem="669-V5-IUF" firstAttribute="centerX" secondItem="pY4-Bg-ZCm" secondAttribute="centerX" id="vdD-xi-UDd"/>
@@ -82,7 +83,7 @@
                     </connections>
                 </button>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="NRP-NU-Ai9">
-                    <rect key="frame" x="0.0" y="31.5" width="375" height="403.5"/>
+                    <rect key="frame" x="0.0" y="50" width="375" height="385"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </tableView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5bl-nS-sEU" customClass="NavigationWithBottomImageButton" customModule="Shadesmar" customModuleProvider="target">
