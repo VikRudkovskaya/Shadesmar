@@ -10,13 +10,20 @@ import SpriteKit
 
 class BeadNode: SKSpriteNode {
     
-    var beadDidTouch: ((BeadViewModel)->())?
     let viewModel: BeadViewModel
+    
+    var beadDidTouch: ((BeadViewModel)->())?
+    
+    var contentNode: SKSpriteNode?
     
      init(viewModel: BeadViewModel) {
         self.viewModel = viewModel
         let size = CGSize(width: 160, height: 160)
-        let texture = SKTexture(imageNamed: viewModel.textureName)
+        let texture = SKTexture(imageNamed: "bead-bg-na-1") // viewModel.textureName
+        
+        let contentNode = SKSpriteNode(imageNamed: viewModel.textureName)
+        contentNode.size = CGSize(width: 0.4 * size.width, height: 0.4 * size.height)
+        
         
         super.init(texture: texture, color: .clear, size: size)
         isUserInteractionEnabled = true
@@ -25,6 +32,8 @@ class BeadNode: SKSpriteNode {
         physicsBody?.mass = 0.1
         physicsBody?.friction = 0.01
         alpha = 0
+        
+        self.addChild(contentNode)
         
         apearenceAnimation()
     }
