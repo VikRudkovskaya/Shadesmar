@@ -22,8 +22,8 @@ class BeadNode: SKSpriteNode {
         let texture = SKTexture(imageNamed: "bead-bg-na-1") // viewModel.textureName
         
         let contentNode = SKSpriteNode(imageNamed: viewModel.textureName)
-        contentNode.size = CGSize(width: 0.4 * size.width, height: 0.4 * size.height)
-        
+        contentNode.size = CGSize(width: 0.42 * size.width, height: 0.42 * size.height)
+        contentNode.name = viewModel.textureName
         
         super.init(texture: texture, color: .clear, size: size)
         isUserInteractionEnabled = true
