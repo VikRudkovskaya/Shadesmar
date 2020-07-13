@@ -1,6 +1,7 @@
 # Shadesmar | Шейдсмар
 
-Море бусин. Фан-приложение по вселенной Архив Штормсвета Сандерсона Брендона.
+Море бусин.  
+Фан-приложение по вселенной Архив Штормсвета Сандерсона Брендона.
 
 
 ## Premise
@@ -18,8 +19,6 @@
 
 Те кто управляют потоком трансформации и те у кого имеются особые фабриали Духозаклинатели, могут ментально посещать это царство находясь одновременно в двух этих реальностях. 
 
-![Иллюстрация к проекту 2](https://github.com/VikRudkovskaya/Shadesmar/blob/master/ART/Cross.png)
-
 ## Практическое применение
 
 Можно использовать в качестве игры с ребенком:
@@ -27,3 +26,8 @@
 - Съедобное-Несъедовное
 - Для изучения предметов | животных | явлений | процессов
 
+## Визуальные материалы
+
+![Games List](https://github.com/VikRudkovskaya/Shadesmar/blob/master/ART/Shadesmar-GamesList.jpg)
+![Forms](https://github.com/VikRudkovskaya/Shadesmar/blob/master/ART/Shadesmar-Forms.jpg)
+![](https://github.com/VikRudkovskaya/Shadesmar/blob/master/ART/Shadesmar-side-art-1.jpg)
