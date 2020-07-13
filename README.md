@@ -28,6 +28,5 @@
 
 ## Визуальные материалы
 
-![Games List](https://github.com/VikRudkovskaya/Shadesmar/blob/master/ART/Shadesmar-GamesList.png)
+![Games List](https://github.com/VikRudkovskaya/Shadesmar/blob/master/ART/Shadesmar-Screen-v1.png)
 ![Forms](https://github.com/VikRudkovskaya/Shadesmar/blob/master/ART/Shadesmar-Forms.png)
-![](https://github.com/VikRudkovskaya/Shadesmar/blob/master/ART/Shadesmar-Card.png)
